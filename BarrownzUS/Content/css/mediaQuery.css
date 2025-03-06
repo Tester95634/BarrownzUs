@@ -229,6 +229,9 @@
        justify-content:center !important;
         
     }
+    .icon_gaps{
+        margin-top:20px;
+    }
 }
 
 /*Only height*/
