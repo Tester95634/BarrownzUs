@@ -15,9 +15,12 @@
     margin-top: 100px;
 }
 .hero_sction_common {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 100px;
+}
+.hero_sction_contact {
     width: 100%;
     height: auto;
     position: relative;
@@ -709,4 +712,27 @@
 .accordion-button:focus{
     box-shadow:none;
     color:white;
+}
+
+/*Contact Page css*/
+.form-control:focus{
+    box-shadow:none;
+}
+
+select{
+    background:none !important;
+}
+
+.image_ss {
+    animation: contact 1s ease-in-out infinite alternate;
+}
+
+@keyframes contact {
+    0% {
+        transform: translateY(0.5%);
+    }
+
+    100% {
+        transform: translateY(-5%);
+    }
 }

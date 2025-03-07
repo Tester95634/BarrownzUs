@@ -99,12 +99,13 @@
                     </div>
                     <a href="@Url.Action("About","Home")" class="nav-item nav-link @(ViewContext.RouteData.Values["action"].ToString() == "About" ? "active" : "") color_s">Who we Are</a>
                     <a href="@Url.Action("Portfolio","Home")" class="nav-item nav-link @(ViewContext.RouteData.Values["action"].ToString() == "Portfolio" ? "active" : "") color_s">Portfolio</a>
+                    <a href="@Url.Action("ContactUs","Home")" class="nav-item nav-link @(ViewContext.RouteData.Values["action"].ToString() == "ContactUs" ? "active" : "") color_s">Contact Us</a>
                     @*<a href="@Url.Action("Career","Home")" class="nav-item nav-link @(ViewContext.RouteData.Values["action"].ToString() == "Career" ? "active" : "") color_s">Career</a>*@
 
 
                 </div>
-                <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-                <a href="#" class="btn btn-primary py-2 px-4 ms-3">Let's Discuss</a>
+                @*<button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+                <a href="#" class="btn btn-primary py-2 px-4 ms-3">Let's Discuss</a>*@
             </div>
         </nav>
 

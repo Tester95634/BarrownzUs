@@ -317,6 +317,14 @@ namespace BarrownzUS.Controllers
         //    return View();
         //}
 
+        public ActionResult ContactUs()
+        {
+            ViewBag.Title = "ContactUs";
+            ViewBag.BodyClass = "locations";
+            return View();
+        }
+
+
         public ActionResult TermsAndConditions()
         {
             ViewBag.Title = "TermsAndCondition";
