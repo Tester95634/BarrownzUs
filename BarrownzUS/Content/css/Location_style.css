@@ -705,3 +705,8 @@
     width: 2px;
     background: rgba(167, 167, 167, 0.8);
 }
+
+.accordion-button:focus{
+    box-shadow:none;
+    color:white;
+}
