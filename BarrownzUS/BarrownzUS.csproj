@@ -144,7 +144,6 @@
     <Content Include="Content\icon_image\call.png" />
     <Content Include="Content\icon_image\Comlogo.png" />
     <Content Include="Content\icon_image\creative-team.png" />
-    <Content Include="Content\icon_image\location.gif" />
     <Content Include="Content\icon_image\path.png" />
     <Content Include="Content\icon_image\skype.png" />
     <Content Include="Content\icon_image\success.png" />
@@ -175,13 +174,11 @@
     <Content Include="Content\img\feature.jpg" />
     <Content Include="Content\img\FinOps.png" />
     <Content Include="Content\img\google-map.png" />
-    <Content Include="Content\img\Graphic_images.jpg" />
     <Content Include="Content\img\Image_for_location.jpg" />
     <Content Include="Content\img\img_dis_3.jpg" />
     <Content Include="Content\img\insta.png" />
     <Content Include="Content\img\ios.png" />
     <Content Include="Content\img\linkedin.png" />
-    <Content Include="Content\img\location %281%29.gif" />
     <Content Include="Content\img\location_blue.png" />
     <Content Include="Content\img\magento.png" />
     <Content Include="Content\img\marketing.png" />
@@ -197,7 +194,6 @@
     <Content Include="Content\img\seo_4.jpg" />
     <Content Include="Content\img\seo_search_2.jpg" />
     <Content Include="Content\img\shopify.png" />
-    <Content Include="Content\img\sign-up.png" />
     <Content Include="Content\img\slist-icon.png" />
     <Content Include="Content\img\social.jpg" />
     <Content Include="Content\img\social.png" />
@@ -244,25 +240,15 @@
     <Content Include="Content\lib\waypoints\waypoints.min.js" />
     <Content Include="Content\lib\wow\wow.js" />
     <Content Include="Content\lib\wow\wow.min.js" />
-    <Content Include="Content\location-icon\arizona.jpg" />
     <Content Include="Content\location-icon\Arizona.png" />
-    <Content Include="Content\location-icon\california-removebg-preview.png" />
     <Content Include="Content\location-icon\California.png" />
-    <Content Include="Content\location-icon\florida.jpg" />
     <Content Include="Content\location-icon\Florida.png" />
-    <Content Include="Content\location-icon\jersey-city.jpg" />
-    <Content Include="Content\location-icon\kansas_city.jpg" />
     <Content Include="Content\location-icon\Kansas_City.png" />
-    <Content Include="Content\location-icon\los-angeles_2.jpg" />
     <Content Include="Content\location-icon\Los_Angeles.png" />
-    <Content Include="Content\location-icon\new-york.jpg" />
     <Content Include="Content\location-icon\New_Jersey.png" />
     <Content Include="Content\location-icon\New_York.png" />
     <Content Include="Content\location-icon\Pennsylvania.png" />
-    <Content Include="Content\location-icon\penssy.jpg" />
-    <Content Include="Content\location-icon\southa_carolina.jpg" />
     <Content Include="Content\location-icon\South_Carolina.png" />
-    <Content Include="Content\location-icon\texas.jpg" />
     <Content Include="Content\location-icon\Texas.png" />
     <Content Include="Content\video\3626148-uhd_4096_2160_25fps.mp4" />
     <Content Include="favicon.ico" />
@@ -277,11 +263,9 @@
     <Content Include="Content\flag_gif\USA_Flag_gif.webp" />
     <Content Include="Content\img\faq-arrow.webp" />
     <Content Include="Content\img\FAQ-image.webp" />
-    <Content Include="Content\img\Faq_icon.webp" />
     <Content Include="Content\img\img_dis_1.webp" />
     <Content Include="Content\img\img_dis_2.webp" />
     <Content Include="Content\img\seo_search.webp" />
-    <Content Include="Content\img\careerpng.webp" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -355,6 +339,7 @@
     <Content Include="Views\Home\TermsAndConditions.cshtml" />
     <Content Include="Views\Home\PrivacyAndPolicy.cshtml" />
     <Content Include="Views\Home\Copyright.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,250 @@
+/* media query for dropdown */
+@media screen and (max-width:576px) {
+
+   .world{
+    color:  #091E3E !important;
+   }
+  
+   .world{
+    background: none !important;
+   }
+
+   /*Location css*/
+    .hero_sction{
+        padding:50px !important;
+        align-items:center;
+        background-size:contain;
+    }
+    .SE0_hero_sction {
+        padding: 150px !important;
+        align-items: center;
+        background-size: cover;
+    }
+    .Digital_marketing_hero_sction {
+        padding: 150px !important;
+        align-items: center;
+        background-size: cover;
+        margin-top: 0px !important;
+    }
+    .Webdevelopment_hero_sction{
+        padding: 150px !important;
+        align-items: center;
+        background-size: cover;
+        margin-top: 0px !important;
+    }
+    .GraphicDesign_hero_sction {
+        padding: 150px !important;
+        align-items: center;
+        background-size: cover;
+        margin-top: 0px !important;
+    }
+    .PriavcyAndPolicy {
+        padding: 150px !important;
+        align-items: center;
+        background-size: cover;
+        margin-top: 0px !important;
+    }
+    .TermsAndCondition {
+        padding: 150px !important;
+        align-items: center;
+        background-size: cover;
+        margin-top: 0px !important;
+    }
+    .Copyright {
+        padding: 150px !important;
+        align-items: center;
+        background-size: cover;
+        margin-top: 0px !important;
+    }
+
+    .hero_sction_common {
+        margin-top: 0px !important;
+    }
+    .first_heading {
+        font-size: 20px !important;
+    }
+
+    /*Animated card*/
+    .wrapper{
+        height:50vh !important;
+    }
+
+    .SE0_hero_sction {
+        margin-top:0px !important;
+    }
+
+    /*box_gaps*/
+    .box_gaps{
+        gap:20px;
+        justify-content:normal;
+    }
+
+    .center_line {
+        display: none !important;
+    }
+
+    .text_rows {
+        margin-top: 40px;
+    }
+
+    .OUR{
+        font-size:30px !important;
+        font-weight:bold;
+        text-align:center;
+    }
+
+    /*Portfolio css*/
+    .card_smaller_side{
+        gap:50px;
+    }
+
+    .hero_sections_holder{
+        gap:100px;
+    }
+
+    /*career page  4 image gap*/
+    .image_gap{
+        gap:20px;
+    }
+
+}
+/*For card*/
+@media (max-width:390px) {
+    .wrapper {
+        height: 56vh !important;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+ 
+    /*Loaction page setup*/
+    .hero_sction {
+        margin-top: 0px !important;
+    }
+    .SE0_hero_sction {
+        margin-top: 0px !important;
+    }
+    .Digital_marketing_hero_sction {
+        margin-top: 0px !important;
+    }
+
+    .Webdevelopment_hero_sction {
+        margin-top: 0px !important;
+    }
+
+    .GraphicDesign_hero_sction {
+        margin-top: 0px !important;
+    }
+
+    .PriavcyAndPolicy {
+        margin-top: 0px !important;
+    }
+
+    .TermsAndCondition {
+        margin-top: 0px !important;
+    }
+
+    .Copyright {
+        margin-top: 0px !important;
+    }
+    
+    .hero_sction .Expert {
+        font-size: 40px !important;
+    }
+    .hero_sction_common {
+        margin-top: 0px !important;
+    }
+
+    .about_hero{
+        height:30vh !important;
+    }
+    /*black card*/
+    .black_card {
+        margin-top: 10px;
+    }
+
+    /*box_gaps*/
+    .box_gaps{
+        justify-content:start !important;
+        gap:0px !important;
+    }
+
+    .center_line {
+        display: none !important;
+    }
+
+    .card_smaller_side {
+        gap: 50px;
+    }
+     /*Portfolio css*/
+/*    .gapps {
+        margin-top:40px;
+    }*/
+
+    .world{
+        background:none
+    }
+
+    .wrapper {
+        height: 35vh !important;
+    }
+}
+
+
+
+
+/*Location setup*/
+ @media (max-width:576px) {
+    .hero_sction{
+        margin-top:0px !important;
+        padding:100px 10px !important;
+    }
+    .black_card {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+@media (min-width:576px) and (max-width:1024px) {
+    .center_line {
+        display: none !important;
+    }
+    .hider{
+        display:none;
+    }
+
+    .width_in{
+        width:100%;
+    }
+    .text_rows{
+        margin-top:40px;
+    }
+    .OUR {
+        font-size: 80px !important;
+        font-weight: bold;
+        text-align: center;
+        display:flex;
+       justify-content:center !important;
+        
+    }
+    .icon_gaps{
+        margin-top:20px;
+    }
+}
+
+/*Only height*/
+
+@media (height:600px) {
+    .wrapper {
+        height: 65vh !important;
+    }
+   
+}
+@media (height:1366px) {
+    .wrapper {
+        height: 35vh !important;
+    }
+   
+} 
