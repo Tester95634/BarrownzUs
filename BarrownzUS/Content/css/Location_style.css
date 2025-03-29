@@ -15,9 +15,12 @@
     margin-top: 100px;
 }
 .hero_sction_common {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 100px;
+}
+.hero_sction_contact {
     width: 100%;
     height: auto;
     position: relative;
@@ -436,13 +439,13 @@
 
 .center_line .line_indi:nth-child(2) {
     width: 40px;
-    height: 3px;
+    height: 2px;
     top: 60px;
     right: 4px ;
 }
 .center_line .line_indi:nth-child(3) {
         width: 40px;
-        height: 3px;
+        height: 2px;
         top: 100px;
         left: 4px;
     
@@ -450,7 +453,7 @@
 
 .center_line .line_indi:nth-child(4) {
         width: 40px;
-        height: 3px;
+        height: 2px;
         top:400px;
         right: 4px;
 }
@@ -464,13 +467,13 @@
 
     .center_line .line_indi:nth-child(6) {
         width: 40px;
-        height: 3px;
+        height: 2px;
         top: 790px;
         right: 4px;
     }
     .center_line .line_indi:nth-child(7) {
         width: 40px;
-        height: 3px;
+        height: 2px;
         top: 830px;
         left: 4px;
     }
@@ -704,4 +707,41 @@
     height: 50px;
     width: 2px;
     background: rgba(167, 167, 167, 0.8);
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+/*    color:white;*/
+}
+
+/*Contact Page css*/
+.form-control:focus{
+    box-shadow:none;
+}
+
+select{
+    background:none !important;
+}
+
+.image_ss {
+    animation: contact 1s ease-in-out infinite alternate;
+}
+
+@keyframes contact {
+    0% {
+        transform: translateY(0.5%);
+    }
+
+    100% {
+        transform: translateY(-5%);
+    }
+}
+
+.first_row_2
+{
+    display:none;
+}
+/*This css for about page available for md and sm device*/
+.sm-md-available{
+    display:none;
 }

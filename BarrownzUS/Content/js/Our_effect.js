@@ -1,10 +1,10 @@
 ﻿
-//for seo southacarolina page 
+//for seo southacarolina page
 let el = document.querySelector('.dev')
 
 
-const height = el.clientHeight
-const width = el.clientWidth
+const height = el.height
+const width = el.width
 
 
 el.addEventListener('mousemove', handleMove)

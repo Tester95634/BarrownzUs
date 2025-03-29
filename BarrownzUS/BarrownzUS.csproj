@@ -165,6 +165,7 @@
     <Content Include="Content\img\careerbg.jpg" />
     <Content Include="Content\img\carousel-1.jpg" />
     <Content Include="Content\img\carousel-2.jpg" />
+    <Content Include="Content\img\contact-11.png" />
     <Content Include="Content\img\development_gif.gif" />
     <Content Include="Content\img\Devops.jpg" />
     <Content Include="Content\img\digital-marketing.jpg" />
@@ -188,6 +189,7 @@
     <Content Include="Content\img\opencart.png" />
     <Content Include="Content\img\OurEdited.png" />
     <Content Include="Content\img\pin.png" />
+    <Content Include="Content\img\plane.png" />
     <Content Include="Content\img\ppc.png" />
     <Content Include="Content\img\promiss.png" />
     <Content Include="Content\img\seo.png" />
