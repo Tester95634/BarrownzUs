@@ -127,75 +127,78 @@
 
 
 
-let prev = document.querySelector('.prev');
-let next = document.querySelector('.next');
-let box = document.querySelector('.box');
-let items = document.querySelectorAll('.item');
+////let prev = document.querySelector('.prev');
+//let prev = document.getElementById('prev');
+////let next = document.querySelector('.next');
+//let next = document.getElementById('next');
+////let box = document.querySelector('.box');
+//let box = document.getElementById("box")
+//let items = document.querySelectorAll('.item');
 
-let isDragging = false;
-let startX, moveX, difference;
+//let isDragging = false;
+//let startX, moveX, difference;
 
-// Next Button Functionality
-next.addEventListener('click', function () {
-    let item = document.querySelectorAll('.item');
-    box.style.transition = "transform 0.5s ease-in-out";
-    box.appendChild(item[0]);
-});
+//// Next Button Functionality
+//next.addEventListener('click', function () {
+//    let item = document.querySelectorAll('.item');
+//    box.style.transition = "transform 0.5s ease-in-out";
+//    box.appendChild(item[0]);
+//});
 
-// Prev Button Functionality
-prev.addEventListener('click', function () {
-    let item = document.querySelectorAll('.item');
-    box.style.transition = "transform 0.5s ease-in-out";
-    box.prepend(item[item.length - 1]);
-});
+//// Prev Button Functionality
+//prev.addEventListener('click', function () {
+//    let item = document.querySelectorAll('.item');
+//    box.style.transition = "transform 0.5s ease-in-out";
+//    box.prepend(item[item.length - 1]);
+//});
 
-// Auto-scroll Every 5 Seconds
-setInterval(() => {
-    let item = document.querySelectorAll('.item');
-    box.style.transition = "transform 0.5s ease-in-out";
-    box.appendChild(item[0]);
-}, 5000);
-
-
-box.addEventListener('mousedown', (e) => startDrag(e.clientX));
-box.addEventListener('touchstart', (e) => startDrag(e.touches[0].clientX));
-
-function startDrag(position) {
-    isDragging = true;
-    startX = position;
-    box.style.transition = "none"; 
-}
-
-box.addEventListener('mousemove', (e) => dragMove(e.clientX));
-box.addEventListener('touchmove', (e) => dragMove(e.touches[0].clientX));
-
-function dragMove(position) {
-    if (!isDragging) return;
-    moveX = position;
-    difference = moveX - startX;
-    box.style.transform = `translateX(${difference}px)`; 
-}
+//// Auto-scroll Every 5 Seconds
+//setInterval(() => {
+//    let item = document.querySelectorAll('.item');
+//    box.style.transition = "transform 0.5s ease-in-out";
+//    box.appendChild(item[0]);
+//}, 5000);
 
 
-box.addEventListener('mouseup', endDrag);
-box.addEventListener('mouseleave', endDrag);
-box.addEventListener('touchend', endDrag);
+//box.addEventListener('mousedown', (e) => startDrag(e.clientX));
+//box.addEventListener('touchstart', (e) => startDrag(e.touches[0].clientX));
 
-function endDrag() {
-    if (!isDragging) return;
-    isDragging = false;
-    box.style.transition = "transform 0.5s ease-in-out";
+//function startDrag(position) {
+//    isDragging = true;
+//    startX = position;
+//    box.style.transition = "none"; 
+//}
 
-    if (difference < -50) {
-        let item = document.querySelectorAll('.item');
-        box.appendChild(item[0]);
-    } else if (difference > 50) {
-        let item = document.querySelectorAll('.item');
-        box.prepend(item[item.length - 1]);
-    }
+//box.addEventListener('mousemove', (e) => dragMove(e.clientX));
+//box.addEventListener('touchmove', (e) => dragMove(e.touches[0].clientX));
 
-    box.style.transform = "translateX(0)";
-}
+//function dragMove(position) {
+//    if (!isDragging) return;
+//    moveX = position;
+//    difference = moveX - startX;
+//    box.style.transform = `translateX(${difference}px)`; 
+//}
+
+
+//box.addEventListener('mouseup', endDrag);
+//box.addEventListener('mouseleave', endDrag);
+//box.addEventListener('touchend', endDrag);
+
+//function endDrag() {
+//    if (!isDragging) return;
+//    isDragging = false;
+//    box.style.transition = "transform 0.5s ease-in-out";
+
+//    if (difference < -50) {
+//        let item = document.querySelectorAll('.item');
+//        box.appendChild(item[0]);
+//    } else if (difference > 50) {
+//        let item = document.querySelectorAll('.item');
+//        box.prepend(item[item.length - 1]);
+//    }
+
+//    box.style.transform = "translateX(0)";
+//}
 
 
 //Content hide and show 

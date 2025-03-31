@@ -309,7 +309,7 @@
         <h1 class="mb-0">Barrownz focuses on client satisfaction by providing quality solutions and supporting business growth.</h1>
     </div>
     <div class="container position-relative d-flex  justify-content-center  " style="height:400px; background: #06A3DA;">
-        <div class="box">
+        <div class="box" id="box">
             <div class="item">
                 <div class="text_holder d-flex align-items-center justify-content-end w-100 px-5" style="height: 100px;">
                     <div class="D3_image_holder mx-4 my-3" style="margin:20px 30px !important;">
@@ -434,9 +434,9 @@
     </div>
 
     <div class="buttonss position-relative d-flex align-items-center justify-content-center ">
-        <div class="buttons  position-absolute">
-            <span class="prev"></span>
-            <span class="next"></span>
+        <div class="buttons position-absolute">
+            <span class="prev" id="prev"></span>
+            <span class="next" id="next"></span>
         </div>
     </div>
 </div>
@@ -949,3 +949,78 @@
     </div>
 </div>
 <!--FAQ  end 2ND-->
+<script>
+    //let prev = document.querySelector('.prev');
+    let prev = document.getElementById('prev');
+    //let next = document.querySelector('.next');
+    let next = document.getElementById('next');
+    //let box = document.querySelector('.box');
+    let box = document.getElementById("box")
+    let items = document.querySelectorAll('.item');
+
+    let isDragging = false;
+    let startX, moveX, difference;
+
+    // Next Button Functionality
+    next.addEventListener('click', function () {
+        let item = document.querySelectorAll('.item');
+        box.style.transition = "transform 0.5s ease-in-out";
+        box.appendChild(item[0]);
+    });
+
+    // Prev Button Functionality
+    prev.addEventListener('click', function () {
+        let item = document.querySelectorAll('.item');
+        box.style.transition = "transform 0.5s ease-in-out";
+        box.prepend(item[item.length - 1]);
+    });
+
+    // Auto-scroll Every 5 Seconds
+    setInterval(() => {
+        let item = document.querySelectorAll('.item');
+        box.style.transition = "transform 0.5s ease-in-out";
+        box.appendChild(item[0]);
+    }, 5000);
+
+
+    box.addEventListener('mousedown', (e) => startDrag(e.clientX));
+    box.addEventListener('touchstart', (e) => startDrag(e.touches[0].clientX));
+
+    function startDrag(position) {
+        isDragging = true;
+        startX = position;
+        box.style.transition = "none";
+    }
+
+    box.addEventListener('mousemove', (e) => dragMove(e.clientX));
+    box.addEventListener('touchmove', (e) => dragMove(e.touches[0].clientX));
+
+    function dragMove(position) {
+        if (!isDragging) return;
+        moveX = position;
+        difference = moveX - startX;
+        box.style.transform = `translateX(${difference}px)`;
+    }
+
+
+    box.addEventListener('mouseup', endDrag);
+    box.addEventListener('mouseleave', endDrag);
+    box.addEventListener('touchend', endDrag);
+
+    function endDrag() {
+        if (!isDragging) return;
+        isDragging = false;
+        box.style.transition = "transform 0.5s ease-in-out";
+
+        if (difference < -50) {
+            let item = document.querySelectorAll('.item');
+            box.appendChild(item[0]);
+        } else if (difference > 50) {
+            let item = document.querySelectorAll('.item');
+            box.prepend(item[item.length - 1]);
+        }
+
+        box.style.transform = "translateX(0)";
+    }
+
+</script>

@@ -1,49 +1,48 @@
-﻿
-//for seo southacarolina page
-let el = document.querySelector('.dev')
+﻿//for seo southacarolina page 
+//let el = document.querySelector('.dev')
+//let el = document.getElementById("dev");
 
 
-const height = el.height
-const width = el.width
+//const height = el.clientHeight
+//const width = el.clientWidth
 
 
-el.addEventListener('mousemove', handleMove)
+//el.addEventListener('mousemove', handleMove)
 
 
-function handleMove(e) {
+//function handleMove(e) {
 
-    const xVal = e.layerX
+//    const xVal = e.layerX
 
-    const yVal = e.layerY
-
-
-    const yRotation = 20 * ((xVal - width / 2) / width)
+//    const yVal = e.layerY
 
 
-    const xRotation = -20 * ((yVal - height / 2) / height)
+//    const yRotation = 20 * ((xVal - width / 2) / width)
 
 
-    const string = 'perspective(500px) scale(1.01) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+//    const xRotation = -20 * ((yVal - height / 2) / height)
 
 
-    el.style.transform = string
-}
+//    const string = 'perspective(500px) scale(1.01) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
 
 
-el.addEventListener('mouseout', function () {
-    el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
-})
+//    el.style.transform = string
+//}
 
 
-el.addEventListener('mousedown', function () {
-    el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
-})
+//el.addEventListener('mouseout', function () {
+//    el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+//})
 
 
-el.addEventListener('mouseup', function () {
-    el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
-})
+//el.addEventListener('mousedown', function () {
+//    el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
+//})
 
+
+//el.addEventListener('mouseup', function () {
+//    el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
+//})
 
 
 //Text hover letter zooming effect
