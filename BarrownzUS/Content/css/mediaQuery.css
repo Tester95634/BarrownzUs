@@ -15,6 +15,57 @@
         align-items:center;
         background-size:contain;
     }
+
+    .southcarolina{
+        padding:50px !important;
+        align-items:center;
+        background-size:contain;
+    }
+    .seocalifornia{
+        padding:50px !important;
+        align-items:center;
+        background-size:contain;
+    }
+    .seoflorida {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .seoTexas {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .seoKansas_City {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .seoLosAngeles {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .seoNewJersey {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .seoArizona {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .seoNewYork {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .seoPennsylvania{
+         padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
     .SE0_hero_sction {
         padding: 150px !important;
         align-items: center;
@@ -150,6 +201,36 @@
     .hero_sction {
         margin-top: 0px !important;
     }
+    .southcarolina {
+        margin-top: 0px !important;
+    }
+    .seocalifornia{
+        margin-top:0px !important;
+    }
+    .seoflorida{
+        margin-top:0px !important;
+    }
+    .seoTexas{
+        margin-top:0px !important;
+    }
+    .seoKansas_City{
+        margin-top:0px !important;
+    }
+    .seoLosAngeles{
+        margin-top:0px !important;
+    }
+    .seoNewJersey{
+        margin-top:0px !important;
+    }
+    .seoArizona{
+        margin-top:0px !important;
+    }
+    .seoNewYork {
+        margin-top: 0px !important;
+    }
+    .seoPennsylvania {
+        margin-top: 0px !important;
+    }
     .SE0_hero_sction {
         margin-top: 0px !important;
     }
@@ -254,6 +335,46 @@
     .hero_sction{
         margin-top:0px !important;
         padding:100px 10px !important;
+    }
+    .southcarolina {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seocalifornia {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seoflorida{
+         margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seoTexas {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seoKansas_City {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seoLosAngeles {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seoNewJersey {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seoArizona {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seoNewYork {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .seoPennsylvania {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
     }
     .black_card {
         margin-top: 10px;

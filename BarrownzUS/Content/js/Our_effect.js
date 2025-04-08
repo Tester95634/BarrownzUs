@@ -1,51 +1,33 @@
 ﻿//This js image hover effect start here
-let el = document.querySelector('.dev')
-//let el = document.getElementById("dev");
+window.addEventListener('load', () => {
+    let el = document.querySelector('.dev');
 
+    const height = el.clientHeight;
+    const width = el.clientWidth;
 
-const height = el.clientHeight
-const width = el.clientWidth
+    el.addEventListener('mousemove', handleMove);
+    el.addEventListener('mouseleave', resetTransform);
 
+    function handleMove(e) {
+        const xVal = e.layerX;
+        const yVal = e.layerY;
 
-el.addEventListener('mousemove', handleMove)
+        const yRotation = 20 * ((xVal - width / 2) / width);
+        const xRotation = -20 * ((yVal - height / 2) / height);
 
+        const string = 'perspective(500px) scale(1.01) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
 
-function handleMove(e) {
+        el.style.transform = string;
+    }
 
-    const xVal = e.layerX
+    function resetTransform() {
+        el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
+    }
+});
 
-    const yVal = e.layerY
-
-
-    const yRotation = 20 * ((xVal - width / 2) / width)
-
-
-    const xRotation = -20 * ((yVal - height / 2) / height)
-
-
-    const string = 'perspective(500px) scale(1.01) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
-
-
-    el.style.transform = string
-}
-
-
-el.addEventListener('mouseout', function () {
-    el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
-})
-
-
-el.addEventListener('mousedown', function () {
-    el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
-})
-
-
-el.addEventListener('mouseup', function () {
-    el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
-})
 //This js image hover effect end here
 
-//Text hover letter zooming effect
+//Text hover letter zooming effect for About Page
 document.addEventListener("DOMContentLoaded", function () {
     let heading = document.querySelector(".Hover_text"); 
     let newHtml = "";
@@ -68,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     heading.innerHTML = newHtml; 
 });
 
-
+//This js for about page
 // animation js
 var radius = 80;
 
@@ -96,7 +78,7 @@ TweenMax.to(".ball", 1, {
 
 
 
-//validation form
+//The validation for form
 function validate() {
 
     let name = document.getElementById("name").value;
@@ -146,12 +128,5 @@ function validate() {
 
 }
 
-let text = document.querySelectorAll(".text-danger")
-
-text.forEach((element) => {
-    setTimeout(() => {
-        element.style.display = "none";
-    }, 10000)
-})
 
 

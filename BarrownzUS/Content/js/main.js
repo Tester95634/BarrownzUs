@@ -126,12 +126,11 @@
 
 
 
+//this js for index page for box silder section autimatic 5 second after chage and implemnt with Dragging effect
 
-//let prev = document.querySelector('.prev');
+//Start Here
 let prev = document.getElementById('prev');
-//let next = document.querySelector('.next');
 let next = document.getElementById('next');
-//let box = document.querySelector('.box');
 let box = document.getElementById("box")
 let items = document.querySelectorAll('.item');
 
@@ -199,11 +198,12 @@ function endDrag() {
 
     box.style.transform = "translateX(0)";
 }
+//End Here
 
 
+
+//This js for index page Our Best Sevices
 //Content hide and show 
-
-
 const box1 = document.getElementById('Box_1');
 const box2 = document.getElementById('Box_2');
 const box3 = document.getElementById('Box_3');

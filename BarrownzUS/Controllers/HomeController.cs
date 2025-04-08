@@ -20,9 +20,9 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
-        public ActionResult SEO_In_SouthaCarolina()
+        public ActionResult SEO_In_SouthCarolina()
         {
-            ViewBag.Title = "SEO_in_SouthaCarolina";
+            ViewBag.Title = "SEO_in_SouthCarolina";
             ViewBag.BodyClass = "SouthaCarolina";
             return View();
         }
@@ -90,9 +90,9 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
-        public ActionResult DigitalMarketing_In_SouthaCarolina()
+        public ActionResult DigitalMarketing_In_SouthCarolina()
         {
-            ViewBag.Title = "DigitalMarketing_In_SouthaCarolina";
+            ViewBag.Title = "DigitalMarketing_In_SouthCarolina";
             ViewBag.BodyClass = "locations";
             return View();
         }
@@ -159,9 +159,9 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "web_development";
             return View();
         }
-        public ActionResult WebsiteDevelopment_In_SouthaCarolina()
+        public ActionResult WebsiteDevelopment_In_SouthCarolina()
         {
-            ViewBag.Title = "WebsiteDevelopment_In_SouthaCarolina";
+            ViewBag.Title = "WebsiteDevelopment_In_SouthCarolina";
             ViewBag.BodyClass = "locations";
             return View();
         }
@@ -230,9 +230,9 @@ namespace BarrownzUS.Controllers
         }
 
 
-        public ActionResult GraphicDesign_In_SouthaCarolina()
+        public ActionResult GraphicDesign_In_SouthCarolina()
         {
-            ViewBag.Title = "GraphicDesign_In_SouthaCarolina";
+            ViewBag.Title = "GraphicDesign_In_SouthCarolina";
             ViewBag.BodyClass = "locations";
             return View();
         }
