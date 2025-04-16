@@ -5,30 +5,30 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\Kratika\Publish\BarrownzUS</_PublishTargetUrl>
-    <History>True|2025-03-06T10:05:36.2392822Z||;False|2025-03-06T15:32:07.8285840+05:30||;False|2025-03-06T15:31:14.7427389+05:30||;False|2025-03-06T15:30:34.4798822+05:30||;</History>
+    <History>True|2025-04-15T12:38:31.6400490Z||;True|2025-04-15T18:08:23.2008073+05:30||;True|2025-04-15T17:50:10.6704710+05:30||;True|2025-04-15T17:49:50.7254870+05:30||;True|2025-04-15T17:42:46.8860474+05:30||;True|2025-04-15T16:46:54.2897249+05:30||;True|2025-03-06T15:35:36.2392822+05:30||;False|2025-03-06T15:32:07.8285840+05:30||;False|2025-03-06T15:31:14.7427389+05:30||;False|2025-03-06T15:30:34.4798822+05:30||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>09/10/2013 16:29:20</publishTime>
+      <publishTime>10/09/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>09/10/2013 16:29:20</publishTime>
+      <publishTime>10/09/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/BarrownzUS.dll">
-      <publishTime>03/06/2025 15:32:07</publishTime>
+      <publishTime>04/15/2025 17:49:49</publishTime>
     </File>
     <File Include="bin/BarrownzUS.pdb">
-      <publishTime>03/06/2025 15:32:07</publishTime>
+      <publishTime>04/15/2025 17:49:49</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>09/05/2018 16:10:50</publishTime>
+      <publishTime>05/09/2018 16:10:50</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>04/11/2022 19:09:46</publishTime>
+      <publishTime>11/04/2022 19:09:46</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>03/08/2023 07:09:56</publishTime>
+      <publishTime>08/03/2023 07:09:56</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2018 05:38:48</publishTime>
@@ -70,10 +70,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2018 12:09:42</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>12/05/2017 09:36:44</publishTime>
+      <publishTime>05/12/2017 09:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>12/05/2017 09:36:44</publishTime>
+      <publishTime>05/12/2017 09:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
       <publishTime>08/08/2018 12:09:42</publishTime>
@@ -82,85 +82,85 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2018 12:09:42</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
-      <publishTime>11/05/2016 18:55:32</publishTime>
+      <publishTime>05/11/2016 18:55:32</publishTime>
     </File>
     <File Include="bin/roslyn/System.AppContext.dll">
-      <publishTime>11/05/2016 18:55:34</publishTime>
+      <publishTime>05/11/2016 18:55:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
       <publishTime>05/16/2018 03:29:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Console.dll">
-      <publishTime>11/05/2016 18:55:48</publishTime>
+      <publishTime>05/11/2016 18:55:48</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
-      <publishTime>11/05/2016 18:55:52</publishTime>
+      <publishTime>05/11/2016 18:55:52</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
-      <publishTime>11/05/2016 18:55:56</publishTime>
+      <publishTime>05/11/2016 18:55:56</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
-      <publishTime>11/05/2016 18:55:52</publishTime>
+      <publishTime>05/11/2016 18:55:52</publishTime>
     </File>
     <File Include="bin/roslyn/System.Globalization.Calendars.dll">
-      <publishTime>11/05/2016 18:56:02</publishTime>
+      <publishTime>05/11/2016 18:56:02</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Compression.dll">
-      <publishTime>11/05/2016 18:56:08</publishTime>
+      <publishTime>05/11/2016 18:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
-      <publishTime>11/05/2016 18:56:04</publishTime>
+      <publishTime>05/11/2016 18:56:04</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.dll">
-      <publishTime>11/05/2016 18:56:08</publishTime>
+      <publishTime>05/11/2016 18:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
-      <publishTime>11/05/2016 18:56:08</publishTime>
+      <publishTime>05/11/2016 18:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.Net.Http.dll">
-      <publishTime>11/05/2016 18:56:30</publishTime>
+      <publishTime>05/11/2016 18:56:30</publishTime>
     </File>
     <File Include="bin/roslyn/System.Net.Sockets.dll">
-      <publishTime>11/05/2016 18:56:34</publishTime>
+      <publishTime>05/11/2016 18:56:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
       <publishTime>05/16/2018 03:29:44</publishTime>
     </File>
     <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
-      <publishTime>11/05/2016 18:57:00</publishTime>
+      <publishTime>05/11/2016 18:57:00</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
-      <publishTime>11/05/2016 18:57:14</publishTime>
+      <publishTime>05/11/2016 18:57:14</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
-      <publishTime>11/05/2016 18:57:08</publishTime>
+      <publishTime>05/11/2016 18:57:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
-      <publishTime>11/05/2016 18:57:18</publishTime>
+      <publishTime>05/11/2016 18:57:18</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
-      <publishTime>11/05/2016 18:57:18</publishTime>
+      <publishTime>05/11/2016 18:57:18</publishTime>
     </File>
     <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
-      <publishTime>11/05/2016 18:57:20</publishTime>
+      <publishTime>05/11/2016 18:57:20</publishTime>
     </File>
     <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
-      <publishTime>11/05/2016 18:57:24</publishTime>
+      <publishTime>05/11/2016 18:57:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.ValueTuple.dll">
-      <publishTime>11/05/2016 18:57:30</publishTime>
+      <publishTime>05/11/2016 18:57:30</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
-      <publishTime>11/05/2016 18:57:36</publishTime>
+      <publishTime>05/11/2016 18:57:36</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
-      <publishTime>11/05/2016 18:57:34</publishTime>
+      <publishTime>05/11/2016 18:57:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XPath.dll">
-      <publishTime>11/05/2016 18:57:40</publishTime>
+      <publishTime>05/11/2016 18:57:40</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
-      <publishTime>11/05/2016 18:57:34</publishTime>
+      <publishTime>05/11/2016 18:57:34</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
       <publishTime>08/08/2018 05:38:48</publishTime>
@@ -184,7 +184,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/27/2022 23:42:20</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>02/11/2014 15:26:04</publishTime>
+      <publishTime>11/02/2014 15:26:04</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
       <publishTime>05/27/2022 23:42:06</publishTime>
@@ -205,16 +205,199 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 10:37:10</publishTime>
     </File>
     <File Include="Content/css/box_style.css">
-      <publishTime>03/04/2025 15:54:00</publishTime>
+      <publishTime>03/27/2025 12:55:48</publishTime>
     </File>
     <File Include="Content/css/Location_style.css">
-      <publishTime>03/04/2025 16:39:52</publishTime>
+      <publishTime>04/15/2025 18:08:09</publishTime>
     </File>
     <File Include="Content/css/mediaQuery.css">
-      <publishTime>03/06/2025 09:39:40</publishTime>
+      <publishTime>04/15/2025 15:46:32</publishTime>
     </File>
     <File Include="Content/css/style.css">
-      <publishTime>03/04/2025 15:51:56</publishTime>
+      <publishTime>04/15/2025 15:33:18</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Arizona/Arizona.webp">
+      <publishTime>10/04/2025 17:32:24</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Arizona/Arizonacity.webp">
+      <publishTime>11/04/2025 09:40:36</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Arizona/service.webp">
+      <publishTime>10/04/2025 17:32:24</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Arizona/vector %282%29.webp">
+      <publishTime>10/04/2025 17:32:22</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Arizona/vector %283%29.webp">
+      <publishTime>10/04/2025 17:32:22</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Arizona/vector.webp">
+      <publishTime>10/04/2025 17:32:22</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/California/LowerBanner.webp">
+      <publishTime>10/04/2025 17:49:18</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/California/Services.webp">
+      <publishTime>10/04/2025 17:49:18</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/California/UpperBanner.webp">
+      <publishTime>10/04/2025 17:49:18</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/California/Vector1.webp">
+      <publishTime>10/04/2025 17:49:18</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/California/Vector2.webp">
+      <publishTime>10/04/2025 17:49:20</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/California/Vector3.webp">
+      <publishTime>10/04/2025 17:49:20</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Florida/LowerBanner.webp">
+      <publishTime>10/04/2025 17:50:22</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Florida/Services.webp">
+      <publishTime>10/04/2025 17:50:22</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Florida/UpperBanner.webp">
+      <publishTime>10/04/2025 17:50:20</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Florida/Vector1.webp">
+      <publishTime>10/04/2025 17:50:20</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Florida/Vector2.webp">
+      <publishTime>10/04/2025 17:50:20</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Florida/Vector3.webp">
+      <publishTime>10/04/2025 17:50:20</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/KansasCity/KansasCity.webp">
+      <publishTime>11/04/2025 09:40:36</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/KansasCity/LowerBanner.webp">
+      <publishTime>10/04/2025 17:51:50</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/KansasCity/Services.webp">
+      <publishTime>10/04/2025 17:51:50</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/KansasCity/Vector1.webp">
+      <publishTime>10/04/2025 17:51:50</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/KansasCity/Vector2.webp">
+      <publishTime>10/04/2025 17:51:52</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/KansasCity/Vector3.webp">
+      <publishTime>10/04/2025 17:51:52</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/LosAngeles/LosAngelescity.webp">
+      <publishTime>11/04/2025 09:40:34</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/LosAngeles/Losangles.webp">
+      <publishTime>10/04/2025 17:53:40</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/LosAngeles/services.webp">
+      <publishTime>10/04/2025 17:53:42</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/LosAngeles/vector1.webp">
+      <publishTime>10/04/2025 17:53:40</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/LosAngeles/vector2.webp">
+      <publishTime>10/04/2025 17:53:40</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/LosAngeles/vector3.webp">
+      <publishTime>10/04/2025 17:53:42</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/MainPage/MainPage.webp">
+      <publishTime>10/04/2025 17:29:22</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewJersey/NewJersey.webp">
+      <publishTime>10/04/2025 17:54:54</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewJersey/NewJerseycity.webp">
+      <publishTime>11/04/2025 09:40:34</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewJersey/service.webp">
+      <publishTime>10/04/2025 17:54:56</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewJersey/vector%283%29.webp">
+      <publishTime>10/04/2025 17:54:56</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewJersey/vector1.webp">
+      <publishTime>10/04/2025 17:54:54</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewJersey/vector2.webp">
+      <publishTime>10/04/2025 17:54:56</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewYork/NewYork %286%29.webp">
+      <publishTime>10/04/2025 17:55:48</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewYork/NewYork.webp">
+      <publishTime>11/04/2025 09:40:32</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewYork/service.webp">
+      <publishTime>10/04/2025 17:55:48</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewYork/vector%283%29.webp">
+      <publishTime>10/04/2025 17:55:48</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewYork/vector1.webp">
+      <publishTime>10/04/2025 17:55:48</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/NewYork/vector2.webp">
+      <publishTime>10/04/2025 17:55:48</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Pennsylvania/pennsylvania.webp">
+      <publishTime>11/04/2025 09:40:32</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Pennsylvania/Pennsylvania1.webp">
+      <publishTime>10/04/2025 17:56:44</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Pennsylvania/service.webp">
+      <publishTime>10/04/2025 17:56:46</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Pennsylvania/vector.webp">
+      <publishTime>10/04/2025 17:56:46</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Pennsylvania/vector2.webp">
+      <publishTime>10/04/2025 17:56:46</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Pennsylvania/vector3.webp">
+      <publishTime>10/04/2025 17:56:46</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/SouthCarolina/LowerBanner.webp">
+      <publishTime>10/04/2025 17:57:40</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/SouthCarolina/Services.webp">
+      <publishTime>10/04/2025 17:57:42</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/SouthCarolina/UpperBanner.webp">
+      <publishTime>10/04/2025 17:57:42</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/SouthCarolina/Vector1.webp">
+      <publishTime>10/04/2025 17:57:42</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/SouthCarolina/Vector2.webp">
+      <publishTime>10/04/2025 17:57:42</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/SouthCarolina/Vector3.webp">
+      <publishTime>10/04/2025 17:57:44</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Texas/LowerBanner.webp">
+      <publishTime>10/04/2025 17:59:02</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Texas/Services.webp">
+      <publishTime>10/04/2025 17:59:02</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Texas/Texas.webp">
+      <publishTime>11/04/2025 09:40:32</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Texas/Vector1.webp">
+      <publishTime>10/04/2025 17:59:04</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Texas/Vector2.webp">
+      <publishTime>10/04/2025 17:59:02</publishTime>
+    </File>
+    <File Include="Content/DigitalMarketingWebImage/Texas/Vector3.webp">
+      <publishTime>10/04/2025 17:59:02</publishTime>
     </File>
     <File Include="Content/flag_gif/AU_flag_gif.webp">
       <publishTime>02/19/2025 10:30:24</publishTime>
@@ -240,11 +423,17 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/icon_image/4.jpg">
       <publishTime>02/20/2025 10:33:46</publishTime>
     </File>
+    <File Include="Content/icon_image/44.png">
+      <publishTime>10/04/2025 12:22:54</publishTime>
+    </File>
     <File Include="Content/icon_image/5.jpg">
       <publishTime>02/20/2025 10:33:46</publishTime>
     </File>
     <File Include="Content/icon_image/6.jpg">
       <publishTime>02/20/2025 10:33:46</publishTime>
+    </File>
+    <File Include="Content/icon_image/ba-seo.png">
+      <publishTime>02/04/2025 15:28:58</publishTime>
     </File>
     <File Include="Content/icon_image/barrownz-logo-2021.png">
       <publishTime>02/20/2025 10:33:46</publishTime>
@@ -252,17 +441,56 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/icon_image/call.png">
       <publishTime>03/03/2025 15:59:38</publishTime>
     </File>
+    <File Include="Content/icon_image/code.png">
+      <publishTime>02/04/2025 15:29:12</publishTime>
+    </File>
     <File Include="Content/icon_image/Comlogo.png">
       <publishTime>02/20/2025 10:33:46</publishTime>
     </File>
     <File Include="Content/icon_image/creative-team.png">
       <publishTime>03/03/2025 14:38:42</publishTime>
     </File>
+    <File Include="Content/icon_image/design.png">
+      <publishTime>02/04/2025 15:28:48</publishTime>
+    </File>
+    <File Include="Content/icon_image/digital_maketing.png">
+      <publishTime>02/04/2025 15:29:04</publishTime>
+    </File>
+    <File Include="Content/icon_image/ehehethth.png">
+      <publishTime>04/04/2025 12:15:58</publishTime>
+    </File>
+    <File Include="Content/icon_image/FireShot.png">
+      <publishTime>02/04/2025 13:13:32</publishTime>
+    </File>
+    <File Include="Content/icon_image/image %281%29.png">
+      <publishTime>02/04/2025 12:39:40</publishTime>
+    </File>
+    <File Include="Content/icon_image/img8.png">
+      <publishTime>04/15/2025 17:47:02</publishTime>
+    </File>
+    <File Include="Content/icon_image/Jewelry.png">
+      <publishTime>02/04/2025 16:09:08</publishTime>
+    </File>
+    <File Include="Content/icon_image/MainPage.png">
+      <publishTime>10/04/2025 15:09:16</publishTime>
+    </File>
+    <File Include="Content/icon_image/Microsoft-teams.png">
+      <publishTime>04/15/2025 11:50:46</publishTime>
+    </File>
+    <File Include="Content/icon_image/Modern Car Shipping.png">
+      <publishTime>02/04/2025 16:08:04</publishTime>
+    </File>
+    <File Include="Content/icon_image/ParagonFlooring.png">
+      <publishTime>02/04/2025 16:11:04</publishTime>
+    </File>
     <File Include="Content/icon_image/path.png">
       <publishTime>03/03/2025 14:40:00</publishTime>
     </File>
     <File Include="Content/icon_image/skype.png">
       <publishTime>03/03/2025 16:11:28</publishTime>
+    </File>
+    <File Include="Content/icon_image/smallest image.png">
+      <publishTime>04/04/2025 11:50:22</publishTime>
     </File>
     <File Include="Content/icon_image/success.png">
       <publishTime>02/28/2025 14:27:36</publishTime>
@@ -275,6 +503,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Content/icon_image/workplace.png">
       <publishTime>03/03/2025 14:42:38</publishTime>
+    </File>
+    <File Include="Content/icon_image/x.png">
+      <publishTime>04/15/2025 11:32:12</publishTime>
     </File>
     <File Include="Content/img/about.jpg">
       <publishTime>02/20/2025 10:36:36</publishTime>
@@ -321,6 +552,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/img/carousel-2.jpg">
       <publishTime>02/20/2025 10:36:36</publishTime>
     </File>
+    <File Include="Content/img/contact-11.png">
+      <publishTime>07/03/2025 14:58:30</publishTime>
+    </File>
     <File Include="Content/img/development_gif.gif">
       <publishTime>02/20/2025 10:36:36</publishTime>
     </File>
@@ -349,7 +583,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 10:36:36</publishTime>
     </File>
     <File Include="Content/img/FinOps.png">
-      <publishTime>03/03/2025 11:23:04</publishTime>
+      <publishTime>03/24/2025 16:04:52</publishTime>
     </File>
     <File Include="Content/img/google-map.png">
       <publishTime>02/20/2025 10:36:36</publishTime>
@@ -364,7 +598,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 10:36:36</publishTime>
     </File>
     <File Include="Content/img/img_dis_3.jpg">
-      <publishTime>02/20/2025 10:36:36</publishTime>
+      <publishTime>03/24/2025 10:13:06</publishTime>
     </File>
     <File Include="Content/img/insta.png">
       <publishTime>02/20/2025 10:36:36</publishTime>
@@ -376,7 +610,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 10:36:36</publishTime>
     </File>
     <File Include="Content/img/location_blue.png">
-      <publishTime>02/21/2025 15:27:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Content/img/magento.png">
       <publishTime>02/20/2025 10:36:36</publishTime>
@@ -397,10 +631,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 10:36:36</publishTime>
     </File>
     <File Include="Content/img/OurEdited.png">
-      <publishTime>02/26/2025 12:47:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Content/img/pin.png">
       <publishTime>02/20/2025 10:36:36</publishTime>
+    </File>
+    <File Include="Content/img/plane.png">
+      <publishTime>07/03/2025 10:24:24</publishTime>
     </File>
     <File Include="Content/img/ppc.png">
       <publishTime>02/20/2025 10:36:36</publishTime>
@@ -508,10 +745,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 10:36:36</publishTime>
     </File>
     <File Include="Content/js/main.js">
-      <publishTime>03/01/2025 18:06:56</publishTime>
+      <publishTime>04/04/2025 18:15:24</publishTime>
     </File>
     <File Include="Content/js/Our_effect.js">
-      <publishTime>03/04/2025 11:18:24</publishTime>
+      <publishTime>04/15/2025 15:33:32</publishTime>
     </File>
     <File Include="Content/lib/animate/animate.css">
       <publishTime>02/20/2025 10:38:10</publishTime>
@@ -574,7 +811,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/28/2025 14:56:36</publishTime>
     </File>
     <File Include="Content/location-icon/Los_Angeles.png">
-      <publishTime>02/28/2025 14:59:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Content/location-icon/New_Jersey.png">
       <publishTime>02/28/2025 14:50:46</publishTime>
@@ -591,6 +828,213 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/location-icon/Texas.png">
       <publishTime>02/28/2025 14:58:18</publishTime>
     </File>
+    <File Include="Content/SeoImages/Arizona/2.webp">
+      <publishTime>09/04/2025 00:07:50</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Arizona/3.webp">
+      <publishTime>09/04/2025 00:07:50</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Arizona/4.webp">
+      <publishTime>09/04/2025 00:07:52</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Arizona/5.webp">
+      <publishTime>09/04/2025 00:07:52</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Arizona/6.webp">
+      <publishTime>09/04/2025 00:08:04</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Arizona/Arizona1.png">
+      <publishTime>12/04/2025 17:38:50</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Arizona/Arizona1.webp">
+      <publishTime>04/15/2025 15:51:32</publishTime>
+    </File>
+    <File Include="Content/SeoImages/California/California.webp">
+      <publishTime>11/04/2025 12:24:18</publishTime>
+    </File>
+    <File Include="Content/SeoImages/California/CaliforniaLowerBanner.webp">
+      <publishTime>09/04/2025 00:09:46</publishTime>
+    </File>
+    <File Include="Content/SeoImages/California/SEOServices.webp">
+      <publishTime>09/04/2025 00:09:48</publishTime>
+    </File>
+    <File Include="Content/SeoImages/California/SEOVector1.webp">
+      <publishTime>09/04/2025 00:09:48</publishTime>
+    </File>
+    <File Include="Content/SeoImages/California/SEOVector2.webp">
+      <publishTime>09/04/2025 00:09:48</publishTime>
+    </File>
+    <File Include="Content/SeoImages/California/SEOVector3.webp">
+      <publishTime>09/04/2025 00:09:50</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Florida/Florida.webp">
+      <publishTime>11/04/2025 12:24:18</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Florida/FloridaLowerBanner.webp">
+      <publishTime>09/04/2025 00:11:30</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Florida/SEOServices.webp">
+      <publishTime>09/04/2025 00:11:30</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Florida/SEOVector1.webp">
+      <publishTime>09/04/2025 00:11:30</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Florida/SEOVector2.webp">
+      <publishTime>09/04/2025 00:11:30</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Florida/SEOVector3.webp">
+      <publishTime>09/04/2025 00:11:30</publishTime>
+    </File>
+    <File Include="Content/SeoImages/KansasCity/1.webp">
+      <publishTime>09/04/2025 00:13:20</publishTime>
+    </File>
+    <File Include="Content/SeoImages/KansasCity/2.webp">
+      <publishTime>09/04/2025 00:13:18</publishTime>
+    </File>
+    <File Include="Content/SeoImages/KansasCity/3.webp">
+      <publishTime>09/04/2025 00:13:18</publishTime>
+    </File>
+    <File Include="Content/SeoImages/KansasCity/KansasCity1.webp">
+      <publishTime>11/04/2025 12:24:20</publishTime>
+    </File>
+    <File Include="Content/SeoImages/KansasCity/KansasCityLowerBanner.webp">
+      <publishTime>09/04/2025 00:13:20</publishTime>
+    </File>
+    <File Include="Content/SeoImages/KansasCity/SEOServices.webp">
+      <publishTime>09/04/2025 00:13:20</publishTime>
+    </File>
+    <File Include="Content/SeoImages/LosAngeles/2.webp">
+      <publishTime>09/04/2025 00:14:26</publishTime>
+    </File>
+    <File Include="Content/SeoImages/LosAngeles/3.webp">
+      <publishTime>09/04/2025 00:14:26</publishTime>
+    </File>
+    <File Include="Content/SeoImages/LosAngeles/4.webp">
+      <publishTime>09/04/2025 00:14:28</publishTime>
+    </File>
+    <File Include="Content/SeoImages/LosAngeles/5.webp">
+      <publishTime>09/04/2025 00:14:28</publishTime>
+    </File>
+    <File Include="Content/SeoImages/LosAngeles/6.webp">
+      <publishTime>09/04/2025 00:14:28</publishTime>
+    </File>
+    <File Include="Content/SeoImages/LosAngeles/LosAngeles1.png">
+      <publishTime>12/04/2025 17:38:46</publishTime>
+    </File>
+    <File Include="Content/SeoImages/LosAngeles/LosAngeles1.webp">
+      <publishTime>04/15/2025 15:53:24</publishTime>
+    </File>
+    <File Include="Content/SeoImages/MainPage/MainPage.webp">
+      <publishTime>09/04/2025 00:15:44</publishTime>
+    </File>
+    <File Include="Content/SeoImages/MainPage/mainseo.webp">
+      <publishTime>04/15/2025 17:47:28</publishTime>
+    </File>
+    <File Include="Content/SeoImages/MainPage/USA.webp">
+      <publishTime>11/04/2025 18:14:06</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewJersey/2.webp">
+      <publishTime>09/04/2025 00:17:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewJersey/3.webp">
+      <publishTime>09/04/2025 00:17:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewJersey/4.webp">
+      <publishTime>09/04/2025 00:17:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewJersey/5.webp">
+      <publishTime>09/04/2025 00:17:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewJersey/6.webp">
+      <publishTime>09/04/2025 00:17:12</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewJersey/NewJersey1.png">
+      <publishTime>12/04/2025 17:38:48</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewJersey/NewJersey1.webp">
+      <publishTime>04/15/2025 15:52:32</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewYork/2.webp">
+      <publishTime>09/04/2025 00:18:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewYork/3.webp">
+      <publishTime>09/04/2025 00:18:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewYork/4.webp">
+      <publishTime>09/04/2025 00:18:16</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewYork/5.webp">
+      <publishTime>09/04/2025 00:18:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewYork/6.webp">
+      <publishTime>09/04/2025 00:18:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewYork/NewYork1.png">
+      <publishTime>12/04/2025 17:38:52</publishTime>
+    </File>
+    <File Include="Content/SeoImages/NewYork/NewYork1.webp">
+      <publishTime>04/15/2025 15:52:06</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Pennsylvania/2.webp">
+      <publishTime>09/04/2025 00:19:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Pennsylvania/3.webp">
+      <publishTime>09/04/2025 00:19:14</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Pennsylvania/4.webp">
+      <publishTime>09/04/2025 00:19:12</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Pennsylvania/5.webp">
+      <publishTime>09/04/2025 00:19:12</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Pennsylvania/6.webp">
+      <publishTime>09/04/2025 00:19:12</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Pennsylvania/Pennsylvania1.png">
+      <publishTime>12/04/2025 17:38:54</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Pennsylvania/Pennsylvania1.webp">
+      <publishTime>04/15/2025 15:51:48</publishTime>
+    </File>
+    <File Include="Content/SeoImages/SouthCarolina/SEOServices.webp">
+      <publishTime>09/04/2025 00:20:22</publishTime>
+    </File>
+    <File Include="Content/SeoImages/SouthCarolina/SEOVector1.webp">
+      <publishTime>09/04/2025 00:20:20</publishTime>
+    </File>
+    <File Include="Content/SeoImages/SouthCarolina/SEOVector2.webp">
+      <publishTime>09/04/2025 00:20:20</publishTime>
+    </File>
+    <File Include="Content/SeoImages/SouthCarolina/SEOVector3.webp">
+      <publishTime>09/04/2025 00:20:18</publishTime>
+    </File>
+    <File Include="Content/SeoImages/SouthCarolina/SouthCarolina.webp">
+      <publishTime>11/04/2025 12:24:20</publishTime>
+    </File>
+    <File Include="Content/SeoImages/SouthCarolina/SouthCarolinaLower Banner.webp">
+      <publishTime>09/04/2025 00:20:18</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Texas/1.webp">
+      <publishTime>09/04/2025 00:21:32</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Texas/2.webp">
+      <publishTime>09/04/2025 00:21:32</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Texas/3.webp">
+      <publishTime>09/04/2025 00:21:32</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Texas/SEOServices.webp">
+      <publishTime>09/04/2025 00:21:32</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Texas/Taxes.webp">
+      <publishTime>11/04/2025 12:24:20</publishTime>
+    </File>
+    <File Include="Content/SeoImages/Texas/TexasLowerBanner.webp">
+      <publishTime>09/04/2025 00:21:30</publishTime>
+    </File>
+    <File Include="Content/video/1.mp4">
+      <publishTime>03/04/2025 14:17:56</publishTime>
+    </File>
     <File Include="Content/video/3626148-uhd_4096_2160_25fps.mp4">
       <publishTime>02/20/2025 10:38:44</publishTime>
     </File>
@@ -599,6 +1043,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Global.asax">
       <publishTime>02/25/2025 10:31:08</publishTime>
+    </File>
+    <File Include="robots.txt">
+      <publishTime>04/15/2025 16:45:12</publishTime>
     </File>
     <File Include="Scripts/bootstrap.bundle.js">
       <publishTime>02/25/2025 10:31:14</publishTime>
@@ -670,163 +1117,181 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/25/2025 10:31:20</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>03/03/2025 13:02:02</publishTime>
+      <publishTime>04/15/2025 16:20:56</publishTime>
     </File>
     <File Include="Views/Home/Career.cshtml">
       <publishTime>03/03/2025 15:12:08</publishTime>
+    </File>
+    <File Include="Views/Home/ContactUs.cshtml">
+      <publishTime>03/29/2025 09:27:18</publishTime>
     </File>
     <File Include="Views/Home/Copyright.cshtml">
       <publishTime>03/03/2025 17:33:40</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_Arizona.cshtml">
-      <publishTime>03/04/2025 14:17:06</publishTime>
+      <publishTime>12/04/2025 15:52:58</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_California.cshtml">
-      <publishTime>03/04/2025 14:17:14</publishTime>
+      <publishTime>12/04/2025 15:53:12</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_Florida.cshtml">
-      <publishTime>03/04/2025 14:17:32</publishTime>
+      <publishTime>04/15/2025 16:00:24</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_KansasCity.cshtml">
-      <publishTime>03/04/2025 14:17:46</publishTime>
+      <publishTime>12/04/2025 15:53:50</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_LosAngeles.cshtml">
-      <publishTime>03/04/2025 14:17:52</publishTime>
+      <publishTime>12/04/2025 15:54:04</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_NewJersey.cshtml">
-      <publishTime>03/04/2025 14:18:00</publishTime>
+      <publishTime>12/04/2025 15:54:12</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_NewYork.cshtml">
-      <publishTime>03/04/2025 14:18:08</publishTime>
+      <publishTime>12/04/2025 15:54:28</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_Pennsylvania.cshtml">
-      <publishTime>03/04/2025 14:18:14</publishTime>
+      <publishTime>12/04/2025 15:54:40</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_SouthaCarolina.cshtml">
       <publishTime>03/04/2025 14:18:22</publishTime>
     </File>
+    <File Include="Views/Home/DigitalMarketing_In_SouthCarolina.cshtml">
+      <publishTime>12/04/2025 15:54:54</publishTime>
+    </File>
     <File Include="Views/Home/DigitalMarketing_In_Taxes.cshtml">
-      <publishTime>03/04/2025 14:18:34</publishTime>
+      <publishTime>04/14/2025 17:14:20</publishTime>
     </File>
     <File Include="Views/Home/DigitalMarketing_In_US.cshtml">
-      <publishTime>03/01/2025 12:03:18</publishTime>
+      <publishTime>04/15/2025 16:04:40</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_Arizona.cshtml">
-      <publishTime>03/04/2025 14:21:26</publishTime>
+      <publishTime>12/04/2025 15:55:36</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_California.cshtml">
-      <publishTime>03/04/2025 14:21:40</publishTime>
+      <publishTime>12/04/2025 15:56:00</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_Florida.cshtml">
-      <publishTime>03/04/2025 14:21:48</publishTime>
+      <publishTime>12/04/2025 15:56:12</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_KansasCity.cshtml">
-      <publishTime>03/04/2025 14:21:56</publishTime>
+      <publishTime>12/04/2025 15:56:24</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_LosAngeles.cshtml">
-      <publishTime>03/04/2025 14:22:06</publishTime>
+      <publishTime>12/04/2025 15:56:40</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_NewJersey.cshtml">
-      <publishTime>03/04/2025 14:22:14</publishTime>
+      <publishTime>12/04/2025 15:57:04</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_NewYork.cshtml">
-      <publishTime>03/04/2025 14:22:20</publishTime>
+      <publishTime>12/04/2025 15:57:20</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_Pennsylvania.cshtml">
-      <publishTime>03/04/2025 14:22:26</publishTime>
+      <publishTime>12/04/2025 15:57:32</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_SouthaCarolina.cshtml">
       <publishTime>03/04/2025 14:22:36</publishTime>
     </File>
+    <File Include="Views/Home/GraphicDesign_In_SouthCarolina.cshtml">
+      <publishTime>12/04/2025 15:57:48</publishTime>
+    </File>
     <File Include="Views/Home/GraphicDesign_In_Taxes.cshtml">
-      <publishTime>03/04/2025 14:22:44</publishTime>
+      <publishTime>12/04/2025 15:58:10</publishTime>
     </File>
     <File Include="Views/Home/GraphicDesign_In_Us.cshtml">
-      <publishTime>03/01/2025 12:12:04</publishTime>
+      <publishTime>04/15/2025 16:04:24</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>03/04/2025 17:25:12</publishTime>
+      <publishTime>04/15/2025 16:25:20</publishTime>
+    </File>
+    <File Include="Views/Home/NotFound.cshtml">
+      <publishTime>04/15/2025 17:49:38</publishTime>
     </File>
     <File Include="Views/Home/Portfolio.cshtml">
-      <publishTime>03/04/2025 14:53:14</publishTime>
+      <publishTime>04/15/2025 16:13:38</publishTime>
     </File>
     <File Include="Views/Home/PrivacyAndPolicy.cshtml">
-      <publishTime>03/04/2025 14:14:48</publishTime>
+      <publishTime>04/03/2025 14:14:48</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_Arizona.cshtml">
-      <publishTime>03/04/2025 14:14:38</publishTime>
+      <publishTime>04/14/2025 17:01:20</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_California.cshtml">
-      <publishTime>03/04/2025 14:14:30</publishTime>
+      <publishTime>12/04/2025 15:59:12</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_Florida.cshtml">
-      <publishTime>03/04/2025 14:14:18</publishTime>
+      <publishTime>12/04/2025 16:03:02</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_KansasCity.cshtml">
-      <publishTime>03/04/2025 14:14:10</publishTime>
+      <publishTime>12/04/2025 16:03:02</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_LosAngeles.cshtml">
-      <publishTime>03/04/2025 14:14:02</publishTime>
+      <publishTime>12/04/2025 16:03:02</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_NewJersey.cshtml">
-      <publishTime>03/04/2025 14:13:50</publishTime>
+      <publishTime>12/04/2025 15:59:58</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_NewYork.cshtml">
-      <publishTime>03/04/2025 14:13:42</publishTime>
+      <publishTime>12/04/2025 16:00:06</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_Pennsylvania.cshtml">
-      <publishTime>03/04/2025 14:13:34</publishTime>
+      <publishTime>12/04/2025 16:00:14</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_SouthaCarolina.cshtml">
       <publishTime>03/04/2025 14:13:10</publishTime>
     </File>
+    <File Include="Views/Home/SEO_In_SouthCarolina.cshtml">
+      <publishTime>12/04/2025 16:00:24</publishTime>
+    </File>
     <File Include="Views/Home/SEO_In_Taxes.cshtml">
-      <publishTime>03/04/2025 14:13:22</publishTime>
+      <publishTime>04/14/2025 17:53:04</publishTime>
     </File>
     <File Include="Views/Home/SEO_In_US.cshtml">
-      <publishTime>03/06/2025 09:38:40</publishTime>
+      <publishTime>04/15/2025 17:42:26</publishTime>
     </File>
     <File Include="Views/Home/TermsAndConditions.cshtml">
-      <publishTime>03/04/2025 11:50:42</publishTime>
+      <publishTime>04/03/2025 11:50:42</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_Arizona.cshtml">
-      <publishTime>03/04/2025 14:24:12</publishTime>
+      <publishTime>04/15/2025 13:04:14</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_California.cshtml">
-      <publishTime>03/04/2025 14:24:22</publishTime>
+      <publishTime>04/15/2025 10:13:50</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_Florida.cshtml">
-      <publishTime>03/04/2025 14:24:28</publishTime>
+      <publishTime>04/15/2025 10:34:22</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_KansasCity.cshtml">
-      <publishTime>03/04/2025 14:24:36</publishTime>
+      <publishTime>04/15/2025 12:07:40</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_LosAngeles.cshtml">
-      <publishTime>03/04/2025 14:24:48</publishTime>
+      <publishTime>04/15/2025 12:39:32</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_NewJersey.cshtml">
-      <publishTime>03/04/2025 14:24:56</publishTime>
+      <publishTime>04/15/2025 14:37:26</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_NewYork.cshtml">
-      <publishTime>03/04/2025 14:25:04</publishTime>
+      <publishTime>04/15/2025 17:41:41</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_Pennsylvania.cshtml">
-      <publishTime>03/04/2025 14:25:12</publishTime>
+      <publishTime>04/15/2025 13:31:04</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_SouthaCarolina.cshtml">
       <publishTime>03/04/2025 14:25:22</publishTime>
     </File>
+    <File Include="Views/Home/WebsiteDevelopment_In_SouthCarolina.cshtml">
+      <publishTime>04/15/2025 09:46:46</publishTime>
+    </File>
     <File Include="Views/Home/WebsiteDevelopment_In_Taxes.cshtml">
-      <publishTime>03/04/2025 14:25:32</publishTime>
+      <publishTime>04/15/2025 10:57:02</publishTime>
     </File>
     <File Include="Views/Home/WebsiteDevelopment_In_US.cshtml">
-      <publishTime>03/01/2025 12:30:20</publishTime>
+      <publishTime>04/15/2025 16:05:18</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>02/25/2025 10:31:08</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>03/04/2025 16:35:46</publishTime>
+      <publishTime>04/15/2025 16:43:05</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>02/25/2025 10:31:08</publishTime>
@@ -835,7 +1300,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/25/2025 10:31:08</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/06/2025 15:30:34</publishTime>
+      <publishTime>04/15/2025 17:42:45</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -1,0 +1,1390 @@
+﻿*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.hero_sction {
+    background-image: url('../icon_image/ehehethth.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.southcarolina {
+    background-image: url('../SeoImages/SouthCarolina/SouthCarolina.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seocalifornia {
+    background-image: url('../SeoImages/California/California.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seoflorida {
+    background-image: url('../SeoImages/Florida/Florida.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seoTexas {
+    background-image: url('../SeoImages/Texas/Taxes.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seoKansas_City {
+    background-image: url('../SeoImages/KansasCity/KansasCity1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seoLosAngeles {
+    background-image: url('../SeoImages/LosAngeles/LosAngeles1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seoNewJersey{
+    background-image: url('../SeoImages/NewJersey/NewJersey1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seoArizona{
+    background-image: url('../SeoImages/Arizona/Arizona1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seoNewYork {
+    background-image: url('../SeoImages/NewYork/NewYork1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.seoPennsylvania {
+    background-image: url('../SeoImages/Pennsylvania/Pennsylvania1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.DigitalMarketingSouthcarolina {
+    background-image: url('../DigitalMarketingWebImage/SouthCarolina/UpperBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.DigitalCalifornia {
+    background-image: url('../DigitalMarketingWebImage/California/UpperBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.digitalflorida {
+    background-image: url('../DigitalMarketingWebImage/Florida/UpperBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.digitalTaxes {
+    background-image: url('../DigitalMarketingWebImage/Texas/Texas.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.digitalkansascity {
+    background-image: url('../DigitalMarketingWebImage/KansasCity/KansasCity.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.digitalLosAngeles {
+    background-image: url('../DigitalMarketingWebImage/LosAngeles/LosAngelescity.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.digitalNewJersey {
+    background-image: url('../DigitalMarketingWebImage/NewJersey/NewJerseycity.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.digitalArizona {
+    background-image: url('../DigitalMarketingWebImage/Arizona/Arizonacity.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.digitalNewyork {
+    background-image: url('../DigitalMarketingWebImage/NewYork/NewYork.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.digitalPennsylvania {
+    background-image: url('../DigitalMarketingWebImage/Pennsylvania/pennsylvania.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.hero_sction_common {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 100px;
+}
+.hero_sction_contact {
+    width: 100%;
+    height: auto;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+
+.Copyright {
+    background-image: url('../img/OurEdited.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.TermsAndCondition {
+    background-image: url('../img/OurEdited.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+
+.PriavcyAndPolicy {
+    background-image: url('../img/OurEdited.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+/*    background:rgba(0,0,0,0.6);*/
+    z-index: 1;
+}
+
+.first_heading {
+    font-size: 50px;
+}
+.first_second{
+    text-shadow:2px 2px 2px 10px white;
+}
+
+/*Nav baar change color*/
+.SouthaCarolina .color_s {
+    color: #06A3DA !important;
+}
+
+
+.Seo_Service .color_s {
+    color: #06A3DA !important;
+}
+
+.web_development .color_s {
+    color: #06A3DA !important;
+}
+
+.digital_marketing .color_s {
+    color: #06A3DA !important;
+}
+.GraphicDesign .color_s {
+    color: #06A3DA !important;
+}
+
+.locations .color_s {
+    color: #06A3DA !important;
+}
+
+/*location_bck_img_southcarolina start here */
+.location_bck_img_Southcarolina {
+    background: url('../SeoImages/SouthCarolina/SouthCarolinaLower Banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.location_bck_img_Southcarolina .circle {
+    width: 320px;
+    height: 320px;
+    background: #06A3DA;
+    border-radius: 50%;
+}
+ .location_bck_img_Southcarolina .circle .arrow {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+ }
+/*location_bck_img_southcarolina end here*/
+
+/*location_bck_img_southcalifornia start here */
+.location_bck_img_california {
+    background: url('../SeoImages/California/CaliforniaLowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+}
+
+    .location_bck_img_california .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_california .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_california end here*/
+
+/*location_bck_img_florida start here */
+.location_bck_img_florida {
+    background: url('../SeoImages/Florida/FloridaLowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+    .location_bck_img_florida .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_florida .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_florida end here*/
+/*location_bck_img_Texas start here*/
+.location_bck_img_Texas {
+    background: url('../SeoImages/Texas/TexasLowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+}
+
+    .location_bck_img_Texas .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_Texas .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_Texas start end*/
+/*location_bck_img_KansasCity start here*/
+.location_bck_img_KansasCity {
+    background: url('../SeoImages/KansasCity/KansasCityLowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+}
+
+    .location_bck_img_KansasCity .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_KansasCity .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_KansasCity start end*/
+/*location_bck_img_LosAngeles start here*/
+.location_bck_img_LosAngeles {
+    background:url('../SeoImages/LosAngeles/6.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+}
+
+    .location_bck_img_LosAngeles .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_LosAngeles .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_LosAngeles end here*/
+/*location_bck_img_NewJersey start here*/
+.location_bck_img_NewJersey {
+    background:url('../SeoImages/NewJersey/6.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+    .location_bck_img_NewJersey .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_NewJersey .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_NewJersey start end*/
+/*location_bck_img_Arizona start here*/
+.location_bck_img_Arizona {
+    background:url('../SeoImages/Arizona/6.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+}
+
+    .location_bck_img_Arizona .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_Arizona .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_Arizona end here*/
+/*location_bck_img_NewYork start here*/
+.location_bck_img_NewYork {
+    background: url('../SeoImages/NewYork/6.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+    .location_bck_img_NewYork .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_NewYork .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_NewYork end here*/
+/*location_bck_img_Pennsylvania start here*/
+.location_bck_img_Pennsylvania {
+    background: url('../SeoImages/Pennsylvania/6.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+    .location_bck_img_Pennsylvania .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_Pennsylvania .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_Pennsylvania end here*/
+
+/*location_bck_img_digitalsouthCarolina start here*/
+.location_bck_img_digitalsouthCarolina {
+    background: url('../DigitalMarketingWebImage/SouthCarolina/LowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .location_bck_img_digitalsouthCarolina .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalsouthCarolina .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalsouthCarolina end here*/
+
+/*location_bck_img_digitalcalifornia start here */
+.location_bck_img_digitalcalifornia {
+    background: url('../DigitalMarketingWebImage/California/LowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+    .location_bck_img_digitalcalifornia .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalcalifornia .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalcalifornia end here*/
+/*location_bck_img_digitalflorida start here*/
+.location_bck_img_digitalflorida {
+    background: url('../DigitalMarketingWebImage/Florida/LowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .location_bck_img_digitalflorida .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalflorida .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalflorida end here*/
+/*location_bck_img_digitalTaxes start here*/
+.location_bck_img_digitalTaxes {
+    background: url('../DigitalMarketingWebImage/Texas/LowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+    .location_bck_img_digitalTaxes .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalTaxes .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalTaxes end here*/
+/*location_bck_img_digitalkansascity start here*/
+.location_bck_img_digitalkansascity {
+    background: url('../DigitalMarketingWebImage/KansasCity/LowerBanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .location_bck_img_digitalkansascity .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalkansascity .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalkansascity end here*/
+/*location_bck_img_digitalLosAngeles start here*/
+.location_bck_img_digitalLosAngeles {
+    background: url('../DigitalMarketingWebImage/LosAngeles/Losangles.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+    .location_bck_img_digitalLosAngeles .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalLosAngeles .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_ digitalLosAngeles end here*/
+/*location_bck_img_digitalNewJersey start here*/
+.location_bck_img_digitalNewJersey {
+    background: url('../DigitalMarketingWebImage/NewJersey/NewJersey.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .location_bck_img_digitalNewJersey .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalNewJersey .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalNewJersey end here*/
+/*location_bck_img_digitalArizona start here*/
+.location_bck_img_digitalArizona {
+    background: url('../DigitalMarketingWebImage/Arizona/Arizona.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .location_bck_img_digitalArizona .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalArizona .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalArizona end here*/
+/*location_bck_img_digitalNewyork start here*/
+.location_bck_img_digitalNewyork {
+    background: url('../DigitalMarketingWebImage/NewYork/NewYork (6).webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .location_bck_img_digitalNewyork .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalNewyork .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalNewyork end here*/
+/*location_bck_img_digitalPennsylvania start here*/
+.location_bck_img_digitalPennsylvania {
+    background: url('../DigitalMarketingWebImage/Pennsylvania/Pennsylvania1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+    .location_bck_img_digitalPennsylvania .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius: 50%;
+    }
+
+        .location_bck_img_digitalPennsylvania .circle .arrow {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+/*location_bck_img_digitalPennsylvania end here*/
+.location_bck_img {
+    background: url('../img/location_blue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .location_bck_img .circle {
+        width: 320px;
+        height: 320px;
+        background: #06A3DA;
+        border-radius:50%;
+    }
+.btnn {
+    color: black;
+    border-radius:20px !important;
+}
+.location_bck_img .circle .arrow {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+.Importance {
+    background: #f2f2f2;
+}
+
+
+/*Black box start */
+
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #29292c;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+    --color: #32a6ff
+}
+
+    .notification:before {
+        position: absolute;
+        content: "";
+        inset: 0.0625rem;
+        border-radius: 0.9375rem;
+        background: #18181b;
+        z-index: 2
+    }
+
+    .notification:after {
+        position: absolute;
+        content: "";
+        width: 0.25rem;
+        inset: 0.65rem auto 0.65rem 0.5rem;
+        border-radius: 0.125rem;
+        background: var(--gradient);
+        transition: transform 300ms ease;
+        z-index: 4;
+    }
+
+    .notification:hover:after {
+        transform: translateX(0.15rem)
+    }
+
+.notititle {
+    color: #06A3DA;
+    padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+}
+
+.notification:hover .notititle {
+    transform: translateX(0.15rem)
+}
+
+.notibody {
+    color: #99999d;
+    padding: 0 1.25rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+}
+
+.notification:hover .notibody {
+    transform: translateX(0.25rem)
+}
+
+.notiglow,
+.notiborderglow {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle closest-side at center, white, transparent);
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.notiglow {
+    z-index: 3;
+}
+
+.notiborderglow {
+    z-index: 1;
+}
+
+.notification:hover .notiglow {
+    opacity: 0.1
+}
+
+.notification:hover .notiborderglow {
+    opacity: 0.1
+}
+
+.note {
+    color: var(--color);
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.9rem;
+    width: 75%;
+}
+
+
+
+/*SE0_hero_sction*/
+
+.SE0_hero_sction {
+    background-image: url('../SeoImages/MainPage/mainseo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+
+/*Digital_marketing_hero_sction*/
+.Digital_marketing_hero_sction {
+    background-image: url('../DigitalMarketingWebImage/MainPage/MainPage.webp');
+/*    background-position:center center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+/*Webdevelopment_hero_sction*/
+.Webdevelopment_hero_sction {
+    background-repeat: no-repeat;
+    background-image: url('../img/web_development_image.jpg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+.GraphicDesign_hero_sction {
+    background-repeat: no-repeat;
+    background-image: url('../img/ad_graphic-design.jpg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px;
+    position: relative;
+/*    margin-top: 100px;*/
+}
+/* From Uiverse.io by dylanharriscameron */
+.card_services {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 14px;
+    z-index: 99;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 190px;
+    height: 240px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #06A3DA;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+    0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}
+
+/*SEO background*/
+
+.seo_bck {
+    background-image: url('../img/seo_search_2.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.dev {
+    transition: all 0.1s ease;
+    border-radius:20px;
+}
+
+    .dev:hover {
+        box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+        cursor: pointer;
+    }
+
+
+
+
+/*This css For about Page 
+     ------------------------------------------------------------------------------    
+   
+ */
+.line {
+    height: 30vh;
+    width:4px;
+}
+
+.dot{
+    height:20px;
+    width:20px;
+    border-radius:50%;
+}
+
+.indicate{
+    width:40px;
+    height:2px;
+    top: 50px;
+    left:4px;
+}
+.indicate_1 {
+    width: 40px;
+    height: 2px;
+    top: 150px;
+    left: 4px;
+}
+
+.about_holder{
+    top:46px;
+    left: 60px;
+}
+
+.about_holder_2 {
+    top: 164px;
+    left: 60px;
+}
+
+.scale-letter_holder{
+    letter-spacing:0px !important;
+}
+
+.scale-letter {
+    display: inline-block; 
+    transition: transform 0.1s ease-in-out;
+}
+
+    .scale-letter:hover {
+        transform: scale(1.5); 
+        cursor: pointer;
+    }
+
+
+
+.center_line{
+    width:4px;
+    height:auto;
+}
+
+/*.line_indi {
+    width: 40px;
+    height: 2px;
+    top: 50px;
+    right: 4px;
+}*/
+
+.center_line .line_indi:nth-child(2) {
+    width: 40px;
+    height: 2px;
+    top: 60px;
+    right: 4px ;
+}
+.center_line .line_indi:nth-child(3) {
+        width: 40px;
+        height: 2px;
+        top: 100px;
+        left: 4px;
+    
+}
+
+.center_line .line_indi:nth-child(4) {
+        width: 40px;
+        height: 2px;
+        top:400px;
+        right: 4px;
+}
+
+.center_line .line_indi:nth-child(5) {
+        width: 40px;
+        height: 2px;
+        top: 445px;
+        left: 4px;
+}
+
+    .center_line .line_indi:nth-child(6) {
+        width: 40px;
+        height: 2px;
+        top: 790px;
+        right: 4px;
+    }
+    .center_line .line_indi:nth-child(7) {
+        width: 40px;
+        height: 2px;
+        top: 830px;
+        left: 4px;
+    }
+
+.lefting {
+    animation: move 1s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0.5%);
+    }
+
+    100% {
+        transform: translateX(-30%);
+    }
+}
+
+.righting {
+    animation: moving 1s ease-in-out infinite alternate;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(30%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/*For css why choose us section css*/
+/*animation*/
+.ball {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 50%;
+    left: 50%;
+    background: rgba(6, 163, 218, 0.45);
+    border-radius: 50%;
+    mix-blend-mode:darken;
+}
+
+/*Lighting  Box animation for Portfolio*
+------------------------------------------------------------------------------    
+    */
+
+.cube-container {
+    width: 200px;
+    height: 200px;
+    perspective: 800px;
+    margin: 50px auto;
+}
+
+.cube {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 15s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: rgb(21, 153, 214);
+    font-size: 18px;
+    text-align: center;
+    line-height: 200px;
+    background: transparent;
+    opacity: 0.9;
+    border: 2px solid;
+    border-image: linear-gradient( 90deg, rgba(14, 8, 110, 1) 0%, rgba(15, 15, 167, 1) 26%, rgba(20, 45, 255, 1) 85% );
+    box-shadow: 0 0 100px rgba(8, 178, 245, 0.61);
+}
+
+.front {
+    transform: translateZ(100px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.cube-container:hover .cube {
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+/*animated btn for css*/
+.ani_btn {
+    --color1: #06A3DA;
+    --color2: #06A3DA;
+    perspective: 1000px;
+    padding: 0.5em 1em;
+    background: linear-gradient(var(--color1), var(--color2));
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #fff;
+    width:150px;
+    text-shadow: 0 10px 10px #000;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border-radius:10px;
+
+}
+
+
+    /*for css portfolio*/
+/* From Uiverse.io by joe-watson-sbf */
+.flip-card {
+    background-color: transparent;
+    height: 330px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    -webkit-box-shadow: -1px -1px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px -1px 12px 0px rgba(0,0,0,0.75);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /*    border: 1px solid coral;*/
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    color: black;
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+    overflow:hidden;
+}
+
+
+/*For Career page  animation*/
+.careers {
+    animation: moment 1s ease-in-out infinite alternate;
+}
+
+@keyframes moment {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-5%);
+    }
+}
+
+.attech {
+    background-image: url('../img/careerbg.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.lenght {
+    height: 50px;
+    width: 2px;
+    background: rgba(167, 167, 167, 0.8);
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+/*    color:white;*/
+}
+
+/*Contact Page css*/
+.form-control:focus{
+    box-shadow:none;
+}
+
+select{
+    background:none !important;
+}
+
+.image_ss {
+    animation: contact 1s ease-in-out infinite alternate;
+}
+
+@keyframes contact {
+    0% {
+        transform: translateY(0.5%);
+    }
+
+    100% {
+        transform: translateY(-5%);
+    }
+}
+
+.first_row_2
+{
+    display:none;
+}
+/*This css for about page available for md and sm device*/
+.sm-md-available{
+    display:none;
+}
+
+/*this css for hover image*/
+.dev {
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+}

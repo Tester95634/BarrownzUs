@@ -180,11 +180,11 @@ h6,
 
 @media (min-width: 992px) {
     .navbar-dark {
-        position: absolute;
+/*      position: absolute;*/
         width: 100%;
         top: 0;
         left: 0;
-        border-bottom: 1px solid rgba(256, 256, 256, .1);
+/*        border-bottom: 1px solid rgba(256, 256, 256, .1);*/
         z-index: 999;
     }
     
@@ -817,8 +817,8 @@ box-shadow: inset -105px -15px 134px 5px rgba(0,0,0,0.39);
     /*-------top scroller btn---------*/
 
 .call {
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
     border-radius: 50%;
     border: none;
     font-weight: 600;
@@ -841,3 +841,5 @@ box-shadow: inset -105px -15px 134px 5px rgba(0,0,0,0.39);
 .holder {
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
+
+

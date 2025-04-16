@@ -10,6 +10,8 @@ namespace BarrownzUS.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "Web Development & Digital Marketing Experts | Barrownz Group";
+            ViewBag.BodyClass = "Position";
             return View();
         }
         //Redirection
@@ -143,7 +145,15 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
+
+
         //DigitalMarketing
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_US()
+        {
+            return Redirect("/DigitalMarketing_In_US");
+        }
         public ActionResult DigitalMarketing_In_US()
         {
             ViewBag.Title = "DigitalMarketing_In_US";
@@ -151,6 +161,12 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_SouthCarolina()
+        {
+            return Redirect("/DigitalMarketing_In_SouthCarolina");
+        }
         public ActionResult DigitalMarketing_In_SouthCarolina()
         {
             ViewBag.Title = "DigitalMarketing_In_SouthCarolina";
@@ -158,11 +174,22 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_California()
+        {
+            return Redirect("/DigitalMarketing_In_California");
+        }
         public ActionResult DigitalMarketing_In_California()
         {
             ViewBag.Title = "DigitalMarketing_In_California";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_Florida()
+        {
+            return Redirect("/DigitalMarketing_In_Florida");
         }
         public ActionResult DigitalMarketing_In_Florida()
         {
@@ -170,11 +197,23 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_Taxes()
+        {
+            return Redirect("/DigitalMarketing_In_Taxes");
+        }
         public ActionResult DigitalMarketing_In_Taxes()
         {
             ViewBag.Title = "DigitalMarketing_In_Taxes";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_KansasCity()
+        {
+            return Redirect("/DigitalMarketing_In_KansasCity");
         }
         public ActionResult DigitalMarketing_In_KansasCity()
         {
@@ -182,11 +221,23 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_LosAngeles()
+        {
+            return Redirect("/DigitalMarketing_In_LosAngeles");
+        }
         public ActionResult DigitalMarketing_In_LosAngeles()
         {
             ViewBag.Title = "DigitalMarketing_In_LosAngeles";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_NewJersey()
+        {
+            return Redirect("/DigitalMarketing_In_NewJersey");
         }
         public ActionResult DigitalMarketing_In_NewJersey()
         {
@@ -194,17 +245,36 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_Arizona()
+        {
+            return Redirect("/DigitalMarketing_In_Arizona");
+        }
         public ActionResult DigitalMarketing_In_Arizona()
         {
             ViewBag.Title = "DigitalMarketing_In_Arizona";
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_NewYork()
+        {
+            return Redirect("/DigitalMarketing_In_NewYork");
+        }
         public ActionResult DigitalMarketing_In_NewYork()
         {
             ViewBag.Title = "DigitalMarketing_In_NewYork";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToDigitalMarketing_In_Pennsylvania()
+        {
+            return Redirect("/DigitalMarketing_In_NewYork");
         }
         public ActionResult DigitalMarketing_In_Pennsylvania()
         {
@@ -214,11 +284,23 @@ namespace BarrownzUS.Controllers
         }
 
         //Website Development
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_US()
+        {
+            return Redirect("/WebsiteDevelopment_In_US");
+        }
         public ActionResult WebsiteDevelopment_In_US()
         {
             ViewBag.Title = "WebsiteDevelopment_In_US";
             ViewBag.BodyClass = "web_development";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_SouthCarolina()
+        {
+            return Redirect("/WebsiteDevelopment_In_SouthCarolina");
         }
         public ActionResult WebsiteDevelopment_In_SouthCarolina()
         {
@@ -227,11 +309,23 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_California()
+        {
+            return Redirect("/WebsiteDevelopment_In_California");
+        }
         public ActionResult WebsiteDevelopment_In_California()
         {
             ViewBag.Title = "WebsiteDevelopment_In_California";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_Florida()
+        {
+            return Redirect("/WebsiteDevelopment_In_Florida");
         }
         public ActionResult WebsiteDevelopment_In_Florida()
         {
@@ -239,11 +333,23 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_Taxes()
+        {
+            return Redirect("/WebsiteDevelopment_In_Taxes");
+        }
         public ActionResult WebsiteDevelopment_In_Taxes()
         {
             ViewBag.Title = "WebsiteDevelopment_In_Taxas";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_KansasCity()
+        {
+            return Redirect("/WebsiteDevelopment_In_Taxes");
         }
         public ActionResult WebsiteDevelopment_In_KansasCity()
         {
@@ -251,11 +357,22 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_LosAngeles()
+        {
+            return Redirect("/WebsiteDevelopment_In_LosAngeles");
+        }
         public ActionResult WebsiteDevelopment_In_LosAngeles()
         {
             ViewBag.Title = "WebsiteDevelopment_In_LosAngeles";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_NewJersey()
+        {
+            return Redirect("/WebsiteDevelopment_In_NewJersey");
         }
         public ActionResult WebsiteDevelopment_In_NewJersey()
         {
@@ -263,17 +380,35 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_Arizona()
+        {
+            return Redirect("/WebsiteDevelopment_In_Arizona");
+        }
         public ActionResult WebsiteDevelopment_In_Arizona()
         {
             ViewBag.Title = "WebsiteDevelopment_In_Arizona";
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_NewYork()
+        {
+            return Redirect("/WebsiteDevelopment_In_NewYork");
+        }
         public ActionResult WebsiteDevelopment_In_NewYork()
         {
             ViewBag.Title = "WebsiteDevelopment_In_NewYork";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToWebsiteDevelopment_In_Pennsylvania()
+        {
+            return Redirect("/WebsiteDevelopment_In_Pennsylvania");
         }
         public ActionResult WebsiteDevelopment_In_Pennsylvania()
         {
@@ -403,6 +538,12 @@ namespace BarrownzUS.Controllers
         public ActionResult Copyright()
         {
             ViewBag.Title = "Copyright";
+            ViewBag.BodyClass = "locations";
+            return View();
+        }
+        public ActionResult NotFound()
+        {
+            ViewBag.Title = "NotFound";
             ViewBag.BodyClass = "locations";
             return View();
         }

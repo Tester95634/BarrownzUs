@@ -66,6 +66,56 @@
         align-items: center;
         background-size: contain;
     }
+    .DigitalMarketingSouthcarolina {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .DigitalCalifornia {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .digitalflorida {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .digitalTaxes {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .digitalkansascity {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .digitalLosAngeles {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .digitalNewJersey {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .digitalArizona {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .digitalNewyork {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .digitalPennsylvania {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
     .SE0_hero_sction {
         padding: 150px !important;
         align-items: center;
@@ -187,6 +237,18 @@
     .sm-md-available{
         display:block !important;
     }
+    .hero_section_PText{
+        text-align:center !important;
+    }
+    /*This css for index page */
+    .text_choose_site{
+        font-size:30px !important;
+        width:100% !important;
+        padding:15px 0px !important;
+    }
+    .barrownz_group{
+        font-size:30px !important;
+    }
 }
 /*For card*/
 @media (max-width:390px) {
@@ -230,6 +292,36 @@
     }
     .seoPennsylvania {
         margin-top: 0px !important;
+    }
+    .DigitalMarketingSouthcarolina{
+        margin-top:0px !important;
+    }
+    .DigitalCalifornia{
+        margin-top:0px !important;
+    }
+    .digitalflorida{
+        margin-top:0px !important;
+    }
+    .digitalTaxes{
+        margin-top:0px !important;
+    }
+    .digitalkansascity{
+        margin-top:0px !important;
+    }
+    .digitalLosAngeles{
+        margin-top:0px !important;
+    }
+    .digitalNewJersey{
+        margin-top:0 !important;
+    }
+    .digitalArizona{
+        margin-top:0px !important;
+    }
+    .digitalNewyork{
+        margin-top:0px !important;
+    }
+    .digitalPennsylvania{
+        margin-top:0px !important;
     }
     .SE0_hero_sction {
         margin-top: 0px !important;
@@ -325,6 +417,10 @@
     .sm-md-available {
         display: block !important;
     }
+    .hero_section_PText {
+        text-align: center !important;
+        padding: 0px 47px !important;
+    }
 }
 
 
@@ -376,6 +472,46 @@
         margin-top: 0px !important;
         padding: 100px 10px !important;
     }
+    .DigitalMarketingSouthcarolina {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .DigitalCalifornia {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .digitalflorida {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .digitalTaxes {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .digitalkansascity {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .digitalLosAngeles {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .digitalNewJersey {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .digitalArizona {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .digitalNewyork {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .digitalPennsylvania {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
     .black_card {
         margin-top: 10px;
     }
@@ -409,6 +545,7 @@
     .icon_gaps{
         margin-top:20px;
     }
+   
 }
 
 /*Only height*/
@@ -438,4 +575,10 @@
     .sm-md-available {
         display: block !important;
     }
-} 
+}
+
+@media (max-width: 912px) {
+    .navbar-dark {
+        position: static !important; 
+    }
+}
