@@ -129,13 +129,89 @@ function validate() {
 }
 
 
-
-//Url find add css 
+//This js work for Nav bar on scroll
+//Url find add css
 document.addEventListener('DOMContentLoaded', function () {
     if (document.title === 'Web Development & Digital Marketing Experts | Barrownz Group') {
         var elements = document.querySelectorAll('.navbar-dark');
         elements.forEach(function (element) {
             element.style.position = 'absolute';
+            element.style.position = 'fixed';
         });
+
     }
+});
+
+//this js work on two image in navbar by default show white logo on scroll show black image
+$(document).ready(function () {
+    // Function to toggle images based on page title and scroll position
+    function toggleImages() {
+        var scrollPosition = $(window).scrollTop();
+        var pageTitle = document.title;
+
+        if (pageTitle === 'Web Development & Digital Marketing Experts | Barrownz Group') {
+            if (scrollPosition > 45) {
+                $('.first').show();
+                $('.second_image').hide();
+            } else {
+                $('.first').hide();
+                $('.second_image').show();
+            }
+        }
+    }
+
+    // Initial check on page load
+    toggleImages();
+
+    // Js working on sticky navbar ko show karne mein
+    $(window).scroll(function () {
+        toggleImages();
+        // Toggle navbar sticky class based on scroll position
+        if ($(this).scrollTop() > 45) {
+            $('.navbar').addClass('sticky-top shadow-sm');
+        } else {
+            $('.navbar').removeClass('sticky-top shadow-sm');
+        }
+    });
+});
+
+//Typed Js Animation
+var typed = new Typed('#element', {
+    strings: ['Development',
+        ' Barrownz Group.'],
+    typeSpeed: 110,
+    startDelay: 1000,
+    cursorChar: '!',
+    loop: true,
+    backSpeed: 80,
+});
+
+var typed = new Typed('#DM', {
+    strings: ['Digital Marketing',
+        ' Barrownz Group'],
+    typeSpeed: 110,
+    startDelay: 1000,
+    cursorChar: '!',
+    loop: true,
+    backSpeed: 80,
+});
+
+var typed = new Typed('#Gd', {
+    strings: ['Graphic Design.',
+        ' Barrownz Group'],
+    typeSpeed: 110,
+    startDelay: 1000,
+    cursorChar: '!',
+    loop: true,
+    backSpeed: 80,
+});
+
+var typed = new Typed('#seo', {
+    strings: ['SEO',
+        ' (SEO) Search Engine ptimization.'],
+    typeSpeed: 110,
+    startDelay: 1000,
+    cursorChar: '!',
+    loop: true,
+    backSpeed: 80,
 });

@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
+    --primary: #00549C;
     --secondary: #34AD54;
     --light: #EEF9FF;
     --dark: #091E3E;
@@ -459,6 +459,10 @@ h6,
 /*    object-fit: cover;
     border-radius: 10px;*/
 }
+    .image-wrapper:hover {
+        animation-play-state: paused;
+        cursor:pointer;
+    }
 
 @keyframes moveUp {
     0% { 
@@ -494,7 +498,7 @@ h6,
 .service-icon_Box {
     font-size: 40px;
     margin-bottom: 15px;
-    color: #00aaff;
+    color: #00549C;
 }
 .read-more-btn {
     color: var(--light) !important;
@@ -842,4 +846,6 @@ box-shadow: inset -105px -15px 134px 5px rgba(0,0,0,0.39);
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
-
+.second_image{
+    display:none;
+}

@@ -116,6 +116,106 @@
         align-items: center;
         background-size: contain;
     }
+    .webdevelopment_southcarolina {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webdevelopmentcalifornia {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webdevelopmentflorida {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webdevelopmentTexas {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webKansasCity {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webdevelopmentLosAngeles {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webdevelopmentNewjersey {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webdevelopmentArizona {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webdevelopmentnewyork {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .webdevelopmentPennsylvania {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignsuthacarolina_hero_section {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesigncalifornia {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignflorida {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignTexas {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignKansascity {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignLosAngeles{
+          padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignNewjersey {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignArizona {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignNewyork {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
+    .GraphicDesignPennsylvania {
+        padding: 50px !important;
+        align-items: center;
+        background-size: contain;
+    }
     .SE0_hero_sction {
         padding: 150px !important;
         align-items: center;
@@ -242,12 +342,25 @@
     }
     /*This css for index page */
     .text_choose_site{
-        font-size:30px !important;
+        font-size:29px !important;
         width:100% !important;
         padding:15px 0px !important;
     }
     .barrownz_group{
-        font-size:30px !important;
+        font-size:21px !important;
+    }
+    /*this css for location page of circle*/
+    .circle_center{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    /*This css represent navbar hide and show small device*/
+    .second_image{
+        display:none !important;
+    }
+    .first{
+        display:block !important;
     }
 }
 /*For card*/
@@ -323,6 +436,60 @@
     .digitalPennsylvania{
         margin-top:0px !important;
     }
+    .webdevelopment_southcarolina {
+        margin-top: 0px !important;
+    }
+    .webdevelopmentcalifornia {
+        margin-top: 0px !important;
+    }
+    .webdevelopmentflorida {
+        margin-top: 0px !important;
+    }
+    .webdevelopmentTexas {
+        margin-top: 0px !important;
+    }
+    .webKansasCity{
+        margin-top:0px !important;
+    }
+    .webdevelopmentLosAngeles{
+        margin-top:0px !important;
+    }
+    .webdevelopmentNewjersey{
+          margin-top:0px !important;
+    }
+    .webdevelopmentArizona{
+        margin-top:0px !important;
+    }
+    .webdevelopmentnewyork{
+        margin-top:0px !important;
+    }
+    .webdevelopmentPennsylvania{
+        margin-top:0px !important;
+    }
+    .GraphicDesignsuthacarolina_hero_section{
+        margin-top:0px !important;
+    }
+    .GraphicDesigncalifornia{
+        margin-top:0px !important;
+    }
+    .GraphicDesignflorida{
+        margin-top:0px !important;
+    }
+    .GraphicDesignTexas{
+        margin-top:0px !important;
+    }
+    .GraphicDesignKansascity{
+        margin-top:0px !important;
+    }
+    .GraphicDesignLosAngeles{
+        margin-top:0px !important;
+    }
+    .GraphicDesignArizona{
+        margin-top:0px !important;
+    }
+    .GraphicDesignPennsylvania{
+        margin-top:0px !important;
+    }
     .SE0_hero_sction {
         margin-top: 0px !important;
     }
@@ -337,7 +504,12 @@
     .GraphicDesign_hero_sction {
         margin-top: 0px !important;
     }
-
+    .GraphicDesignNewjersey{
+        margin-top:0px !important;
+    }
+    .GraphicDesignNewyork{
+        margin-top:0px !important;
+    }
     .PriavcyAndPolicy {
         margin-top: 0px !important;
     }
@@ -420,6 +592,14 @@
     .hero_section_PText {
         text-align: center !important;
         padding: 0px 47px !important;
+    }
+    /*This css represent navbar hide and show small device*/
+    .second_image {
+        display: none !important;
+    }
+
+    .first {
+        display: block !important;
     }
 }
 
@@ -509,6 +689,86 @@
         padding: 100px 10px !important;
     }
     .digitalPennsylvania {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopment_southcarolina {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopmentcalifornia {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopmentflorida {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopmentTexas {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webKansasCity {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopmentLosAngeles {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopmentNewjersey {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopmentArizona {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopmentnewyork {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .webdevelopmentPennsylvania {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignsuthacarolina_hero_section {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesigncalifornia {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignflorida {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignTexas {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignKansascity {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignLosAngeles {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignNewjersey {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignArizona {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignNewyork {
+        margin-top: 0px !important;
+        padding: 100px 10px !important;
+    }
+    .GraphicDesignPennsylvania {
         margin-top: 0px !important;
         padding: 100px 10px !important;
     }
