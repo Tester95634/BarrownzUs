@@ -15,15 +15,15 @@
 /*    margin-top: 100px;*/
 }
 .southcarolina {
-    background-image: url('../SeoImages/SouthCarolina/SouthCarolina.webp');
+    background-image: url('../SeoImages/SouthCarolina/SouthCarolinaHeader.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .seocalifornia {
     background-image: url('../SeoImages/California/California.webp');
@@ -31,10 +31,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .seoflorida {
     background-image: url('../SeoImages/Florida/Florida.webp');
@@ -42,87 +42,87 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .seoTexas {
-    background-image: url('../SeoImages/Texas/Taxes.webp');
+    background-image: url('../SeoImages/Texas/TexasHeader.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .seoKansas_City {
-    background-image: url('../SeoImages/KansasCity/KansasCity1.webp');
+    background-image: url('../SeoImages/KansasCity/KansasCity.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .seoLosAngeles {
-    background-image: url('../SeoImages/LosAngeles/LosAngeles1.webp');
+    background-image: url('../SeoImages/LosAngeles/LosAngeles.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
-.seoNewJersey{
-    background-image: url('../SeoImages/NewJersey/NewJersey1.webp');
+.seoNewJersey {
+    background-image: url('../SeoImages/NewJersey/NewJersey.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
-.seoArizona{
-    background-image: url('../SeoImages/Arizona/Arizona1.webp');
+.seoArizona {
+    background-image: url('../SeoImages/Arizona/Arizona.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .seoNewYork {
-    background-image: url('../SeoImages/NewYork/NewYork1.webp');
+    background-image: url('../SeoImages/NewYork/NewYork.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .seoPennsylvania {
-    background-image: url('../SeoImages/Pennsylvania/Pennsylvania1.webp');
+    background-image: url('../SeoImages/Pennsylvania/Pennsylvania.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .DigitalMarketingSouthcarolina {
     background-image: url('../DigitalMarketingWebImage/SouthCarolina/UpperBanner.webp');
@@ -130,10 +130,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .DigitalCalifornia {
     background-image: url('../DigitalMarketingWebImage/California/UpperBanner.webp');
@@ -141,10 +141,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .digitalflorida {
     background-image: url('../DigitalMarketingWebImage/Florida/UpperBanner.webp');
@@ -152,10 +152,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .digitalTaxes {
     background-image: url('../DigitalMarketingWebImage/Texas/Texas.webp');
@@ -163,10 +163,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .digitalkansascity {
     background-image: url('../DigitalMarketingWebImage/KansasCity/KansasCity.webp');
@@ -174,10 +174,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .digitalLosAngeles {
     background-image: url('../DigitalMarketingWebImage/LosAngeles/LosAngelescity.webp');
@@ -185,10 +185,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .digitalNewJersey {
     background-image: url('../DigitalMarketingWebImage/NewJersey/NewJerseycity.webp');
@@ -196,10 +196,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .digitalArizona {
     background-image: url('../DigitalMarketingWebImage/Arizona/Arizonacity.webp');
@@ -207,10 +207,10 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .digitalNewyork {
     background-image: url('../DigitalMarketingWebImage/NewYork/NewYork.webp');
@@ -218,21 +218,21 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 .digitalPennsylvania {
-    background-image: url('../DigitalMarketingWebImage/Pennsylvania/pennsylvania.webp');
+    background-image: url('../DigitalMarketingWebImage/Pennsylvania/Pennsylvaniacity.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
 }
 /*Webdevelopment*/
 .webdevelopment_southcarolina {
@@ -241,9 +241,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 
 .webdevelopmentcalifornia {
@@ -252,9 +254,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .webdevelopmentflorida {
     background-image: url('../Web_Development_Images/Florida/FloridaHeader.webp');
@@ -262,9 +266,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .webdevelopmentTexas {
     background-image: url('../Web_Development_Images/Texas/TexasHeader.webp');
@@ -272,9 +278,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .webKansasCity {
     background-image: url('../Web_Development_Images/KansasCity/KansasCityHeader.webp');
@@ -282,9 +290,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .webdevelopmentLosAngeles {
     background-image: url('../Web_Development_Images/LosAngeles/MainLosAngeles.webp');
@@ -292,9 +302,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .webdevelopmentNewjersey {
     background-image: url('../Web_Development_Images/NewJersey/MainNewJersey.webp');
@@ -302,9 +314,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .webdevelopmentArizona {
     background-image: url('../Web_Development_Images/Arizona/MainArizona.webp');
@@ -312,9 +326,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .webdevelopmentnewyork {
     background-image: url('../Web_Development_Images/NewYork/MainNewYork.webp');
@@ -322,9 +338,11 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .webdevelopmentPennsylvania {
     background-image: url('../Web_Development_Images/Pennsylvania/MainPennsylvania.webp');
@@ -332,110 +350,122 @@
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 
 .GraphicDesignsuthacarolina_hero_section {
-    background-image: url('../Graphic_Design_Images/SouthCarolina/SouthCarolinaHeader.png');
+    background-image: url('../Graphic_Design_Images/SouthCarolina/SouthCarolina_.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height:281px;
+/*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesigncalifornia {
-    background-image: url('../Graphic_Design_Images/California/CaliforniaHeader.png');
+    background-image: url('../Graphic_Design_Images/California/California_.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesignflorida {
-    background-image: url('../Graphic_Design_Images/Florida/FloridaHeader.png');
+    background-image: url('../Graphic_Design_Images/Florida/Florida_.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesignTexas {
-    background-image: url('../Graphic_Design_Images/Texas/TexasHeader.png');
+    background-image: url('../Graphic_Design_Images/Texas/Texas_.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesignKansascity {
-    background-image: url('../Graphic_Design_Images/KansasCity/KansasCityHeader.png');
+    background-image: url('../Graphic_Design_Images/KansasCity/KansasCity_.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesignLosAngeles {
-    background-image: url('../Graphic_Design_Images/LosAngeles/MainLosAngeles.png');
+    background-image: url('../Graphic_Design_Images/LosAngeles/LosAngeles1 (1).webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesignNewjersey {
-    background-image: url('../Graphic_Design_Images/NewJersey/MainNewJersey.png');
+    background-image: url('../Graphic_Design_Images/NewJersey/1NewJersey.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesignArizona {
-    background-image: url('../Graphic_Design_Images/Arizona/MainArizona.png');
+    background-image: url('../Graphic_Design_Images/Arizona/PngArizona.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesignNewyork {
-    background-image: url('../Graphic_Design_Images/NewYork/MainNewYork.png');
+    background-image: url('../Graphic_Design_Images/NewYork/NewYorkHedarebanner.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .GraphicDesignPennsylvania {
-    background-image: url('../Graphic_Design_Images/Pennsylvania/MainPennsylvania.png');
+    background-image: url('../Graphic_Design_Images/Pennsylvania/PngPennsylvania.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 }
 .hero_sction_common {
     width: 100%;
@@ -451,58 +481,83 @@
 }
 
 .Copyright {
-    background-image: url('../img/OurEdited.png');
+    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Copyright.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
     height: auto;
-    padding: 200px 0px;
+    padding: 141px 0px;
     position: relative;
 /*    margin-top: 100px;*/
+}
+.Copyright::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 .TermsAndCondition {
-    background-image: url('../img/OurEdited.png');
+    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Term&Conditions.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
-    height: auto;
-    padding: 200px 0px;
+/*    min-height: 281px;*/
+        height: auto;
+    padding: 141px 0px;
     position: relative;
-/*    margin-top: 100px;*/
 }
+    .TermsAndCondition::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
 
 
 
 .PriavcyAndPolicy {
-    background-image: url('../img/OurEdited.png');
+    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Privacy&Policies.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
     width: 100%;
     height: auto;
-    padding: 200px 0px;
+    padding: 141px 0px;
     position: relative;
-/*    margin-top: 100px;*/
+    /*    margin-top: 100px;*/
 }
 
+.PriavcyAndPolicy::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
 
 .layer {
     width: 100%;
-    height: 100%;
+/*    height: 100%;*/
     position: absolute;
 /*    background:rgba(0,0,0,0.6);*/
     z-index: 1;
 }
 
-.first_heading {
+/*.first_heading {
     font-size: 50px;
 }
 .first_second{
     text-shadow:2px 2px 2px 10px white;
-}
+}*/
 
 /*Nav baar change color*/
 .SouthaCarolina .color_s {
@@ -538,15 +593,15 @@
 }
 
 .location_bck_img_Southcarolina .circle {
-    width: 320px;
-    height: 320px;
+    width: 233px;
+    height: 233px;
     background: #00549C;
     border-radius: 50%;
 }
  .location_bck_img_Southcarolina .circle .arrow {
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
  }
 /*location_bck_img_southcarolina end here*/
 
@@ -559,16 +614,16 @@
 }
 
     .location_bck_img_california .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_california .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_california end here*/
 
@@ -581,16 +636,16 @@
 }
 
     .location_bck_img_florida .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_florida .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_florida end here*/
 /*location_bck_img_Texas start here*/
@@ -602,16 +657,16 @@
 }
 
     .location_bck_img_Texas .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_Texas .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_Texas start end*/
 /*location_bck_img_KansasCity start here*/
@@ -623,16 +678,16 @@
 }
 
     .location_bck_img_KansasCity .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_KansasCity .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_KansasCity start end*/
 /*location_bck_img_LosAngeles start here*/
@@ -644,16 +699,16 @@
 }
 
     .location_bck_img_LosAngeles .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_LosAngeles .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_LosAngeles end here*/
 /*location_bck_img_NewJersey start here*/
@@ -665,16 +720,16 @@
 }
 
     .location_bck_img_NewJersey .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_NewJersey .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_NewJersey start end*/
 /*location_bck_img_Arizona start here*/
@@ -686,16 +741,16 @@
 }
 
     .location_bck_img_Arizona .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_Arizona .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_Arizona end here*/
 /*location_bck_img_NewYork start here*/
@@ -707,16 +762,16 @@
 }
 
     .location_bck_img_NewYork .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_NewYork .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_NewYork end here*/
 /*location_bck_img_Pennsylvania start here*/
@@ -728,16 +783,16 @@
 }
 
     .location_bck_img_Pennsylvania .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_Pennsylvania .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_Pennsylvania end here*/
 
@@ -749,16 +804,16 @@
 }
 
     .location_bck_img_digitalsouthCarolina .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalsouthCarolina .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalsouthCarolina end here*/
 
@@ -771,16 +826,16 @@
 }
 
     .location_bck_img_digitalcalifornia .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalcalifornia .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalcalifornia end here*/
 /*location_bck_img_digitalflorida start here*/
@@ -791,16 +846,16 @@
 }
 
     .location_bck_img_digitalflorida .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalflorida .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalflorida end here*/
 /*location_bck_img_digitalTaxes start here*/
@@ -812,16 +867,16 @@
 }
 
     .location_bck_img_digitalTaxes .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalTaxes .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalTaxes end here*/
 /*location_bck_img_digitalkansascity start here*/
@@ -832,118 +887,118 @@
 }
 
     .location_bck_img_digitalkansascity .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalkansascity .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalkansascity end here*/
 /*location_bck_img_digitalLosAngeles start here*/
 .location_bck_img_digitalLosAngeles {
-    background: url('../DigitalMarketingWebImage/LosAngeles/Losangles.webp');
+    background: url('../DigitalMarketingWebImage/LosAngeles/5.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
 }
 
     .location_bck_img_digitalLosAngeles .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalLosAngeles .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_ digitalLosAngeles end here*/
 /*location_bck_img_digitalNewJersey start here*/
 .location_bck_img_digitalNewJersey {
-    background: url('../DigitalMarketingWebImage/NewJersey/NewJersey.webp');
+    background: url('../DigitalMarketingWebImage/NewJersey/4.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_digitalNewJersey .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalNewJersey .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalNewJersey end here*/
 /*location_bck_img_digitalArizona start here*/
 .location_bck_img_digitalArizona {
-    background: url('../DigitalMarketingWebImage/Arizona/Arizona.webp');
+    background: url('../DigitalMarketingWebImage/Arizona/3.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_digitalArizona .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalArizona .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalArizona end here*/
 /*location_bck_img_digitalNewyork start here*/
 .location_bck_img_digitalNewyork {
-    background: url('../DigitalMarketingWebImage/NewYork/NewYork (6).webp');
+    background: url('../DigitalMarketingWebImage/NewYork/2.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_digitalNewyork .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalNewyork .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalNewyork end here*/
 /*location_bck_img_digitalPennsylvania start here*/
 .location_bck_img_digitalPennsylvania {
-    background: url('../DigitalMarketingWebImage/Pennsylvania/Pennsylvania1.webp');
+    background: url('../DigitalMarketingWebImage/Pennsylvania/1.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
 }
 
     .location_bck_img_digitalPennsylvania .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_digitalPennsylvania .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_digitalPennsylvania end here*/
 
@@ -956,16 +1011,16 @@
 }
 
     .location_bck_img_websouthcarolina .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_websouthcarolina .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_websouthcarolina end here*/
 /*location_bck_img_webcarolina start here*/
@@ -976,16 +1031,16 @@
 }
 
     .location_bck_img_webcarolina .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_webcarolina .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_webcarolina end here*/
 /*location_bck_img_wedflorida start here*/
@@ -997,37 +1052,37 @@
 }
 
     .location_bck_img_wedflorida .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_wedflorida .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_wedflorida end here*/
 /*location_bck_img_webTexas start here*/
 .location_bck_img_webTexas {
-    background: url('../Web_Development_Images/Florida/FloridaLowerBanner.webp');
+    background: url('../Web_Development_Images/Texas/TexasLowerBanner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
     .location_bck_img_webTexas .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_webTexas .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_webTexas end here*/
 /*location_bck_img_webkansascity start here*/
@@ -1039,76 +1094,76 @@
 }
 
     .location_bck_img_webkansascity .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_webkansascity .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_webkansascity start here*/
 /*location_bck_img_webLosAngeles start here*/
 .location_bck_img_webLosAngeles {
-    background: url('../Web_Development_Images/LosAngeles/LosAngeles.webp');
+    background: url('../Web_Development_Images/LosAngeles/LatestLosAngeles.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_webLosAngeles .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_webLosAngeles .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_webkansascity start here*/
-/*location_bck_img_NewJersey start here*/
-.location_bck_img_NewJersey {
-    background: url('../Web_Development_Images/NewJersey/Service.webp');
+/*location_bck_img_webNewJersey start here*/
+.location_bck_img_webNewJersey {
+    background: url('../Web_Development_Images/NewJersey/NewJersey.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-    .location_bck_img_NewJersey .circle {
-        width: 320px;
-        height: 320px;
+    .location_bck_img_webNewJersey .circle {
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
-        .location_bck_img_NewJersey .circle .arrow {
+        .location_bck_img_webNewJersey .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_NewJersey end here*/
 /*location_bck_img_webarizona start here*/
 .location_bck_img_webarizona {
-    background: url('../Web_Development_Images/Arizona/Arizona.webp');
+    background: url('../Web_Development_Images/Arizona/latestArizona.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_webarizona .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_webarizona .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_webarizona end here*/
 /*location_bck_img_webnewyork start here*/
@@ -1119,138 +1174,138 @@
 }
 
     .location_bck_img_webnewyork .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_webnewyork .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_webnewyork end here*/
 /*location_bck_img_wePennsylvania start here*/
 .location_bck_img_wePennsylvania {
-    background: url('../Web_Development_Images/Pennsylvania/Pennsylvania.webp');
+    background: url('../Web_Development_Images/Pennsylvania/latestPennsylvania.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_wePennsylvania .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_wePennsylvania .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_wePennsylvania end here*/
 /*location_bck_img_graphic_Southcarolina start here*/
 .location_bck_img_graphic_Southcarolina {
-    background: url('../Graphic_Design_Images/SouthCarolina/LowerBanner.png');
+    background: url('../Graphic_Design_Images/SouthCarolina/LowerBanner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
 }
 
     .location_bck_img_graphic_Southcarolina .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphic_Southcarolina .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_graphic_Southcarolina end here*/
 /*location_bck_img_graphiccalifornia start here*/
 .location_bck_img_graphiccalifornia {
-    background: url('../Graphic_Design_Images/California/LowerBanner.png');
+    background: url('../Graphic_Design_Images/California/LowerBanner.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_graphiccalifornia .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphiccalifornia .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_graphiccalifornia end here*/
 /*location_bck_img_graphicflorida start here*/
 .location_bck_img_graphicflorida {
-    background: url('../Graphic_Design_Images/Florida/LowerBanner.png');
+    background: url('../Graphic_Design_Images/Florida/LowerBanner.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_graphicflorida .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphicflorida .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_graphicflorida end here*/
 /* location_bck_img_graphictexas start here*/
 .location_bck_img_graphictexas {
-    background: url('../Graphic_Design_Images/Texas/LowerBanner.png');
+    background: url('../Graphic_Design_Images/Texas/LowerBanner.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
     .location_bck_img_graphictexas .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphictexas .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /* location_bck_img_graphictexas end here*/
 /*location_bck_img_graphickansas start here*/
 .location_bck_img_graphickansas {
-    background: url('../Graphic_Design_Images/KansasCity/LowerBanner.png');
+    background: url('../Graphic_Design_Images/KansasCity/LowerBanner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
 }
 
     .location_bck_img_graphickansas .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphickansas .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 
 /*location_bck_img_graphickansas end here*/
@@ -1263,16 +1318,16 @@
 }
 
     .location_bck_img_graphicLosAngeles .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphicLosAngeles .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_graphicLosAngeles end here*/
 /*location_bck_img_graphicnewjersey start here*/
@@ -1284,16 +1339,16 @@
 }
 
     .location_bck_img_graphicnewjersey .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphicnewjersey .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_graphicnewjersey end here*/
 /*location_bck_img_graphicarizona start here*/
@@ -1305,16 +1360,16 @@
 }
 
     .location_bck_img_graphicarizona .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphicarizona .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 /*location_bck_img_graphicarizona end here*/
 /*location_bck_img_graphicNewyork start here*/
@@ -1325,16 +1380,16 @@
 }
 
     .location_bck_img_graphicNewyork .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphicNewyork .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 
 /*location_bck_img_graphicNewyork end here*/
@@ -1346,16 +1401,16 @@
 }
 
     .location_bck_img_graphicPennsylvania .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius: 50%;
     }
 
         .location_bck_img_graphicPennsylvania .circle .arrow {
             border-radius: 100%;
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
         }
 
 /*location_bck_img_graphicPennsylvania end here*/
@@ -1367,8 +1422,8 @@
 }
 
     .location_bck_img .circle {
-        width: 320px;
-        height: 320px;
+        width: 233px;
+        height: 233px;
         background: #00549C;
         border-radius:50%;
     }
@@ -1378,8 +1433,8 @@
 }
 .location_bck_img .circle .arrow {
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 .Importance {
     background: #f2f2f2;
@@ -1496,27 +1551,29 @@
 /*SE0_hero_sction*/
 
 .SE0_hero_sction {
-    background-image: url('../SeoImages/MainPage/mainseo.webp');
+    background-image: url('../SeoImages/MainPage/MainPage.webp');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: auto;
+    min-height:281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
+    position: relative;*/
 /*    margin-top: 100px;*/
 }
 
 /*Digital_marketing_hero_sction*/
 .Digital_marketing_hero_sction {
     background-image: url('../DigitalMarketingWebImage/MainPage/MainPage.webp');
-/*    background-position:center center;*/
+    /*    background-position:center center;*/
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 /*Webdevelopment_hero_sction*/
 .Webdevelopment_hero_sction {
@@ -1524,20 +1581,22 @@
     background-image: url('../Web_Development_Images/MainPage/MainPageHeader.webp');
     background-size: cover;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 .GraphicDesign_hero_sction {
     background-repeat: no-repeat;
-    background-image: url('../Graphic_Design_Images/MainPage/MainPageHeader.png');
+    background-image: url('../Graphic_Design_Images/MainPage/USA(1).webp');
     background-size: cover;
     width: 100%;
-    height: auto;
+    min-height: 281px;
+    /*    height: auto;
     padding: 200px 0px;
-    position: relative;
-/*    margin-top: 100px;*/
+    position: relative;*/
+    /*    margin-top: 100px;*/
 }
 /* From Uiverse.io by dylanharriscameron */
 .card_services {
@@ -1559,7 +1618,7 @@
     top: 5px;
     left: 5px;
     width: 190px;
-    height: 240px;
+    height: 225px;
     z-index: 2;
     background: rgba(255, 255, 255, .95);
     backdrop-filter: blur(24px);
@@ -1641,13 +1700,13 @@
 }
 
 .indicate{
-    width:40px;
+    width:25px;
     height:2px;
     top: 50px;
     left:4px;
 }
 .indicate_1 {
-    width: 40px;
+    width: 25px;
     height: 2px;
     top: 150px;
     left: 4px;
@@ -1685,20 +1744,20 @@
 }
 
 /*.line_indi {
-    width: 40px;
+    width: 25px;
     height: 2px;
     top: 50px;
     right: 4px;
 }*/
 
 .center_line .line_indi:nth-child(2) {
-    width: 40px;
+    width: 25px;
     height: 2px;
     top: 60px;
     right: 4px ;
 }
 .center_line .line_indi:nth-child(3) {
-        width: 40px;
+        width: 25px;
         height: 2px;
         top: 100px;
         left: 4px;
@@ -1706,27 +1765,27 @@
 }
 
 .center_line .line_indi:nth-child(4) {
-        width: 40px;
+        width: 25px;
         height: 2px;
         top:400px;
         right: 4px;
 }
 
 .center_line .line_indi:nth-child(5) {
-        width: 40px;
+        width: 25px;
         height: 2px;
         top: 445px;
         left: 4px;
 }
 
     .center_line .line_indi:nth-child(6) {
-        width: 40px;
+        width: 25px;
         height: 2px;
         top: 790px;
         right: 4px;
     }
     .center_line .line_indi:nth-child(7) {
-        width: 40px;
+        width: 25px;
         height: 2px;
         top: 830px;
         left: 4px;
@@ -1919,7 +1978,7 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     /*    border: 1px solid coral;*/
-    border-radius: 1rem;
+/*    border-radius: 1rem;*/
 }
 
 .flip-card-front {
@@ -1927,7 +1986,7 @@
 }
 
 .flip-card-back {
-    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
+/*    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);*/
     color: white;
     transform: rotateY(180deg);
     overflow:hidden;
@@ -2003,4 +2062,8 @@ select{
 .dev {
     transition: transform 0.2s ease;
     transform-style: preserve-3d;
+}
+/*Layout Page css*/
+.bottom-top{
+    display:none;
 }

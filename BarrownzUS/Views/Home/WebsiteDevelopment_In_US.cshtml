@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="Webdevelopment_hero_sction d-flex align-items-center justify-content-center flex-column ">
+<div class="Webdevelopment_hero_sction large_screen d-flex align-items-center justify-content-center flex-column ">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
         <div class="row w-100 px-lg-3">
             <div class="col-lg-6">
@@ -165,7 +165,7 @@
                 <h2 class="text-center">Get Found Online Easily with Our top web design services in USA.</h2>
             </div>
             <div class="col-lg-4 d-flex align-items-center justify-content-center ">
-                <a class="btn border-primary text-primary d-flex align-items-center justify-content-center" style="height:50px; width:150px;">Contact Now</a>
+                <a href="@Url.Action("ContactUs","Home")" class="btn border-primary text-primary d-flex align-items-center justify-content-center" style="height:50px; width:150px;">Contact Now</a>
             </div>
         </div>
     </div>
@@ -325,7 +325,7 @@
 
 
 <!--This js represent 4 card dragging effect left to right to left-->
-<script>
+@*<script>
 
     document.addEventListener("DOMContentLoaded", function () {
         const inner = document.querySelector(".inner");
@@ -391,6 +391,38 @@
         document.addEventListener("touchend", () => {
             isDragging = false;
             inner.style.animation = "rotating 10s linear infinite"; // Touch chhodo to animation start
+        });
+    });
+</script>*@
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const inner = document.querySelector(".inner");
+        const cards = document.querySelectorAll(".card");
+        const totalCards = cards.length;
+        let isStopped = false;
+
+        cards.forEach((card, index) => {
+            card.addEventListener("click", () => {
+                // Rotation angle calculate karo
+                const angle = 360 / totalCards;
+                const rotateTo = -angle * index;
+
+                // Animation rok do
+                inner.style.animation = "none";
+                isStopped = true;
+
+                // Transform set karo
+                inner.style.transform = `perspective(1000px) rotateX(-15deg) rotateY(${rotateTo}deg)`;
+            });
+        });
+
+        inner.addEventListener("mouseleave", () => {
+            if (isStopped) {
+                // Mouse leave pe animation wapas start karo
+                inner.style.animation = "rotating 10s linear infinite";
+                isStopped = false;
+            }
         });
     });
 </script>

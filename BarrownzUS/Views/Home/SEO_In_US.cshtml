@@ -6,7 +6,7 @@
 }
 
 
-<div class="SE0_hero_sction d-flex align-items-center justify-content-center flex-column ">
+<div class="SE0_hero_sction large_screen d-flex align-items-center justify-content-center flex-column ">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
         <div class="row w-100 px-lg-3">
             <div class="col-lg-6">
@@ -155,7 +155,7 @@
                 <h2 class="text-center">Enhance Your Ranking On Search Engines</h2>
             </div>
             <div class="col-lg-4 d-flex align-items-center justify-content-center ">
-                <a class="btn border-primary text-primary d-flex align-items-center justify-content-center" style="height:50px; width:150px;">Contant Now</a>
+                <a href="@Url.Action("ContactUs","Home")" class="btn border-primary text-primary d-flex align-items-center justify-content-center" style="height:50px; width:150px;">Contant Now</a>
             </div>
         </div>
     </div>
@@ -174,7 +174,7 @@
 </div>
 
 
-<!--Why Choose Techmagnate for SEO Services?-->
+<!--Make the most of our local SEO services in USA.-->
 <div class="container-fluid py-3">
     <div class="container">
         <h2>Make the most of our local SEO services in USA.</h2>
@@ -183,6 +183,8 @@
         <p>With our local <b>SEO services in USA,</b> your business will stand out in local search results, making it easier for potential customers to find you. Let us help you grow locally!</p>
     </div>
 </div>
+
+
 
 <!--FAQs-->
 <div class="container-fluid py-5">
@@ -254,6 +256,8 @@
         </div>
     </div>
 </div>
+
+
 <!--Location  -->
 <div class="container-fluid py-5">
     <div class="container px-2">
@@ -329,66 +333,83 @@
 
 
 <!--This js represent 4 card dragging effect left to right to left-->
+@*<script>
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const inner = document.querySelector(".inner");
+            let isDragging = false;
+            let startX, currentX, rotationY = 0;
+
+            inner.addEventListener("mouseenter", () => {
+                const currentTransform = computedStyle.transform;
+                inner.style.transform = currentTransform;
+                inner.style.animation = "none"; // Hover par animation stop
+                const computedStyle = window.getComputedStyle(inner);
+            });
+
+            inner.addEventListener("mouseleave", () => {
+                if (!isDragging) {
+                    inner.style.animation = "rotating 10s linear infinite"; // Mouse hatao to animation start
+                }
+            });
+
+            inner.addEventListener("mousedown", (e) => {
+                isDragging = true;
+                startX = e.clientX;
+                inner.style.animation = "none"; // Dragging par bhi animation stop
+            });
+
+            document.addEventListener("mousemove", (e) => {
+                if (!isDragging) return;
+                currentX = e.clientX;
+                let deltaX = currentX - startX;
+                rotationY += deltaX * 0.2; // Sensitivity control
+                inner.style.transform = `perspective(1000px) rotateX(-15deg) rotateY(${rotationY}deg)`;
+                startX = currentX;
+            });
+
+            document.addEventListener("mouseup", () => {
+                isDragging = true;
+                inner.style.animation = "rotating 10s linear infinite"; // Dragging chhodo to animation start
+            });
+
+            // Mobile touch support
+            inner.addEventListener("touchstart", (e) => {
+                isDragging = true;
+                startX = e.touches[0].clientX;
+                inner.style.animation = "none";
+            });
+        });
+
+    </script>*@
 <script>
-
     document.addEventListener("DOMContentLoaded", function () {
         const inner = document.querySelector(".inner");
-        let isDragging = false;
-        let startX, currentX, rotationY = 0;
+        const cards = document.querySelectorAll(".card");
+        const totalCards = cards.length;
+        let isStopped = false;
 
-        inner.addEventListener("mouseenter", () => {
-            const currentTransform = computedStyle.transform;
-            inner.style.transform = currentTransform;
-            inner.style.animation = "none"; // Hover par animation stop
-            const computedStyle = window.getComputedStyle(inner);
+        cards.forEach((card, index) => {
+            card.addEventListener("click", () => {
+                // Rotation angle calculate karo
+                const angle = 360 / totalCards;
+                const rotateTo = -angle * index;
+
+                // Animation rok do
+                inner.style.animation = "none";
+                isStopped = true;
+
+                // Transform set karo
+                inner.style.transform = `perspective(1000px) rotateX(-15deg) rotateY(${rotateTo}deg)`;
+            });
         });
 
         inner.addEventListener("mouseleave", () => {
-            if (!isDragging) {
-                inner.style.animation = "rotating 10s linear infinite"; // Mouse hatao to animation start
+            if (isStopped) {
+                // Mouse leave pe animation wapas start karo
+                inner.style.animation = "rotating 10s linear infinite";
+                isStopped = false;
             }
-        });
-
-        inner.addEventListener("mousedown", (e) => {
-            isDragging = true;
-            startX = e.clientX;
-            inner.style.animation = "none"; // Dragging par bhi animation stop
-        });
-
-        document.addEventListener("mousemove", (e) => {
-            if (!isDragging) return;
-            currentX = e.clientX;
-            let deltaX = currentX - startX;
-            rotationY += deltaX * 0.2; // Sensitivity control
-            inner.style.transform = `perspective(1000px) rotateX(-15deg) rotateY(${rotationY}deg)`;
-            startX = currentX;
-        });
-
-        document.addEventListener("mouseup", () => {
-            isDragging = true;
-            inner.style.animation = "rotating 10s linear infinite"; // Dragging chhodo to animation start
-        });
-
-        // Mobile touch support
-        inner.addEventListener("touchstart", (e) => {
-            isDragging = true;
-            startX = e.touches[0].clientX;
-            inner.style.animation = "none";
-        });
-
-        document.addEventListener("touchmove", (e) => {
-            if (!isDragging) return;
-            currentX = e.touches[0].clientX;
-            let deltaX = currentX - startX;
-            rotationY += deltaX * 0.2;
-            inner.style.transform = `perspective(1000px) rotateX(-15deg) rotateY(${rotationY}deg)`;
-            startX = currentX;
-        });
-
-        document.addEventListener("touchend", () => {
-            isDragging = false;
-            inner.style.animation = "rotating 10s linear infinite"; // Touch chhodo to animation start
         });
     });
 </script>

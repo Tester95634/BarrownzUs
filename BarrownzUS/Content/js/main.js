@@ -126,7 +126,7 @@
 
 
 
-//this js for index page for box silder section autimatic 5 second after chage and implemnt with Dragging effect
+//this js for index page for box silder section autimatic 5 second after change and implemnt with Dragging effect
 
 //Start Here
 let prev = document.getElementById('prev');

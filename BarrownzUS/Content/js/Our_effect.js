@@ -208,10 +208,21 @@ var typed = new Typed('#Gd', {
 
 var typed = new Typed('#seo', {
     strings: ['SEO',
-        ' (SEO) Search Engine ptimization.'],
+        ' (SEO) Search Engine Optimization.'],
     typeSpeed: 110,
     startDelay: 1000,
     cursorChar: '!',
     loop: true,
     backSpeed: 80,
+});
+
+
+//bottom top btn
+$(window).scroll(function () {
+    let buttons = document.getElementById("bottom-top");
+    if ($(this).scrollTop() > 100) {
+        buttons.style.display = 'block';
+    } else {
+        buttons.style.display = 'none';
+    }
 });

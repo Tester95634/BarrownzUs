@@ -25,6 +25,7 @@
     transform-style: preserve-3d;
     transform: perspective(var(--perspective));
     animation: rotating 10s linear infinite;
+    will-change: transform;
 }
 
     .inner:hover {
@@ -49,4 +50,5 @@
     transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(var(--translateZ));
     user-select:none;
 }
+
 

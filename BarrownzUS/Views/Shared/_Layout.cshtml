@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     <meta name="description" content="@ViewBag.MetaDescription" />
-
+    <meta name="google-site-verification" content="Iyvj5a-e85C8OAHJY78iAr_SDU1it8xheCH508nCM4s" />
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +76,7 @@
     <div class="container-fluid position-relative p-0">
 
 
-        <nav class="navbar navbar-expand-lg navbar-dark px-4  py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-4  py-lg-0" id="Topnavbaar">
             <a href="@Url.Action("Index","Home")" class="navbar-brand p-0">
 
                 <h1 class="m-0 color_s first" id="top">
@@ -203,7 +203,7 @@
                                 <a class="text-light mb-2" href="@Url.Action("SEO_In_US","Home")"><i class="bi bi-arrow-right text-primary me-2"></i>Services</a>
                                 <a class="text-light mb-2" href="@Url.Action("About","Home")"><i class="bi bi-arrow-right text-primary me-2"></i>Who We Are</a>
                                 <a class="text-light mb-2" href="@Url.Action("Portfolio","Home")"><i class="bi bi-arrow-right text-primary me-2"></i>Portfolio</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Career</a>
+                                <a class="text-light" href="@Url.Action("ContactUs","Home")"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -243,16 +243,17 @@
             </div>
         </div>
 
-      
-
 
 
         <a href="tel:6507411354" class="call  position-absolute position-fixed bg-none p-1" style="bottom:180px; z-index:999999; right:60px;">
-            <img src="~/Content/icon_image/call.png" class="img-fluid"/>
+            <img src="~/Content/icon_image/call.png" class="img-fluid" />
         </a>
 
         <a href="#" class="call  position-absolute position-fixed  border-white p-2" style="bottom:125px; z-index:999999; right:60px; border:1px solid white;">
             <img src="~/Content/icon_image/Microsoft-teams.png" class="img-fluid" />
+        </a>
+        <a href="#" id="bottom-top" class="position-absolute position-fixed  border-white p-2 " style="bottom: 20px; z-index: 999999; left: 20px; box-shadow: 0 8px 34px -6px black; background: white; ">
+            <i class="fa-solid fa-arrow-up fs-5"></i>
         </a>
     </div>
 

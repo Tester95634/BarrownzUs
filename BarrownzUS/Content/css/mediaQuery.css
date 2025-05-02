@@ -265,7 +265,7 @@
         margin-top: 0px !important;
     }
     .first_heading {
-        font-size: 20px !important;
+        font-size: 19px !important;
     }
 
     /*Animated card*/
@@ -361,6 +361,16 @@
     }
     .first{
         display:block !important;
+    }
+
+    /*This css for porfolio page*/
+    .flip-card{
+        height:250px !important;
+    }
+
+    /*This css terms and condition*/
+    .only_one{
+        font-size:30px !important;
     }
 }
 /*For card*/
@@ -591,7 +601,7 @@
     }
     .hero_section_PText {
         text-align: center !important;
-        padding: 0px 47px !important;
+/*        padding: 0px 47px !important;*/
     }
     /*This css represent navbar hide and show small device*/
     .second_image {
@@ -600,6 +610,11 @@
 
     .first {
         display: block !important;
+    }
+
+    /*This css terms and condition*/
+    .only_one {
+        font-size: 50px !important;
     }
 }
 
@@ -805,7 +820,10 @@
     .icon_gaps{
         margin-top:20px;
     }
-   
+
+    .large_screen {
+        min-height: 400px !important;
+    }
 }
 
 /*Only height*/
@@ -842,3 +860,28 @@
         position: static !important; 
     }
 }
+
+@media(min-width:1900px) {
+    .large_screen {
+        min-height: 44vh !important;
+    }
+
+    /*.first_heading {
+        font-size: 45px !important;
+    }*/
+
+    .hero_section_PText {
+        text-align: center !important;
+        padding: 0px 6px !important;*/
+        /* font-size: 30px;*/
+   }
+
+/*    .wrapper {
+        height: 25vh !important;
+    }
+*/
+    .hero_section_PText {
+        text-align: start !important;
+    }
+}
+

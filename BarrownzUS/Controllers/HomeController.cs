@@ -418,6 +418,11 @@ namespace BarrownzUS.Controllers
         }
 
         //Graphic design
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_Us()
+        {
+            return Redirect("/GraphicDesign_In_Us");
+        }
         public ActionResult GraphicDesign_In_Us()
         {
             ViewBag.Title = "GraphicDesign_In_Us";
@@ -425,7 +430,11 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
-
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_SouthCarolina()
+        {
+            return Redirect("/GraphicDesign_In_SouthCarolina");
+        }
         public ActionResult GraphicDesign_In_SouthCarolina()
         {
             ViewBag.Title = "GraphicDesign_In_SouthCarolina";
@@ -433,17 +442,33 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_California()
+        {
+            return Redirect("/GraphicDesign_In_California");
+        }
         public ActionResult GraphicDesign_In_California()
         {
             ViewBag.Title = "GraphicDesign_In_California";
             ViewBag.BodyClass = "locations";
             return View();
         }
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_Florida()
+        {
+            return Redirect("/GraphicDesign_In_Florida");
+        }
         public ActionResult GraphicDesign_In_Florida()
         {
             ViewBag.Title = "GraphicDesign_In_Florida";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_Taxes()
+        {
+            return Redirect("/GraphicDesign_In_Taxes");
         }
         public ActionResult GraphicDesign_In_Taxes()
         {
@@ -454,11 +479,23 @@ namespace BarrownzUS.Controllers
           
             return View();
         }
+
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_KansasCity()
+        {
+            return Redirect("/GraphicDesign_In_KansasCity");
+        }
         public ActionResult GraphicDesign_In_KansasCity()
         {
             ViewBag.Title = "GraphicDesign_In_KansasCity";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_LosAngeles()
+        {
+            return Redirect("/GraphicDesign_In_LosAngeles");
         }
         public ActionResult GraphicDesign_In_LosAngeles()
         {
@@ -466,11 +503,24 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_NewJersey()
+        {
+            return Redirect("/GraphicDesign_In_NewJersey");
+        }
         public ActionResult GraphicDesign_In_NewJersey()
         {
             ViewBag.Title = "GraphicDesign_In_NewJersey";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+
+
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_Arizona()
+        {
+            return Redirect("/GraphicDesign_In_Arizona");
         }
         public ActionResult GraphicDesign_In_Arizona()
         {
@@ -478,11 +528,23 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_NewYork()
+        {
+            return Redirect("/GraphicDesign_In_NewYork");
+        }
         public ActionResult GraphicDesign_In_NewYork()
         {
             ViewBag.Title = "GraphicDesign_In_NewYork";
             ViewBag.BodyClass = "locations";
             return View();
+        }
+        //Redirection
+        public ActionResult RedirectToGraphicDesign_In_Pennsylvania()
+        {
+            return Redirect("/GraphicDesign_In_Pennsylvania");
         }
         public ActionResult GraphicDesign_In_Pennsylvania()
         {
@@ -491,7 +553,11 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
-
+        //Redirection
+        public ActionResult RedirectToAbout()
+        {
+            return Redirect("/About");
+        }
         public ActionResult About()
         {
             ViewBag.Title = "About";
@@ -499,6 +565,11 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
+        //Redirection
+        public ActionResult RedirectToPortfolio()
+        {
+            return Redirect("/Portfolio");
+        }
         public ActionResult Portfolio()
         {
             ViewBag.Title = "Portfolio";
@@ -513,6 +584,11 @@ namespace BarrownzUS.Controllers
         //    return View();
         //}
 
+        //Redirection
+        public ActionResult RedirectToContactUs()
+        {
+            return Redirect("/ContactUs");
+        }
         public ActionResult ContactUs()
         {
             ViewBag.Title = "ContactUs";
@@ -520,7 +596,11 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
-
+        //Redirection
+        public ActionResult RedirectToTermsAndConditions()
+        {
+            return Redirect("/TermsAndConditions");
+        }
         public ActionResult TermsAndConditions()
         {
             ViewBag.Title = "TermsAndCondition";
@@ -528,6 +608,12 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
+
+        //Redirection
+        public ActionResult RedirectToPrivacyAndPolicy()
+        {
+            return Redirect("/PrivacyAndPolicy");
+        }
         public ActionResult PrivacyAndPolicy()
         {
             ViewBag.Title = "PrivacyAndPolicy";
@@ -535,6 +621,10 @@ namespace BarrownzUS.Controllers
             return View();
         }
 
+        public ActionResult RedirectToCopyright()
+        {
+            return Redirect("/Copyright");
+        }
         public ActionResult Copyright()
         {
             ViewBag.Title = "Copyright";

@@ -1,19 +1,20 @@
 ﻿
 @{
-    ViewBag.Title = "Portfolio";
+    ViewBag.Title = "Portfolio | Barrownz Group";
+    ViewBag.MetaDescription = " Explore the diverse portfolio of Barrownz Group, showcasing innovative projects and successful collaborations across digital marketing, software development, branding, and more.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="hero_sction_common container-fluid">
     
-    <div class="container py-4 ">
+    <div class="container py-5 ">
     <div class="row hero_sections_holder">
         <div class="col-lg-6 d-flex justify-content-center  flex-column">
-            <h1>Our Portfolio</h1>
+            <h1>From Vision to Reality: Our Portfolio </h1>
             <p class="lh-5">
-                Our portfolio highlights a diverse array of projects that exemplify our commitment to innovation and quality. Each work reflects our expertise and creativity, showcasing our ability to meet client needs while delivering impactful results across various industries and disciplines.
+                We have over 9 years of experience in web development and digital marketing in the USA. We build websites using the latest technologies and offer digital marketing, content creation, graphic design, and social media services. We are your one-stop shop for all your online and digital business needs.
             </p>
-            <a class="ani_btn text-white" href="#">Contact US</a>
+            <a class="ani_btn text-white" href="@Url.Action("ContactUs","Home")">Contact US</a>
 
         </div>
         <div class="col-lg-6">
@@ -46,9 +47,9 @@
 
 <div class="container-fluid py-4 mt-3">
 <div class="container d-flex align-items-center justify-content-center flex-column">
-    <h1 class="py-2">Our Work</h1>
-    <h6 class="py-2 text-center">A Quick Overview of Some of Our Projects.</h6>
-    <p class="text-center">When we accept a project, we know our client places great trust in us. That is why we never let our energy down and work efficiently to deliver quality work before the time frame elapses. Our team enjoys creating futuristic masterpieces. Here are a few of them.</p>
+    <h2 class="py-2 text-center">Explore Our Winning Projects </h2>
+    <h6 class="py-2 text-center">Some of Our Work at a Glance .</h6>
+    <p class="text-center">Whether it’s web development, digital marketing, graphic design, or content creation, our team brings passion, creativity, and precision to every task. We don’t just complete projects; we craft digital experiences that are innovative, user-friendly, and future-ready. From websites to marketing campaigns, we love turning ideas into impactful digital solutions.</p>
 </div>
 </div>
 
@@ -57,73 +58,39 @@
         <div class="row card_smaller_side ">
 
             <div class="col-lg-6 col-md-12">
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front px-5">
-                            <p class="title">FLIP CARD</p>
-                            <p>A text can be written materials, such as books, magazines, newspapers, or online content. But it can also be other things, those that we may not associate with standard text. Text could be movies, scripts, paintings, songs, political cartoons, advertisements and maps.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <img src="~/Content/img/about.jpg" class="img-fluid" />
+                <a href="https://gazetinternational.com/">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front border px-5">
+                                <h2 class="text-decoration-underline">Gazet National Global Magazine</h2>
+                                <p>We developed the complete website for Gazet National Global Magazine, including both the UI and back-end, with a modern UX design that ensures easy product navigation.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="~/Content/PortfolioImages/GazetInternational.png" class="img-fluid" style="height:100%;" />
+                            </div>
                         </div>
                     </div>
-                </div>
-
+                </a>
             </div>
 
             <div class="col-lg-6 col-md-12">
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <p class="title">FLIP CARD</p>
-                            <p>Hover Me</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">BACK</p>
-                            <p>Leave Me</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div><br /><br />
-
-        <div class="row card_smaller_side">
-
-            <div class="col-lg-6 col-md-12">
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <p class="title">FLIP CARD</p>
-                            <p>Hover Me</p>
-                        </div>
-                        <div class="flip-card-back rounded-3">
-                            <img src="~/Content/img/about.jpg" />
+                <a href="#">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="text-decoration-underline">Levier</h2>
+                                <p>
+                                    We designed a stunning, luxury-style website for lab-grown diamonds, showcasing elegant visuals and seamless navigation that reflects brand excellence.
+                                </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">BACK</p>
+                                <img src="~/Content/PortfolioImages/Leveir.png" class="img-fluid" style="height:100%;" />
+                            </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <p class="title">FLIP CARD</p>
-                            <p>Hover Me</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">BACK</p>
-                            <p>Leave Me</p>
-                        </div>
-                    </div>
-                </div>
+                </a>
 
             </div>
 
@@ -135,33 +102,83 @@
             <div class="col-lg-6 col-md-12">
 
                 <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <p class="title">FLIP CARD</p>
-                            <p>Hover Me</p>
+                    <a href="https://magiccarshipping.com/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front border">
+                                <h2 class="text-decoration-underline">Magic Car Shipping</h2>
+                                <p class="px-3">
+                                    We built the Magic Car Shipping website using .NET technologies and provided SEO services to boost visibility and online performance.
+                                </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="~/Content/PortfolioImages/MagicCarShipping.png" style="height:100%;" />
+                            </div>
                         </div>
-                        <div class="flip-card-back">
-                            <img src="~/Content/img/about.jpg" />
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+
+                <div class="flip-card">
+                    <a href="https://moderncarshipping.com/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="text-decoration-underline">Modern Car Shipping</h2>
+                                <p class="px-3">
+                                    We created a modern, clean design for a trustworthy car shipping service with strong branding, SEO setup, and mobile-friendly performance.
+                                </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="~/Content/PortfolioImages/ModernCarShipping.png" class="img-fluid" style="height:100%;" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div><br /><br />
+
+        <div class="row card_smaller_side">
+
+            <div class="col-lg-6 col-md-12">
+
+                <a href="https://paragonflooringsc.com/">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="text-decoration-underline">Paragon</h2>
+                                <p class="px-3">We developed a flooring website with a strong focus on clean UI and smooth UX to enhance product browsing and engagement.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="~/Content/PortfolioImages/ParagonFlooring.png" style="height:100%;" />
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
             </div>
 
             <div class="col-lg-6 col-md-12 ">
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <p class="title">FLIP CARD</p>
-                            <p>Hover Me</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">BACK</p>
-                            <p>Leave Me</p>
+                <a href="https://securecarshipping.com/">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="text-decoration-underline">Secure Car Shipping </h2>
+                                <p class="px-3">
+                                    We developed a user-friendly, secure, and responsive website offering affordable car shipping services with a smooth and reliable user experience.
+                                </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="~/Content/PortfolioImages/SecureCarShipping.png" class="img-fluid" style="height:100%;" />
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
             </div>
 
@@ -171,34 +188,41 @@
 
             <div class="col-lg-6 col-md-12">
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <p class="title">FLIP CARD</p>
-                            <p>Hover Me</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <img src="~/Content/img/about.jpg" />
+                <a href="https://tfz.ae/">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="text-decoration-underline">TfZ</h2>
+                                <p class="px-3">
+                                    We developed the website and executed SEO for the Dubai-based company TfZ, improving visibility, performance, and user engagement.
+                                </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="~/Content/PortfolioImages/TFZ.png" style="height:100%;" />
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
             </div>
 
             <div class="col-lg-6 col-md-12 ">
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <p class="title">FLIP CARD</p>
-                            <p>Hover Me</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">BACK</p>
-                            <p>Leave Me</p>
+                <a href="">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="text-decoration-underline">Valour Apparel </h2>
+                                <p class="px-3">
+                                    Built a stylish e-commerce store on WordPress with a custom UX design for smooth shopping, product showcase, and seamless checkout experience.
+                                </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="~/Content/PortfolioImages/Valour.png" class="img-fluid" style="height:100%;" />
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
             </div>
 

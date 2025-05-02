@@ -1,25 +1,5 @@
 User-agent: *
-Disallow: /
+Disallow: 
+Disallow: /cgi-bin/
 
-Allow: /seo-company-in-usa
-Allow: /seo-service-in-south-carolina
-Allow: /seo-service-in-california
-Allow: /seo-service-in-florida
-Allow: /seo-service-in-taxes
-Allow: /seo-service-in-kansas-city
-Allow: /seo-service-in-los-angeles
-Allow: /seo-service-in-new-jersey
-Allow: /seo-service-in-arizona
-Allow: /seo-service-in-new-york
-Allow: /seo-service-in-Pennsylvania
-Allow: /digital-marketing-company-usa
-Allow: /digital-marketing-service-south-carolina
-Allow: /digital-marketing-service-california
-Allow: /digital-marketing-service-florida
-Allow: /digital-marketing-service-texas
-Allow: /digital-marketing-service-kansas-city
-Allow: /digital-marketing-service-los-angeles
-Allow: /digital-marketing-service-new-jersey
-Allow: /digital-marketing-service-arizona
-Allow: /digital-marketing-service-new-york
-Allow: /digital-marketing-service-pennsylvania
+Sitemap: https://barrownz.us/sitemap.xml
