@@ -4,7 +4,6 @@
     box-sizing:border-box;
 }
 .hero_sction {
-    background-image: url('../icon_image/ehehethth.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
@@ -224,7 +223,7 @@
     position: relative;*/
 }
 .digitalPennsylvania {
-    background-image: url('../DigitalMarketingWebImage/Pennsylvania/Pennsylvaniacity.png');
+    background-image: url('../DigitalMarketingWebImage/Pennsylvania/Pennsylvaniacity.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
@@ -446,7 +445,7 @@
     position: relative;*/
 }
 .GraphicDesignNewyork {
-    background-image: url('../Graphic_Design_Images/NewYork/NewYorkHedarebanner.png');
+    background-image: url('../Graphic_Design_Images/NewYork/NewYorkHedarebanner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
@@ -481,7 +480,7 @@
 }
 
 .Copyright {
-    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Copyright.png');
+    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Copyright.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
@@ -501,7 +500,7 @@
 }
 
 .TermsAndCondition {
-    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Term&Conditions.png');
+    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Term&Conditions.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
@@ -524,7 +523,7 @@
 
 
 .PriavcyAndPolicy {
-    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Privacy&Policies.png');
+    background-image: url('../Image_Terms_Privacy_copyright_Portfolio/Privacy&Policies.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
@@ -1311,7 +1310,7 @@
 /*location_bck_img_graphickansas end here*/
 /*location_bck_img_graphicLosAngeles start here*/
 .location_bck_img_graphicLosAngeles {
-    background: url('../Graphic_Design_Images/LosAngeles/LosAngeles.png');
+    background: url('../Graphic_Design_Images/LosAngeles/LosAngeles.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1332,7 +1331,7 @@
 /*location_bck_img_graphicLosAngeles end here*/
 /*location_bck_img_graphicnewjersey start here*/
 .location_bck_img_graphicnewjersey {
-    background: url('../Graphic_Design_Images/NewJersey/NewJersey.png');
+    background: url('../Graphic_Design_Images/NewJersey/NewJersey.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1353,7 +1352,7 @@
 /*location_bck_img_graphicnewjersey end here*/
 /*location_bck_img_graphicarizona start here*/
 .location_bck_img_graphicarizona {
-    background: url('../Graphic_Design_Images/Arizona/Arizona.png');
+    background: url('../Graphic_Design_Images/Arizona/Arizona.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1374,7 +1373,7 @@
 /*location_bck_img_graphicarizona end here*/
 /*location_bck_img_graphicNewyork start here*/
 .location_bck_img_graphicNewyork {
-    background: url('../Graphic_Design_Images/NewYork/NewYork.png');
+    background: url('../Graphic_Design_Images/NewYork/NewYork.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1395,7 +1394,7 @@
 /*location_bck_img_graphicNewyork end here*/
 /*location_bck_img_graphicPennsylvania start here*/
 .location_bck_img_graphicPennsylvania {
-    background: url('../Graphic_Design_Images/Pennsylvania/Pennsylvania.png');
+    background: url('../Graphic_Design_Images/Pennsylvania/LowePennsylvania.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1416,7 +1415,7 @@
 /*location_bck_img_graphicPennsylvania end here*/
 
 .location_bck_img {
-    background: url('../img/location_blue.png');
+/*    background: url('../img/location_blue.png');*/
     background-repeat: no-repeat;
     background-size: cover;
 }
