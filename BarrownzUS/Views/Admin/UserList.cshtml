@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "UserList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-hover table-bordered" id="datatablesSimple">
+    <thead>
+        <tr>
+            <th>Srno</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>PhoneNumber</th>
+            <th>Service</th>
+            <th>Message</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+             int SrNo = 1;
+            }
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@SrNo</td>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.Service</td>
+                <td>@item.Message</td>
+                <td>
+                    <form action="/Admin/Delete_User" method="post">
+                        <input type="hidden" name="Id" value="@item.Id" />
+                        <button class="btn btn-danger" onclick="confirm('Are yor sure want to delete')"><i class="fa-solid fa-trash"></i></button>
+                    </form>
+                </td>
+
+            </tr>
+            SrNo++;
+        }
+    </tbody>
+
+</table>
+
+<span class="text-danger">@ViewBag.Message</span>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.btn-success').addEventListener('click', function () {
+            var table = document.getElementById('datatablesSimple');
+            var wb = XLSX.utils.table_to_book(table, { sheet: "Sheet1" });
+            XLSX.writeFile(wb, "Enquiry_List.xlsx");
+        });
+    });
+</script>

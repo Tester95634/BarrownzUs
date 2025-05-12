@@ -83,6 +83,7 @@ function validate() {
 
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
+    let number = document.getElementById("number").value;
     let option = document.getElementById("option").value;
     let message = document.getElementById("message").value;
 
@@ -90,11 +91,13 @@ function validate() {
 
     let name_error = document.getElementById("name_error");
     let email_error = document.getElementById("email_error");
+    let number_error = document.getElementById("number_error");
     let option_error = document.getElementById("option_error");
     let message_error = document.getElementById("message_error");
 
     name_error.textContent = "";
     email_error.textContent = "";
+    number_error.textContent = "";
     option_error.textContent = "";
     message_error.textContent = "";
 
@@ -115,13 +118,15 @@ function validate() {
         valid = false;
     }
 
+    if (number === "" || number.length < 10) {
+        number_error.textContent = "Please enter a valid number";
+        valid = false;
+    }
+
+
     if (message === "") {
         message_error.textContent = "please write message";
         valid = false;
-    }
-    if (valid) {
-        alert("Your form has been submit");
-
     }
 
     return valid;

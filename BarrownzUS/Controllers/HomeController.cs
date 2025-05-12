@@ -1,19 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BarrownzUS.Models;
 
 namespace BarrownzUS.Controllers
 {
     public class HomeController : Controller
     {
+
+        //Database Connection
+
+        private readonly string Connection = ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
+
         public ActionResult Index()
         {
             ViewBag.Title = "Web Development & Digital Marketing Experts | Barrownz Group";
             ViewBag.BodyClass = "Position";
             return View();
         }
+       
+
+        [HttpPost]
+           public ActionResult IndexSaveData(ContactEnquiry data)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Connection))
+                {
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
+                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", data.Name);
+                        cmd.Parameters.AddWithValue("@Email", data.Email);
+                        cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
+                        cmd.Parameters.AddWithValue("@Service", data.Service);
+                        cmd.Parameters.AddWithValue("@Message", data.Message);
+                        con.Open();
+                        int a = cmd.ExecuteNonQuery();
+                        if (a > 0)
+                        {
+
+                            TempData["Msg"] = "Your enquiry was submitted successfully!";
+                            return RedirectToAction("Index", "Home");
+                        }
+
+                    }
+
+                }
+                TempData["error"] = "Failed to submit your enquiry. Please try again.";
+                return RedirectToAction("Index", "Home");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View();
+            }
+        }
+
+
         //Redirection
         public ActionResult RedirectToSEO_In_US()
         {
@@ -26,6 +75,45 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "Seo_Service";
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Submit_Data_By_Seo_View(ContactEnquiry data)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Connection))
+                {
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
+                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", data.Name);
+                        cmd.Parameters.AddWithValue("@Email", data.Email);
+                        cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
+                        cmd.Parameters.AddWithValue("@Service", data.Service);
+                        cmd.Parameters.AddWithValue("@Message", data.Message);
+                        con.Open();
+                        int a = cmd.ExecuteNonQuery();
+                        if (a > 0)
+                        {
+
+                            TempData["Msg"] = "Your enquiry was submitted successfully!";
+                            return RedirectToAction("SEO_In_US", "Home");
+                        }
+
+                    }
+
+                }
+                TempData["error"] = "Failed to submit your enquiry. Please try again.";
+                return RedirectToAction("SEO_In_US", "Home");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View();
+            }
+        }
+
 
         //Redirection
         public ActionResult RedirectToSEO_In_SouthCarolina()
@@ -160,7 +248,45 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "digital_marketing";
             return View();
         }
+     
 
+         [HttpPost]
+        public ActionResult Submit_Data_By_DigitalMarketing_View(ContactEnquiry data)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Connection))
+                {
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
+                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", data.Name);
+                        cmd.Parameters.AddWithValue("@Email", data.Email);
+                        cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
+                        cmd.Parameters.AddWithValue("@Service", data.Service);
+                        cmd.Parameters.AddWithValue("@Message", data.Message);
+                        con.Open();
+                        int a = cmd.ExecuteNonQuery();
+                        if (a > 0)
+                        {
+
+                            TempData["Msg"] = "Your enquiry was submitted successfully!";
+                            return RedirectToAction("DigitalMarketing_In_US", "Home");
+                        }
+
+                    }
+
+                }
+                TempData["error"] = "Failed to submit your enquiry. Please try again.";
+                return RedirectToAction("DigitalMarketing_In_US", "Home");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View();
+            }
+        }
 
         //Redirection
         public ActionResult RedirectToDigitalMarketing_In_SouthCarolina()
@@ -296,6 +422,45 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "web_development";
             return View();
         }
+    
+         [HttpPost]
+        public ActionResult Submit_Data_By_web_View(ContactEnquiry data)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Connection))
+                {
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
+                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", data.Name);
+                        cmd.Parameters.AddWithValue("@Email", data.Email);
+                        cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
+                        cmd.Parameters.AddWithValue("@Service", data.Service);
+                        cmd.Parameters.AddWithValue("@Message", data.Message);
+                        con.Open();
+                        int a = cmd.ExecuteNonQuery();
+                        if (a > 0)
+                        {
+
+                            TempData["Msg"] = "Your enquiry was submitted successfully!";
+                            return RedirectToAction("WebsiteDevelopment_In_US", "Home");
+                        }
+
+                    }
+
+                }
+                TempData["error"] = "Failed to submit your enquiry. Please try again.";
+                return RedirectToAction("WebsiteDevelopment_In_US", "Home");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View();
+            }
+        }
+
 
         //Redirection
         public ActionResult RedirectToWebsiteDevelopment_In_SouthCarolina()
@@ -428,6 +593,44 @@ namespace BarrownzUS.Controllers
             ViewBag.Title = "GraphicDesign_In_Us";
             ViewBag.BodyClass = "GraphicDesign";
             return View();
+        }
+   
+        [HttpPost]
+        public ActionResult Submit_Data_By_Graphic_View(ContactEnquiry data)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Connection))
+                {
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
+                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", data.Name);
+                        cmd.Parameters.AddWithValue("@Email", data.Email);
+                        cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
+                        cmd.Parameters.AddWithValue("@Service", data.Service);
+                        cmd.Parameters.AddWithValue("@Message", data.Message);
+                        con.Open();
+                        int a = cmd.ExecuteNonQuery();
+                        if (a > 0)
+                        {
+
+                            TempData["Msg"] = "Your enquiry was submitted successfully!";
+                            return RedirectToAction("GraphicDesign_In_Us", "Home");
+                        }
+
+                    }
+
+                }
+                TempData["error"] = "Failed to submit your enquiry. Please try again.";
+                return RedirectToAction("GraphicDesign_In_Us", "Home");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View();
+            }
         }
 
         //Redirection
@@ -589,12 +792,55 @@ namespace BarrownzUS.Controllers
         {
             return Redirect("/ContactUs");
         }
+
+        //Contact 
+        // GET: ContactUs
+        //[HttpGet]
         public ActionResult ContactUs()
         {
             ViewBag.Title = "ContactUs";
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+        [HttpPost]
+        public ActionResult SaveData(ContactEnquiry data)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Connection))
+                {
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
+                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", data.Name);
+                        cmd.Parameters.AddWithValue("@Email", data.Email);
+                        cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
+                        cmd.Parameters.AddWithValue("@Service", data.Service);
+                        cmd.Parameters.AddWithValue("@Message", data.Message);
+                        con.Open();
+                        int a = cmd.ExecuteNonQuery();
+                        if (a > 0)
+                        {
+
+                            TempData["Msg"] = "Your enquiry was submitted successfully!";
+                            return RedirectToAction("ContactUs", "Home");
+                        }
+
+                    }
+
+                }
+                TempData["error"] = "Failed to submit your enquiry. Please try again.";
+                return RedirectToAction("ContactUs", "Home");
+            }
+            catch (Exception ex) { 
+                ViewBag.ErrorMessage = ex.Message;
+                return View();
+            }
+        }
+
+        
 
         //Redirection
         public ActionResult RedirectToTermsAndConditions()
@@ -637,5 +883,52 @@ namespace BarrownzUS.Controllers
             ViewBag.BodyClass = "locations";
             return View();
         }
+
+
+        //Blog Pages
+
+        public ActionResult Blog()
+        {
+            ViewBag.Title = "Blog";
+            ViewBag.BodyClass = "locations";
+            return View();
+        }
+
+        public ActionResult BlogDetails()
+        {
+            ViewBag.Title = "BlogDetails";
+            ViewBag.BodyClass = "locations";
+            return View();
+        }
+
+
+        //Data Insert Process
+
+        //[HttpPost]
+        //private void SaveData(ContactEnquiry data)
+        //{
+        //    using (SqlConnection con = new SqlConnection(Connection))
+        //    {
+        //        string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
+        //             "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+        //        using (SqlCommand cmd = new SqlCommand(query, con))
+        //        {
+        //            cmd.Parameters.AddWithValue("@Name", data.Name);
+        //            cmd.Parameters.AddWithValue("@Email", data.Email);
+        //            cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
+        //            cmd.Parameters.AddWithValue("@Service", data.Service);
+        //            cmd.Parameters.AddWithValue("@Message", data.Message);
+        //            con.Open();
+        //            int a = cmd.ExecuteNonQuery();
+        //            if (a > 0)
+        //            {
+        //                TempData["Msg"] = "Data successfully insert";
+        //            }
+
+        //        }
+
+        //    }
+        //    ViewBag["Error"] = "Data insertion failed";
+        //}
     }
 }

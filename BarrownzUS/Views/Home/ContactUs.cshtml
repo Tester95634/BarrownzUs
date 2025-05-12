@@ -27,24 +27,25 @@
 
             <div class="col-lg-6 col-md-6">
                 <div class="form_container">
-                    <form>
+                    <form action="@Url.Action("SaveData", "Home")" method="post">
+                        @*@Html.AntiForgeryToken()*@
                         <div class="name_email_holer d-flex gap-5">
                             <div class="mb-3">
                                 <div class="form-label fw-bold">Name<sup class="text-primary">*</sup></div>
-                                <input type="text" class="form-control" name="name" />
+                                <input type="text" class="form-control" name="Name" />
                             </div>
                             <div class="mb-3">
                                 <div class="form-label fw-bold">Email<sup class="text-primary">*</sup></div>
-                                <input type="email" class="form-control" name="email" />
+                                <input type="email" class="form-control" name="Email" />
                             </div>
                         </div>
                         <div class="mb-3">
                             <div class="form-label fw-bold">Number<sup class="text-primary">*</sup></div>
-                            <input type="number" class="form-control" name="number" />
+                            <input type="number" class="form-control" name="PhoneNumber" />
                         </div>
                         <div class="mb-3">
                             <div class="form-label fw-bold">Select a service<sup class="text-primary">*</sup></div>
-                            <select class="form-control">
+                            <select class="form-control" name="Service">
                                 <option>Select A Service</option>
                                 <option>Design & Development</option>
                                 <option>Search Engin Optimization</option>
@@ -54,10 +55,10 @@
                         </div>
                         <div class="mb-3">
                             <div class="form-label fw-bold">Message<sup class="text-primary">*</sup></div>
-                            <textarea class="form-control" placeholder="Message"></textarea>
+                            <textarea class="form-control" placeholder="Message" name="Message"></textarea>
                         </div>
 
-                        <button class="btn btn-primary rounded">Send Massage</button>
+                        <button class="btn btn-primary rounded" type="submit">Send Massage</button>
                     </form>
                 </div>
             </div>
@@ -70,6 +71,33 @@
         </div>
     </div>
 </div>
+<script>
+    @if (TempData["Msg"] != null)
+     {
+          <text>
+      Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: '@TempData["Msg"]',
+          timer: 2000,
+          showConfirmButton: false
+      });
+     </text>
+     }
+
+     @if (TempData["Error"] != null)
+     {
+      <text>
+        Swal.fire({
+            icon: 'error',
+            title: 'Login Failed',
+            text: '@TempData["error"]',
+            timer: 2000,
+            showConfirmButton: false
+        });
+      </text>
+      }
+</script>
 
 
 

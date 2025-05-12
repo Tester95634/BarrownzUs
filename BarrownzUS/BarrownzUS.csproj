@@ -120,13 +120,31 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactEnquiry.cs" />
+    <Compile Include="Models\tbl_Admin.cs" />
+    <Compile Include="Models\tbl_BlogCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Admin_assets\assets\demo\chart-area-demo.js" />
+    <Content Include="Content\Admin_assets\assets\demo\chart-bar-demo.js" />
+    <Content Include="Content\Admin_assets\assets\demo\chart-pie-demo.js" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\SIL Open Font License.txt" />
+    <Content Include="Content\Admin_assets\css\Image_style.css" />
+    <Content Include="Content\Admin_assets\css\Style.css" />
+    <Content Include="Content\Admin_assets\js\AdminLogin_Validation.js" />
+    <Content Include="Content\Admin_assets\js\ContactUs_Validation.js" />
+    <Content Include="Content\Admin_assets\js\datatables\datatables-simple-demo.js" />
+    <Content Include="Content\Admin_assets\js\litepicker.js" />
+    <Content Include="Content\Admin_assets\js\markdown.js" />
+    <Content Include="Content\Admin_assets\js\scripts.js" />
+    <Content Include="Content\Admin_assets\js\toasts.js" />
+    <Content Include="Content\css\Blog_And_BlogDetails_Style.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\box_style.css" />
     <Content Include="Content\css\Indexcard.css" />
@@ -271,6 +289,8 @@
     <Content Include="Content\location-icon\Pennsylvania.png" />
     <Content Include="Content\location-icon\South_Carolina.png" />
     <Content Include="Content\location-icon\Texas.png" />
+    <Content Include="Content\logo\blog_imgae.jpg" />
+    <Content Include="Content\logo\city-bg.png" />
     <Content Include="Content\logo\Logos-07 5.png" />
     <Content Include="Content\logo\Logos-07 White.png" />
     <Content Include="Content\logo\Logos-07%40png 1.png" />
@@ -565,6 +585,24 @@
     <Content Include="Content\Web_Development_Images\Arizona\vector2.webp" />
     <Content Include="Content\Web_Development_Images\Arizona\vector3.webp" />
     <Content Include="Content\Web_Development_Images\NewJersey\LatestNewJersey.webp" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-Black.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-BlackItalic.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-Bold.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-BoldItalic.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-ExtraBold.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-ExtraBoldItalic.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-ExtraLight.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-ExtraLightItalic.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-Light.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-LightItalic.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-Medium.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-MediumItalic.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-Regular.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-RegularItalic.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-SemiBold.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-SemiBoldItalic.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-Thin.otf" />
+    <Content Include="Content\Admin_assets\assets\fonts\metropolis\Metropolis-ThinItalic.otf" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -641,10 +679,19 @@
     <Content Include="Views\Home\Copyright.cshtml" />
     <Content Include="Views\Home\ContactUs.cshtml" />
     <Content Include="Views\Home\NotFound.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
+    <Content Include="Views\Home\BlogDetails.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\Dashboard.cshtml" />
+    <Content Include="Views\Admin\Login.cshtml" />
+    <Content Include="Views\Admin\AddBlog.cshtml" />
+    <Content Include="Views\Admin\BlogList.cshtml" />
+    <Content Include="Views\Admin\UserList.cshtml" />
+    <Content Include="Views\Admin\AddBlogCategory.cshtml" />
+    <Content Include="Views\Admin\EditCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -4,53 +4,55 @@
     ViewBag.MetaDescription = " Explore the diverse portfolio of Barrownz Group, showcasing innovative projects and successful collaborations across digital marketing, software development, branding, and more.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Styles {
+    <link rel="canonical" href="https://barrownz.us/portfolio" />
+}
 <div class="hero_sction_common container-fluid">
-    
+
     <div class="container py-5 ">
-    <div class="row hero_sections_holder">
-        <div class="col-lg-6 d-flex justify-content-center  flex-column">
-            <h1>From Vision to Reality: Our Portfolio </h1>
-            <p class="lh-5">
-                We have over 9 years of experience in web development and digital marketing in the USA. We build websites using the latest technologies and offer digital marketing, content creation, graphic design, and social media services. We are your one-stop shop for all your online and digital business needs.
-            </p>
-            <a class="ani_btn text-white" href="@Url.Action("ContactUs","Home")">Contact US</a>
+        <div class="row hero_sections_holder">
+            <div class="col-lg-6 d-flex justify-content-center  flex-column">
+                <h1>From Vision to Reality: Our Portfolio </h1>
+                <p class="lh-5">
+                    We have over 9 years of experience in web development and digital marketing in the USA. We build websites using the latest technologies and offer digital marketing, content creation, graphic design, and social media services. We are your one-stop shop for all your online and digital business needs.
+                </p>
+                <a class="ani_btn text-white" href="@Url.Action("ContactUs","Home")">Contact US</a>
 
-        </div>
-        <div class="col-lg-6">
-            <div class="cube-container mt-5">
-                <div class="cube">
-                    <div class="face front d-flex align-items-center justify-content-center">
-                       <img src="~/Content/icon_image/Comlogo.png" class="img-fluid" />
-                    </div>
-                    <div class="face back d-flex align-items-center justify-content-center">
-                        <img  src="~/Content/icon_image/barrownz-logo-2021.png"/>
-                    </div>
-                    <div class="face right d-flex align-items-center justify-content-center">
-                        
-                    </div>
-                    <div class="face left d-flex align-items-center justify-content-center">
+            </div>
+            <div class="col-lg-6">
+                <div class="cube-container mt-5">
+                    <div class="cube">
+                        <div class="face front d-flex align-items-center justify-content-center">
+                            <img src="~/Content/icon_image/Comlogo.png" class="img-fluid" />
+                        </div>
+                        <div class="face back d-flex align-items-center justify-content-center">
+                            <img src="~/Content/icon_image/barrownz-logo-2021.png" />
+                        </div>
+                        <div class="face right d-flex align-items-center justify-content-center">
 
-                    </div>
-                    <div class="face top d-flex align-items-center justify-content-center">
-                       
-                    </div>
-                    <div class="face bottom d-flex align-items-center justify-content-center">
-                       
+                        </div>
+                        <div class="face left d-flex align-items-center justify-content-center">
+
+                        </div>
+                        <div class="face top d-flex align-items-center justify-content-center">
+
+                        </div>
+                        <div class="face bottom d-flex align-items-center justify-content-center">
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 </div>
 
 <div class="container-fluid py-4 mt-3">
-<div class="container d-flex align-items-center justify-content-center flex-column">
-    <h2 class="py-2 text-center">Explore Our Winning Projects </h2>
-    <h6 class="py-2 text-center">Some of Our Work at a Glance .</h6>
-    <p class="text-center">Whether it’s web development, digital marketing, graphic design, or content creation, our team brings passion, creativity, and precision to every task. We don’t just complete projects; we craft digital experiences that are innovative, user-friendly, and future-ready. From websites to marketing campaigns, we love turning ideas into impactful digital solutions.</p>
-</div>
+    <div class="container d-flex align-items-center justify-content-center flex-column">
+        <h2 class="py-2 text-center">Explore Our Winning Projects </h2>
+        <h6 class="py-2 text-center">Some of Our Work at a Glance .</h6>
+        <p class="text-center">Whether it’s web development, digital marketing, graphic design, or content creation, our team brings passion, creativity, and precision to every task. We don’t just complete projects; we craft digital experiences that are innovative, user-friendly, and future-ready. From websites to marketing campaigns, we love turning ideas into impactful digital solutions.</p>
+    </div>
 </div>
 
 <div class="container-fluid py-5">

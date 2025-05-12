@@ -46,28 +46,40 @@
             </div>
             <div class="col-lg-5">
                 <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                    <form>
+                    <form action="@Url.Action("Submit_Data_By_Seo_View","Home")" onsubmit="return validate()" method="post">
                         <div class="row g-3">
                             <div class="col-xl-12">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                <input type="text" class="form-control bg-light border-0" id="name" name="Name" placeholder="Your Name" style="height: 55px;">
+                                <span id="name_error" class="text-danger"></span>
                             </div>
                             <div class="col-12">
-                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" class="form-control bg-light border-0" id="email" name="Email" placeholder="Your Email" style="height: 55px;">
+                                <span id="email_error" class="text-danger"></span>
+
                             </div>
                             <div class="col-12">
-                                <select class="form-select bg-light border-0" style="height: 55px;">
-                                    <option>Select A Service</option>
-                                    <option>web development</option>
-                                    <option>Digital Marketing</option>
+                                <input type="number" class="form-control bg-light border-0" id="number" name="PhoneNumber" placeholder="Your number" style="height: 55px;">
+                                <span id="number_error" class="text-danger"></span>
+
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select bg-light border-0" name="Service" id="option" style="height: 55px;">
+                                    <option selected>Select A Service</option>
+                                    <option>Web development</option>
                                     <option>SEO Optimization</option>
+                                    <option>Digital Marketing</option>
                                     <option>Graphic design</option>
                                 </select>
+                                <span id="option_error" class="text-danger"></span>
+
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
+                                <textarea class="form-control bg-light border-0" name="Message" id="message" rows="3" placeholder="Message"></textarea>
+                                <span id="message_error" class="text-danger"></span>
+
                             </div>
                             <div class="col-12">
-                                <a class="btn btn-dark w-100 py-3" href="#">Request A Quote</a>
+                                <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
                             </div>
                         </div>
                     </form>
@@ -333,55 +345,8 @@
 
 
 <!--This js represent 4 card dragging effect left to right to left-->
-@*<script>
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const inner = document.querySelector(".inner");
-            let isDragging = false;
-            let startX, currentX, rotationY = 0;
 
-            inner.addEventListener("mouseenter", () => {
-                const currentTransform = computedStyle.transform;
-                inner.style.transform = currentTransform;
-                inner.style.animation = "none"; // Hover par animation stop
-                const computedStyle = window.getComputedStyle(inner);
-            });
-
-            inner.addEventListener("mouseleave", () => {
-                if (!isDragging) {
-                    inner.style.animation = "rotating 10s linear infinite"; // Mouse hatao to animation start
-                }
-            });
-
-            inner.addEventListener("mousedown", (e) => {
-                isDragging = true;
-                startX = e.clientX;
-                inner.style.animation = "none"; // Dragging par bhi animation stop
-            });
-
-            document.addEventListener("mousemove", (e) => {
-                if (!isDragging) return;
-                currentX = e.clientX;
-                let deltaX = currentX - startX;
-                rotationY += deltaX * 0.2; // Sensitivity control
-                inner.style.transform = `perspective(1000px) rotateX(-15deg) rotateY(${rotationY}deg)`;
-                startX = currentX;
-            });
-
-            document.addEventListener("mouseup", () => {
-                isDragging = true;
-                inner.style.animation = "rotating 10s linear infinite"; // Dragging chhodo to animation start
-            });
-
-            // Mobile touch support
-            inner.addEventListener("touchstart", (e) => {
-                isDragging = true;
-                startX = e.touches[0].clientX;
-                inner.style.animation = "none";
-            });
-        });
-
-    </script>*@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const inner = document.querySelector(".inner");
@@ -412,4 +377,33 @@
             }
         });
     });
+
+    //Sweet alert
+
+      @if (TempData["Msg"] != null)
+   {
+        <text>
+    Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: '@TempData["Msg"]',
+        timer: 2000,
+        showConfirmButton: false
+    });
+   </text>
+   }
+
+   @if (TempData["Error"] != null)
+   {
+    <text>
+      Swal.fire({
+          icon: 'error',
+          title: 'Login Failed',
+          text: '@TempData["error"]',
+          timer: 2000,
+          showConfirmButton: false
+      });
+    </text>
+    }
+
 </script>
