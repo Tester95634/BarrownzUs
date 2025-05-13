@@ -2352,7 +2352,7 @@ progress {
 }
 
 .table-responsive, .datatable-wrapper .datatable-container {
-    overflow-x: auto;
+    overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -21848,7 +21848,7 @@ body {
 
 /* TABLE */
 .datatable-table {
-    border-collapse: collapse;
+    border-collapse: collapse !important;
 }
 
     .datatable-table > tbody > tr > td,

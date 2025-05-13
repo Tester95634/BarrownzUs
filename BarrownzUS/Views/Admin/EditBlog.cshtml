@@ -1,83 +1,83 @@
 ﻿
 @{
-    ViewBag.Title = "AddBlog";
+    ViewBag.Title = "EditBlog";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+
+@{
+    var categories = ViewBag.Categories as List<BarrownzUS.Models.tbl_BlogCategory>;
+}
+
 <div class="container-fluid">
     <div class="container px-0">
-        
         <div class="p-sm-2 p-lg-5 pl-md-5">
             <h2>Add blog details</h2>
-            <form action="@Url.Action("AddBlog","Admin")" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="Id" />
+            <form action="@Url.Action("EditBlog","Admin")" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="@Model.Id" />
+
                 <div class="row py-2">
-                    <div class="col-lg-12">
-                        <!-- From Uiverse.io by akshat-patel28 -->
+                    <div class="col-lg-12 d-flex gap-5">
                         <div class="input-div">
                             <input class="input" name="Blog_Img" type="file">
+                            <!-- SVG icon code -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" class="icon"><polyline points="16 16 12 12 8 16"></polyline><line y2="21" x2="12" y1="12" x1="12"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
+
                         </div>
+                        <img src="~/Content/Blog_Uploaded_Image/@Model.Blog_Img" style="width:60px; height:60px;" />
                     </div>
                 </div>
+
                 <div class="row py-2">
                     <div class="col-lg-6">
                         <div class="form-label">Category</div>
                         <select class="form-control" name="CategoryId">
-                            <option>Select Category</option>
-                            @foreach (var data in Model)
+                            <option value="">Select Category</option>
+                            @if (categories != null)
                             {
-                                <option value="@data.Id">@data.BlogCategory</option>
+                                foreach (var item in categories)
+                                {
+                                    var selected = (item.Id == Model.CategoryId) ? "selected" : "";
+                                    <option value="@item.Id" @selected>@item.BlogCategory</option>
+                                }
                             }
-
                         </select>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-label">Meta Title</div>
-                        <input class="form-control" name="MetaTitle" placeholder="Meta Title" />
+                        <input class="form-control" name="MetaTitle" placeholder="Meta Title" value="@Model.MetaTitle" />
                     </div>
                 </div>
 
                 <div class="row py-2">
                     <div class="col-lg-12">
                         <div class="form-label">Meta Description</div>
-                        <textarea class="form-control lh-2" name="MetaDescription" placeholder="Meta Description"></textarea>
+                        <textarea class="form-control lh-2" name="MetaDescription" placeholder="Meta Description">@Model.MetaDescription</textarea>
                     </div>
                 </div>
+
                 <div class="row py-2">
                     <div class="col-lg-6">
                         <div class="form-label">Slug</div>
-                        <input type="text" class="form-control" placeholder="Slug" name="Slug" />
+                        <input type="text" class="form-control" placeholder="Slug" name="Slug" value="@Model.Slug"/>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-label">Blog Title</div>
-                        <input type="text" class="form-control" name="BlogTitle" placeholder="Blog Title" />
+                        <input type="text" class="form-control" name="BlogTitle" placeholder="Blog Title" value="@Model.BlogTitle" />
                     </div>
-               
                 </div>
+
                 <div class="row py-2">
                     <div class="col-lg-12">
                         <div class="form-label">Blog Description</div>
-                        <textarea type="text" placeholder="Blog Description" name="BlogDescription" class="form-control lh-2"></textarea>
+                        <textarea placeholder="Blog Description" name="BlogDescription" class="form-control lh-2">@Model.BlogDescription</textarea>
                     </div>
                 </div>
+
                 <button class="btn btn-primary mt-3" type="submit">Submit</button>
             </form>
         </div>
     </div>
 </div>
 
-<script>
-   @if (TempData["Success"] != null)
-   {
-       <text>
-           Swal.fire({
-               icon: 'success',
-               title: 'Success',
-               text: '@TempData["Success"] ',
-               timer: 2000,
-               showConfirmButton: false
-           });
-       </text>
-   }
 
-</script>
+

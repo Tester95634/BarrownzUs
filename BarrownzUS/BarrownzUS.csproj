@@ -125,6 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BlogData.cs" />
     <Compile Include="Models\ContactEnquiry.cs" />
     <Compile Include="Models\tbl_Admin.cs" />
     <Compile Include="Models\tbl_BlogCategory.cs" />
@@ -689,9 +690,11 @@
     <Content Include="Views\Admin\UserList.cshtml" />
     <Content Include="Views\Admin\AddBlogCategory.cshtml" />
     <Content Include="Views\Admin\EditCategory.cshtml" />
+    <Content Include="Views\Admin\EditBlog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Blog_Uploaded_Image\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

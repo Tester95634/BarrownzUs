@@ -3,72 +3,104 @@
     ViewBag.Title = "AddBlogCategory";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-<!-- Create Button -->
-<button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#createFormModal">
-    Add Category
-</button>
 
 
-<!-- Modal -->
-<div class="modal fade" id="createFormModal" tabindex="-1" aria-labelledby="createFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="createFormModalLabel">Create New Entry</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form method="post" action="/Admin/AddBlogCategory">
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Category</label>
-                        <input type="text" name="BlogCategory" class="form-control" required />
+<main>
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="filter"></i></div>
+                            Blog Category List
+                        </h1>
+                        <div class="page-header-subtitle">An extension of the Simple DataTables library, customized for SB Admin Pro</div>
                     </div>
-                    <!-- Add more fields as needed -->
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </header>
+    <!-- Main page content-->
+    <div class="container-xl px-4 mt-n10">
+        <div class="card mb-4">
+            <div class="card-header d-flex align-items-center justify-content-between">
+                Extended DataTables
+                <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#createFormModal">
+                    Add Category
+                </button>
+            </div>
+            <div class="card-body">
+
+                <!-- Create Button -->
+              
+                <!-- Modal -->
+                <div class="modal fade" id="createFormModal" tabindex="-1" aria-labelledby="createFormModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="createFormModalLabel">Create New Entry</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <form method="post" action="/Admin/AddBlogCategory">
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Category</label>
+                                        <input type="text" name="BlogCategory" class="form-control" required />
+                                    </div>
+                                    <!-- Add more fields as needed -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </form>
+                <br />
+                <table class="table table-hover table-bordered " id="datatablesSimple">
+                    <thead>
+                        <tr>
+                            <th>Srno</th>
+                            <th>Category</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int SrNo = 1;
+                        }
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@SrNo</td>
+                                <td>@item.BlogCategory</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <form action="/Admin/Delete_Category" method="post">
+                                            <input type="hidden" name="Id" value="@item.Id" />
+                                            <button class="btn btn-danger" onclick="confirm('Are yor sure want to delete')"><i class="fa-solid fa-trash"></i></button>
+                                        </form>
+
+                                        <a href="@Url.Action("EditCategory", "Admin", new {Id=item.Id})" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            SrNo++;
+                        }
+                    </tbody>
+
+                </table>
+
+            </div>
         </div>
     </div>
-</div>
-<br />
-<table class="table table-hover table-bordered " id="datatablesSimple">
-    <thead>
-        <tr>
-            <th>Srno</th>
-            <th>Category</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @{
-            int SrNo = 1;
-        }
-
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@SrNo</td>
-                <td>@item.BlogCategory</td>
-                <td>
-                    <form action="/Admin/Delete_Category" method="post">
-                        <input type="hidden" name="Id" value="@item.Id" />
-                        <button class="btn btn-danger" onclick="confirm('Are yor sure want to delete')"><i class="fa-solid fa-trash"></i></button>
-                    </form>
-                </td>
-                <td><a href="@Url.Action("EditCategory", "Admin", new {Id=item.Id})" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a></td>
-            </tr>
-            SrNo++;
-        }
-    </tbody>
-
-</table>
-
-
-
-
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
 <script>
 
@@ -91,13 +123,14 @@
      <text>
         Swal.fire({
             icon: 'error',
-            title: 'Login Failed',`
+            title: 'Login Failed',
             text: '@TempData["error"]',
             timer: 2000,
             showConfirmButton: false
         });
       </text>
 }
+
 
 </script>
 

@@ -4,47 +4,78 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<table class="table table-hover table-bordered" id="datatablesSimple">
-    <thead>
-        <tr>
-            <th>Srno</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>PhoneNumber</th>
-            <th>Service</th>
-            <th>Message</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @{
-             int SrNo = 1;
-            }
+<main>
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="filter"></i></div>
+                            Client List
+                        </h1>
+                        <div class="page-header-subtitle">An extension of the Simple DataTables library, customized for SB Admin Pro</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main page content-->
+    <div class="container-xl px-4 mt-n10">
+        <div class="card mb-4">
+            <div class="card-header d-flex align-items-center justify-content-between">
+                Extended DataTables
+                <button class="btn btn-success">Import Excel</button>
+            </div>
+            <div class="card-body">
+                <table class="table table-hover table-bordered" id="datatablesSimple">
+                    <thead>
+                        <tr>
+                            <th>Srno</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>PhoneNumber</th>
+                            <th>Service</th>
+                            <th>Message</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int SrNo = 1;
+                        }
 
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@SrNo</td>
-                <td>@item.Name</td>
-                <td>@item.Email</td>
-                <td>@item.PhoneNumber</td>
-                <td>@item.Service</td>
-                <td>@item.Message</td>
-                <td>
-                    <form action="/Admin/Delete_User" method="post">
-                        <input type="hidden" name="Id" value="@item.Id" />
-                        <button class="btn btn-danger" onclick="confirm('Are yor sure want to delete')"><i class="fa-solid fa-trash"></i></button>
-                    </form>
-                </td>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@SrNo</td>
+                                <td>@item.Name</td>
+                                <td>@item.Email</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>@item.Service</td>
+                                <td>@item.Message</td>
+                                <td>
+                                    <form action="/Admin/Delete_User" method="post">
+                                        <input type="hidden" name="Id" value="@item.Id" />
+                                        <button class="btn btn-danger" onclick="confirm('Are yor sure want to delete')"><i class="fa-solid fa-trash"></i></button>
+                                    </form>
+                                </td>
 
-            </tr>
-            SrNo++;
-        }
-    </tbody>
+                            </tr>
+                            SrNo++;
+                        }
+                    </tbody>
 
-</table>
+                </table>
 
-<span class="text-danger">@ViewBag.Message</span>
+                <span class="text-danger">@ViewBag.Message</span>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+@*<span class="text-danger">@ViewBag.Message</span>*@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.btn-success').addEventListener('click', function () {

@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<form method="post" action="/Admin/AddBlogCategory" class="w-50">
+<form method="post" action="@Url.Action("EditCategory","Admin")" class="w-50">
     <input type="hidden" id="@Model.Id" />
     <div class="modal-body">
         <div class="mb-3">
@@ -18,3 +18,17 @@
     </div>
 </form>
 
+<script>
+    @if (TempData["error"] != null)
+         {
+    <text>
+        Swal.fire({
+            icon: 'error',
+            title: 'Login Failed',
+            text: '@TempData["error"]',
+            timer: 2000,
+            showConfirmButton: false
+        });
+    </text>
+}
+</script>
