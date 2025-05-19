@@ -6,11 +6,12 @@ using System.Web;
 
 namespace BarrownzUS.Models
 {
-    public class tbl_BlogCategory
-    {
+	public class BlogCategory
+	{
         [Key]
-        public int Id { get; set; }
+        public int CategoryID { get; set; }
         [Required]
-        public string BlogCategory {  get; set; }
+        public string BlogCategoryName { get; set; }
+        public DateTime Created_dt { get; set; }
     }
 }

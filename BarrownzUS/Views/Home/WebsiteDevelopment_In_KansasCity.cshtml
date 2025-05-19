@@ -4,7 +4,9 @@
     ViewBag.MetaDescription = "We are proud to be recognised as one of the best web design agencies in Kansas City. Our work speaks for itself—we always focus on quality over quantity.\r\n\r\n";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/web-development-service-kansas-city" />
+}
 
 <div class="webKansasCity large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
@@ -40,7 +42,7 @@
             </div>
             <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center position-relative">
                 <img src="~/Content/Web_Development_Images/KansasCity/Services5.webp" class="img-fluid border border-primary-1 p-1 position-relative dev" />
-               
+
             </div>
         </div>
     </div>
@@ -279,11 +281,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4 icon_gaps">
-                <a href="@Url.Action("WebsiteDevelopment_In_KansasCity")" class="d-flex align-items-center justify-content-center flex-column border">
-                    <img src="~/Content/location-icon/Kansas_City.png" class="img-fluid" style="height:100px; width:100px;" />
-                    <p class="text-center">Kansas City</p>
-                </a>
-            </div>*@
+                    <a href="@Url.Action("WebsiteDevelopment_In_KansasCity")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Kansas_City.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Kansas City</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4">
                 <a href="@Url.Action("WebsiteDevelopment_In_LosAngeles")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/Los_Angeles.png" class="img-fluid" style="height:100px; width:100px;" />

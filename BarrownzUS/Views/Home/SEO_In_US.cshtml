@@ -4,7 +4,9 @@
     ViewBag.MetaDescription = "Barrownz Group USA is the best SEO company in USA. We offer complete SEO services to help your business succeed online.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/seo-company-in-usa" />
+}
 
 <div class="SE0_hero_sction large_screen d-flex align-items-center justify-content-center flex-column ">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
@@ -64,7 +66,7 @@
                             </div>
                             <div class="col-12">
                                 <select class="form-select bg-light border-0" name="Service" id="option" style="height: 55px;">
-                                    <option selected>Select A Service</option>
+                                    <option value="">Select A Service</option>
                                     <option>Web development</option>
                                     <option>SEO Optimization</option>
                                     <option>Digital Marketing</option>

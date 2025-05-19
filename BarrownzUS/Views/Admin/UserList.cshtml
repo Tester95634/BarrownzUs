@@ -12,9 +12,9 @@
                     <div class="col-auto mt-4">
                         <h1 class="page-header-title">
                             <div class="page-header-icon"><i data-feather="filter"></i></div>
-                            Client List
+                            Enquiry List
                         </h1>
-                        <div class="page-header-subtitle">An extension of the Simple DataTables library, customized for SB Admin Pro</div>
+                        <div class="page-header-subtitle">Explore the latest enquiries organized for easy tracking. Stay informed with user-submitted queries that help improve service and understand customer needs better.</div>
                     </div>
                 </div>
             </div>
@@ -37,6 +37,7 @@
                             <th>PhoneNumber</th>
                             <th>Service</th>
                             <th>Message</th>
+                            <th>Created_dt</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -54,9 +55,10 @@
                                 <td>@item.PhoneNumber</td>
                                 <td>@item.Service</td>
                                 <td>@item.Message</td>
+                                <td>@item.Created_dt</td>
                                 <td>
                                     <form action="/Admin/Delete_User" method="post">
-                                        <input type="hidden" name="Id" value="@item.Id" />
+                                        <input type="hidden" name="ID" value="@item.ID" />
                                         <button class="btn btn-danger" onclick="confirm('Are yor sure want to delete')"><i class="fa-solid fa-trash"></i></button>
                                     </form>
                                 </td>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -31,8 +32,8 @@ namespace BarrownzUS.Controllers
             {
                 using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
-                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message, Created_dt) " +
+                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message, @Created_dt)";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Name", data.Name);
@@ -40,6 +41,7 @@ namespace BarrownzUS.Controllers
                         cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
                         cmd.Parameters.AddWithValue("@Service", data.Service);
                         cmd.Parameters.AddWithValue("@Message", data.Message);
+                        cmd.Parameters.AddWithValue("@Created_dt", DateTime.Now);
                         con.Open();
                         int a = cmd.ExecuteNonQuery();
                         if (a > 0)
@@ -83,8 +85,8 @@ namespace BarrownzUS.Controllers
             {
                 using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
-                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message, Created_dt) " +
+                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message, @Created_dt)";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Name", data.Name);
@@ -92,6 +94,7 @@ namespace BarrownzUS.Controllers
                         cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
                         cmd.Parameters.AddWithValue("@Service", data.Service);
                         cmd.Parameters.AddWithValue("@Message", data.Message);
+                        cmd.Parameters.AddWithValue("@Created_dt", DateTime.Now);
                         con.Open();
                         int a = cmd.ExecuteNonQuery();
                         if (a > 0)
@@ -257,8 +260,8 @@ namespace BarrownzUS.Controllers
             {
                 using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
-                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message, Created_dt) " +
+                      "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message, @Created_dt)";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Name", data.Name);
@@ -266,6 +269,7 @@ namespace BarrownzUS.Controllers
                         cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
                         cmd.Parameters.AddWithValue("@Service", data.Service);
                         cmd.Parameters.AddWithValue("@Message", data.Message);
+                        cmd.Parameters.AddWithValue("@Created_dt", DateTime.Now);
                         con.Open();
                         int a = cmd.ExecuteNonQuery();
                         if (a > 0)
@@ -430,8 +434,8 @@ namespace BarrownzUS.Controllers
             {
                 using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
-                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message, Created_dt) " +
+                        "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message, @Created_dt)";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Name", data.Name);
@@ -439,6 +443,7 @@ namespace BarrownzUS.Controllers
                         cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
                         cmd.Parameters.AddWithValue("@Service", data.Service);
                         cmd.Parameters.AddWithValue("@Message", data.Message);
+                        cmd.Parameters.AddWithValue("@Created_dt", DateTime.Now);
                         con.Open();
                         int a = cmd.ExecuteNonQuery();
                         if (a > 0)
@@ -602,8 +607,8 @@ namespace BarrownzUS.Controllers
             {
                 using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
-                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message, Created_dt) " +
+                     "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message, @Created_dt)";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Name", data.Name);
@@ -611,6 +616,7 @@ namespace BarrownzUS.Controllers
                         cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
                         cmd.Parameters.AddWithValue("@Service", data.Service);
                         cmd.Parameters.AddWithValue("@Message", data.Message);
+                        cmd.Parameters.AddWithValue("@Created_dt", DateTime.Now);
                         con.Open();
                         int a = cmd.ExecuteNonQuery();
                         if (a > 0)
@@ -810,8 +816,8 @@ namespace BarrownzUS.Controllers
             {
                 using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
-                         "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
+                    string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message, Created_dt) " +
+                      "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message, @Created_dt)";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Name", data.Name);
@@ -819,6 +825,7 @@ namespace BarrownzUS.Controllers
                         cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
                         cmd.Parameters.AddWithValue("@Service", data.Service);
                         cmd.Parameters.AddWithValue("@Message", data.Message);
+                        cmd.Parameters.AddWithValue("@Created_dt", DateTime.Now);
                         con.Open();
                         int a = cmd.ExecuteNonQuery();
                         if (a > 0)
@@ -886,49 +893,147 @@ namespace BarrownzUS.Controllers
 
 
         //Blog Pages
-
+        public ActionResult RedirectToBlog()
+        {
+            return Redirect("/Blog");
+        }
         public ActionResult Blog()
+        
         {
             ViewBag.Title = "Blog";
             ViewBag.BodyClass = "locations";
-            return View();
+
+            //Here Fetch BlogCategory
+            List<BlogCategory> categories = new List<BlogCategory>();
+            using (SqlConnection conn = new SqlConnection(Connection))
+            {
+                string query = "SELECT * FROM tbl_BlogCategory";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    conn.Open();
+                    using (SqlDataReader r = cmd.ExecuteReader())
+                    {
+                        while (r.Read())
+                        {
+                            categories.Add(new BlogCategory()
+                            {
+                                CategoryID = Convert.ToInt32(r["CategoryID"]),
+                                BlogCategoryName = r["BlogCategoryName"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+
+            //Blog data fetch
+            List<BlogData> posts = new List<BlogData>();
+            using (SqlConnection conn = new SqlConnection(Connection))
+            {
+                string query = @"
+                SELECT 
+                    b.BlogID, b.BlogTitle, b.Slug, b.Blog_Img, b.CategoryID, b.BlogDescription, b.Created_dt  ,c.BlogCategoryName FROM 
+                    tbl_blog b
+                INNER JOIN 
+                    tbl_BlogCategory c ON b.CategoryID = c.CategoryID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            posts.Add(new BlogData()
+                            {
+                                BlogID = Convert.ToInt32(reader["BlogID"]),
+                                BlogTitle = reader["BlogTitle"].ToString(),
+                                Blog_Img = reader["Blog_Img"].ToString(),
+                                Slug = reader["Slug"].ToString(),
+                                CategoryID = Convert.ToInt32(reader["CategoryID"]),
+                                BlogDescription = reader["BlogDescription"].ToString(),
+                                BlogCategoryName = reader["BlogCategoryName"].ToString(),
+                                Created_dt = Convert.ToDateTime(reader["Created_dt"])
+
+                            });
+                        }
+                    }
+                }
+            }
+
+            var viewModal = new CategoryWithBlogModal
+            {
+                Category = categories,
+                Posts = posts,
+            };
+         
+            return View(viewModal);
         }
 
-        public ActionResult BlogDetails()
+        public ActionResult BlogDetails(string Slug)
         {
             ViewBag.Title = "BlogDetails";
             ViewBag.BodyClass = "locations";
-            return View();
+            //Here Fetch BlogCategory
+            List<BlogCategory> categories = new List<BlogCategory>();
+            using (SqlConnection conn = new SqlConnection(Connection))
+            {
+                string query = "SELECT * FROM tbl_BlogCategory";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    conn.Open();
+                    using (SqlDataReader r = cmd.ExecuteReader())
+                    {
+                        while (r.Read())
+                        {
+                            categories.Add(new BlogCategory()
+                            {
+                                CategoryID = Convert.ToInt32(r["CategoryID"]),
+                                BlogCategoryName = r["BlogCategoryName"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+
+            //Blog data fetch
+            BlogData posts = new BlogData();
+            using (SqlConnection conn = new SqlConnection(Connection))
+            {
+                string query = @"
+                SELECT 
+                    b.BlogID, b.BlogTitle, b.Slug, b.Blog_Img, b.CategoryID, b.BlogDescription, b.Created_dt  ,c.BlogCategoryName FROM 
+                    tbl_blog b 
+                INNER JOIN 
+                    tbl_BlogCategory c ON b.CategoryID = c.CategoryID WHERE b.Slug=@Slug";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Slug",Slug);
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if(reader.Read())
+                        {
+                            posts.BlogID = Convert.ToInt32(reader["BlogID"]);
+                            posts.BlogTitle = reader["BlogTitle"].ToString();
+                            posts.Blog_Img = reader["Blog_Img"].ToString();
+                            posts.Slug = reader["Slug"].ToString();
+                            posts.CategoryID = Convert.ToInt32(reader["CategoryID"]);
+                            posts.BlogDescription = reader["BlogDescription"].ToString();
+                            posts.BlogCategoryName = reader["BlogCategoryName"].ToString();
+                            posts.Created_dt = Convert.ToDateTime(reader["Created_dt"]);
+
+                         
+                        }
+                    }
+                }
+            }
+
+            ViewBag.Category = categories;
+
+            return View(posts);
+
         }
 
 
-        //Data Insert Process
 
-        //[HttpPost]
-        //private void SaveData(ContactEnquiry data)
-        //{
-        //    using (SqlConnection con = new SqlConnection(Connection))
-        //    {
-        //        string query = "INSERT INTO tbl_ContactEnquiry(Name, Email, PhoneNumber, Service, Message) " +
-        //             "VALUES (@Name, @Email, @PhoneNumber, @Service, @Message)";
-        //        using (SqlCommand cmd = new SqlCommand(query, con))
-        //        {
-        //            cmd.Parameters.AddWithValue("@Name", data.Name);
-        //            cmd.Parameters.AddWithValue("@Email", data.Email);
-        //            cmd.Parameters.AddWithValue("@PhoneNumber", data.PhoneNumber);
-        //            cmd.Parameters.AddWithValue("@Service", data.Service);
-        //            cmd.Parameters.AddWithValue("@Message", data.Message);
-        //            con.Open();
-        //            int a = cmd.ExecuteNonQuery();
-        //            if (a > 0)
-        //            {
-        //                TempData["Msg"] = "Data successfully insert";
-        //            }
-
-        //        }
-
-        //    }
-        //    ViewBag["Error"] = "Data insertion failed";
-        //}
     }
 }

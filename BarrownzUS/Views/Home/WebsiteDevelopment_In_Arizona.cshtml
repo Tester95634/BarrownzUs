@@ -4,8 +4,9 @@
     ViewBag.MetaDescription = "Barrownz Group is proud to be recognized as one of the top web design companies in Arizona. We help businesses create modern, fast, and responsive websites that stand out online.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/web-development-service-arizona" />
+}
 
 
 <div class="webdevelopmentArizona large_screen d-flex align-items-center justify-content-center flex-column">
@@ -66,7 +67,7 @@
 <div class="container-fluid py-4 location_bck_img_webarizona">
     <div class="container circle_center">
         <div class="circle d-flex align-items-center justify-content-center flex-column">
-            <p class="text-white text-center"style="font-size:15px;">
+            <p class="text-white text-center" style="font-size:15px;">
                 Ready to create a <br />website?
             </p>
             <p class="text-white text-center" style="font-size:13px;">Reach out to us and grow <br />your online presence!</p>
@@ -259,8 +260,8 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
         </div>
     </div>
 </div>
@@ -321,11 +322,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4">
-                <a href="@Url.Action("WebsiteDevelopment_In_Arizona")" class="d-flex align-items-center justify-content-center flex-column border">
-                    <img src="~/Content/location-icon/Arizona.png" class="img-fluid" style="height:100px; width:100px;" />
-                    <p class="text-center">Arizona</p>
-                </a>
-            </div>*@
+                    <a href="@Url.Action("WebsiteDevelopment_In_Arizona")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Arizona.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Arizona</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4 icon_gaps">
                 <a href="@Url.Action("WebsiteDevelopment_In_NewYork")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/New_York.png" class="img-fluid" style="height:100px; width:100px;" />

@@ -4,11 +4,13 @@
     ViewBag.MetaDescription = "We offer the best SEO services in Los Angeles. Our services include everything you need, from website audits and optimization to on-page and off-page SEO.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/seo-service-in-los-angeles" />
+}
 
 <div class="seoLosAngeles large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
-       <div class="row w-100 px-lg-3">
+        <div class="row w-100 px-lg-3">
             <div class="col-lg-6">
                 <div class="inner-left-container">
                     <h1 class="first_heading animated zoomIn carousel_text Expert text-white hero_section_PText ">
@@ -36,7 +38,7 @@
             </div>
             <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center position-relative">
                 <img src="~/Content/SeoImages/LosAngeles/5.webp" class="img-fluid border border-primary-1 p-1 position-relative dev" />
-               
+
             </div>
         </div>
     </div>
@@ -139,7 +141,7 @@
                 <div class="notification pb-4">
                     <div class="notiglow"></div>
                     <div class="notiborderglow"></div>
-                    <div class="notititle fw-bold"> 
+                    <div class="notititle fw-bold">
                         <h3 style="color: #06A3DA; font-size: 1.1rem;">Technical SEO</h3>
                     </div>
                     <div class="notibody">
@@ -163,7 +165,7 @@
                     <div class="notiborderglow"></div>
                     <div class="notititle fw-bold">
                         <h3 style="color: #06A3DA; font-size: 1.1rem;">Performance Marketing</h3>
-                        
+
                     </div>
                     <div class="notibody">
                         We use paid ads to drive targeted traffic to your website, focusing on increasing sales and leads by reaching the right audience at the right time.
@@ -173,7 +175,7 @@
                     <div class="notiglow"></div>
                     <div class="notiborderglow"></div>
                     <div class="notititle fw-bold">
-                      
+
                         <h3 style="color: #06A3DA; font-size: 1.1rem;">  Content Marketing</h3>
                     </div>
                     <div class="notibody">
@@ -299,11 +301,11 @@
         </div><br />
         <div class="row d-flex align-items-center justify-content-center gap-4 box_gaps">
             @*<div class="col-lg-2 col-md-4">
-                <a href="@Url.Action("SEO_In_LosAngeles","Home")" class="d-flex align-items-center justify-content-center flex-column border">
-                    <img src="~/Content/location-icon/Los_Angeles.png" class="img-fluid" style="height:100px; width:100px;" />
-                    <p class="text-center">Los Angeles</p>
-                </a>
-            </div>*@
+                    <a href="@Url.Action("SEO_In_LosAngeles","Home")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Los_Angeles.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Los Angeles</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4">
                 <a href="@Url.Action("SEO_In_NewJersey","Home")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/New_Jersey.png" class="img-fluid" style="height:100px; width:100px;" />

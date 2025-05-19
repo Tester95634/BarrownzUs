@@ -5,7 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/web-development-service-new-jersey" />
+}
 
 <div class="webdevelopmentNewjersey large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
@@ -20,7 +22,8 @@
                 </div>
             </div>
             <div class="col-lg-6"></div>
-        </div> </div>
+        </div>
+    </div>
 </div>
 
 <div class="container-fluid py-5">
@@ -319,21 +322,21 @@
                     <p class="text-center">Kansas City</p>
                 </a>
             </div>
-          
+
         </div><br />
         <div class="row d-flex align-items-center justify-content-center gap-4 box_gaps">
-              <div class="col-lg-2 col-md-4">
-          <a href="@Url.Action("WebsiteDevelopment_In_LosAngeles")" class="d-flex align-items-center justify-content-center flex-column border">
-              <img src="~/Content/location-icon/Los_Angeles.png" class="img-fluid" style="height:100px; width:100px;" />
-              <p class="text-center">Los Angeles</p>
-          </a>
-      </div>
-            @*<div class="col-lg-2 col-md-4">
-                <a href="@Url.Action("WebsiteDevelopment_In_NewJersey")" class="d-flex align-items-center justify-content-center flex-column border">
-                    <img src="~/Content/location-icon/New_Jersey.png" class="img-fluid" style="height:100px; width:100px;" />
-                    <p class="text-center">New Jersey</p>
+            <div class="col-lg-2 col-md-4">
+                <a href="@Url.Action("WebsiteDevelopment_In_LosAngeles")" class="d-flex align-items-center justify-content-center flex-column border">
+                    <img src="~/Content/location-icon/Los_Angeles.png" class="img-fluid" style="height:100px; width:100px;" />
+                    <p class="text-center">Los Angeles</p>
                 </a>
-            </div>*@
+            </div>
+            @*<div class="col-lg-2 col-md-4">
+                    <a href="@Url.Action("WebsiteDevelopment_In_NewJersey")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/New_Jersey.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">New Jersey</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4">
                 <a href="@Url.Action("WebsiteDevelopment_In_Arizona")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/Arizona.png" class="img-fluid" style="height:100px; width:100px;" />

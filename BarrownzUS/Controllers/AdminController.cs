@@ -11,6 +11,7 @@ using BarrownzUS.Models;
 
 namespace BarrownzUS.Controllers
 {
+    [CustomAuthorize]
     public class AdminController : Controller
     {
         //Database Connection
@@ -19,12 +20,66 @@ namespace BarrownzUS.Controllers
 
         // GET: Admin
         public ActionResult Dashboard()
+        
         {
-            if (Session["Password"]==null && Session["Email"] == null)
+
+            var Houres = DateTime.Now.Hour;
+            string greeting;
+            if(Houres<12)
             {
-                return RedirectToAction("Login", "Admin");
+                greeting = "Good Morning";
             }
-            return View();
+            else if (Houres < 17)
+            {
+                greeting = "Good Afternoon";
+            }
+            else
+            {
+                greeting = "Good Evening";
+            }
+
+
+            int UserCount = 0;
+            int BlogCount = 0;
+            int CategoryCount = 0;
+         //User count
+         using(SqlConnection con=new SqlConnection(Connection))
+            {
+                string query = "SELECT COUNT(*) FROM tbl_ContactEnquiry";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    con.Open();
+                    UserCount = (int)cmd.ExecuteScalar();
+                }
+            }
+         //Blog count
+            using (SqlConnection con = new SqlConnection(Connection))
+            {
+                string query = "SELECT COUNT(*) FROM tbl_Blog";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    con.Open();
+                    BlogCount = (int)cmd.ExecuteScalar();
+                }
+            }
+            //Category count
+            using (SqlConnection con = new SqlConnection(Connection))
+            {
+                string query = "SELECT COUNT(*) FROM tbl_BlogCategory";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    con.Open();
+                    CategoryCount = (int)cmd.ExecuteScalar();
+                }
+            }
+
+            
+
+            TempData["User"]= UserCount;
+            TempData["blog"] = BlogCount;
+            TempData["Category"] = CategoryCount;
+            TempData["Greeting"] = greeting;
+                return View();
         }
 
         public ActionResult Login()
@@ -34,13 +89,13 @@ namespace BarrownzUS.Controllers
 
         //Admin Login
         [HttpPost]
-        public ActionResult Login(tbl_Admin data, string email,string password)
+        public ActionResult Login(Users data, string email,string password)
         {
             try
             {
                 using (SqlConnection conn = new SqlConnection(Connection))
                 {
-                    string query = "SELECT Id,Email,Password FROM tbl_Admin WHERE Email=@Email";
+                    string query = "SELECT UserID,Username,Email,Password FROM tbl_Users WHERE Email=@Email";
                     using(SqlCommand cmd=new SqlCommand(query,conn)){
                         cmd.Parameters.AddWithValue("@Email", data.Email);
                         conn.Open();
@@ -48,11 +103,13 @@ namespace BarrownzUS.Controllers
 
                             if (reader.Read())
                             {
-                                int Id = Convert.ToInt32(reader["id"]);
+                                int UserID = Convert.ToInt32(reader["UserID"]);
+                                string Username= reader["Username"].ToString();
                                 string Email = reader["Email"].ToString();
                                 string Password = reader["Password"].ToString();
 
-                                Session["Id"] = Id;
+                                Session["UserID"] = UserID;
+                                Session["Username"] = Username;
                                 Session["Email"] = Email;
                                 Session["Password"] = Password;
 
@@ -96,18 +153,13 @@ namespace BarrownzUS.Controllers
         //All User fetch data
         public ActionResult UserList()
         {
-            if (Session["Password"] == null && Session["Email"] == null)
-            {
-                return RedirectToAction("Login", "Admin");
-            }
-
-
+         
             List<ContactEnquiry> Listdata=new List<ContactEnquiry>();
             try
             {
                 using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "SELECT *FROM tbl_ContactEnquiry";
+                    string query = "SELECT * FROM tbl_ContactEnquiry";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         con.Open();
@@ -117,12 +169,13 @@ namespace BarrownzUS.Controllers
                             {
                                 Listdata.Add(new ContactEnquiry()
                                 {
-                                    Id = Convert.ToInt32(reader["ID"]),
+                                    ID = Convert.ToInt32(reader["ID"]),
                                     Name = reader["Name"].ToString(),
                                     Email = reader["Email"].ToString(),
                                     PhoneNumber = reader["PhoneNumber"].ToString(),
                                     Service = reader["Service"].ToString(),
-                                    Message = reader["Message"].ToString()
+                                    Message = reader["Message"].ToString(),
+                                    Created_dt = Convert.ToDateTime(reader["Created_dt"])
 
                                 });
                             }
@@ -144,10 +197,10 @@ namespace BarrownzUS.Controllers
             {
                 using(SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "DELETE FROM tbl_ContactEnquiry WHERE Id=@Id";
+                    string query = "DELETE FROM tbl_ContactEnquiry WHERE ID=@ID";
                     using(SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        cmd.Parameters.AddWithValue("@Id", Id);
+                        cmd.Parameters.AddWithValue("@ID", Id);
                         con.Open();
                         cmd.ExecuteNonQuery();
                     }
@@ -165,17 +218,13 @@ namespace BarrownzUS.Controllers
         //Fetching Category data
         public ActionResult AddBlogCategory()
         {
-            if (Session["Password"] == null && Session["Email"] == null)
-            {
-                return RedirectToAction("Login", "Admin");
-            }
-
-            List<tbl_BlogCategory> bloglist = new List<tbl_BlogCategory>();
+          
+            List<BlogCategory> bloglist = new List<BlogCategory>();
             try
             {
                 using(SqlConnection con=new SqlConnection(Connection))
                 {
-                    string query = "SELECT *FROM tbl_BlogCategory";
+                    string query = "SELECT * FROM tbl_BlogCategory";
                     using(SqlCommand cmd=new SqlCommand(query,con))
                     {
                         con.Open();
@@ -183,11 +232,11 @@ namespace BarrownzUS.Controllers
                         {
                             while (reader.Read())
                             {
-                                bloglist.Add(new tbl_BlogCategory()
+                                bloglist.Add(new BlogCategory()
                                 {
-                                    Id = Convert.ToInt32(reader["Id"]),
-                                    BlogCategory = reader["BlogCategory"].ToString()
-
+                                    CategoryID = Convert.ToInt32(reader["CategoryID"]),
+                                    BlogCategoryName = reader["BlogCategoryName"].ToString(),
+                                    Created_dt = Convert.ToDateTime(reader["Created_dt"])
                                 });
 
                             }
@@ -198,7 +247,7 @@ namespace BarrownzUS.Controllers
             }
             catch (Exception ex)
             {
-                ViewBag["error"] = ex.Message;
+                ViewBag.error = ex.Message;
             }
 
             return View(bloglist);
@@ -207,14 +256,15 @@ namespace BarrownzUS.Controllers
         //Add Blog Category
 
         [HttpPost]
-        public ActionResult AddBlogCategory(tbl_BlogCategory CategoryData)
+        public ActionResult AddBlogCategory(BlogCategory CategoryData)
         {
               using(SqlConnection con=new SqlConnection(Connection))
                 {
-                    string query = "INSERT INTO tbl_BlogCategory(BlogCategory)" + "VALUES(@BlogCategory)";
+                    string query = "INSERT INTO tbl_BlogCategory(BlogCategoryName, Created_dt)" + "VALUES(@BlogCategoryName, @Created_dt)";
                     using(SqlCommand cmd=new SqlCommand(query, con))
                     {
-                        cmd.Parameters.AddWithValue("@BlogCategory", CategoryData.BlogCategory);
+                        cmd.Parameters.AddWithValue("@BlogCategoryName", CategoryData.BlogCategoryName);
+                        cmd.Parameters.AddWithValue("@Created_dt", DateTime.Now);
                         con.Open();
                         int row=cmd.ExecuteNonQuery();
                         if (row > 0)
@@ -229,20 +279,21 @@ namespace BarrownzUS.Controllers
         }
 
         //Delete Category
-        public ActionResult Delete_Category(int id)
+        public ActionResult Delete_Category(int CategoryID)
         {
             try
             {
                 using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    string query = "DELETE FROM tbl_BlogCategory WHERE Id=@Id";
+                    string query = "DELETE FROM tbl_BlogCategory WHERE CategoryID=@CategoryID";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        cmd.Parameters.AddWithValue("@Id", id);
+                        cmd.Parameters.AddWithValue("@CategoryID", CategoryID);
                         con.Open();
                         cmd.ExecuteNonQuery();
                     }
                 }
+                TempData["Msg"] = "Successfully delete";
                 return RedirectToAction("AddBlogCategory", "Admin");
             }
             catch (Exception ex)
@@ -256,20 +307,20 @@ namespace BarrownzUS.Controllers
         
         public ActionResult EditCategory(int Id)
         {
-            tbl_BlogCategory data = new tbl_BlogCategory();
+            BlogCategory data = new BlogCategory();
             using(SqlConnection con=new SqlConnection(Connection))
             {
-                string query = "SELECT *FROM tbl_BlogCategory WHERE Id=@Id";
+                string query = "SELECT * FROM tbl_BlogCategory WHERE CategoryID=@CategoryID";
                 using(SqlCommand cmd=new SqlCommand(query, con))
                 {
-                    cmd.Parameters.AddWithValue("@Id", Id);
+                    cmd.Parameters.AddWithValue("@CategoryID", Id);
                     con.Open();
                     using(SqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
-                            data.Id=Convert.ToInt32(reader["id"]);
-                            data.BlogCategory = reader["BlogCategory"].ToString();
+                            data.CategoryID =Convert.ToInt32(reader["CategoryID"]);
+                            data.BlogCategoryName = reader["BlogCategoryName"].ToString();
                         }
                     }
 
@@ -281,19 +332,19 @@ namespace BarrownzUS.Controllers
 
         //Edit  Category
         [HttpPost]
-        public ActionResult EditCategory(tbl_BlogCategory data, int Id)
+        public ActionResult EditCategory(BlogCategory data, int CategoryID)
         {
             try
             {
-                if (data.Id > 0)
+                if (data.CategoryID > 0)
                 {
                     using (SqlConnection con = new SqlConnection(Connection))
                     {
-                        string query = "UPDATE tbl_BlogCategory SET BlogCategory=@BlogCategory WHERE Id=@Id";
+                        string query = "UPDATE tbl_BlogCategory SET BlogCategoryName=@BlogCategoryName WHERE CategoryID=@CategoryID";
                         using (SqlCommand cmd = new SqlCommand(query, con))
                         {
-                            cmd.Parameters.AddWithValue("@BlogCategory", data.BlogCategory);
-                            cmd.Parameters.AddWithValue("@Id", data.Id);
+                            cmd.Parameters.AddWithValue("@BlogCategoryName", data.BlogCategoryName);
+                            cmd.Parameters.AddWithValue("@CategoryID", data.CategoryID);
 
                             con.Open();
                             cmd.ExecuteNonQuery();
@@ -305,7 +356,7 @@ namespace BarrownzUS.Controllers
                 }
 
                 TempData["Msg"] = "Category update failed";
-                return RedirectToAction("EditCategory", "Admin");
+                return RedirectToAction("EditCategory", "Admin");      
             }
             catch (Exception ex)
             {
@@ -317,10 +368,6 @@ namespace BarrownzUS.Controllers
         //Main method
         public ActionResult AddBlog()
         {
-            if (Session["Password"] == null && Session["Email"] == null)
-            {
-                return RedirectToAction("Login", "Admin");
-            }
             var categories=GetAllCategories();
             return View(categories);
         }
@@ -346,8 +393,8 @@ namespace BarrownzUS.Controllers
 
                     using (SqlConnection conn = new SqlConnection(Connection))
                     {
-                        string query = "INSERT INTO tbl_blog (BlogTitle, MetaTitle, MetaDescription, Slug, Blog_Img, CategoryId, BlogDescription) " +
-                                       "VALUES (@BlogTitle, @MetaTitle, @MetaDescription, @Slug, @Blog_Img, @CategoryId, @BlogDescription)";
+                        string query = "INSERT INTO tbl_Blog (BlogTitle, MetaTitle, MetaDescription, Slug, Blog_Img, CategoryID, BlogDescription, Created_dt) " +
+                                       "VALUES (@BlogTitle, @MetaTitle, @MetaDescription, @Slug, @Blog_Img, @CategoryID, @BlogDescription, @Created_dt)";
 
                         using (SqlCommand cmd = new SqlCommand(query, conn))
                         {
@@ -356,8 +403,9 @@ namespace BarrownzUS.Controllers
                             cmd.Parameters.AddWithValue("@MetaDescription", data.MetaDescription);
                             cmd.Parameters.AddWithValue("@Slug", data.Slug);
                             cmd.Parameters.AddWithValue("@Blog_Img", FileName);
-                            cmd.Parameters.AddWithValue("@CategoryId", data.CategoryId);
+                            cmd.Parameters.AddWithValue("@CategoryID", data.CategoryID);
                             cmd.Parameters.AddWithValue("@BlogDescription", data.BlogDescription);
+                            cmd.Parameters.AddWithValue("@Created_dt",DateTime.Now);
                             conn.Open();
                             int row = cmd.ExecuteNonQuery();
                             if (row > 0)
@@ -374,7 +422,6 @@ namespace BarrownzUS.Controllers
             }
             catch (Exception ex)
             {
-                // Error Logging (if needed)
                 TempData["error"] = "Error: " + ex.Message;
                 return RedirectToAction("AddBlog", "Admin");
             }
@@ -382,13 +429,9 @@ namespace BarrownzUS.Controllers
 
 
         //Add fetch Blog data
+        [ValidateInput(false)] //  Allows HTML content
         public ActionResult BlogList()
         {
-            if (Session["Password"] == null || Session["Email"] == null)
-            {
-                return RedirectToAction("Login", "Admin");
-            }
-
             List<BlogData> list_Blog = new List<BlogData>();
 
             try
@@ -397,10 +440,10 @@ namespace BarrownzUS.Controllers
                 {
                     string query = @"
                 SELECT 
-                    b.Id, b.BlogTitle,  b.MetaTitle,   b.MetaDescription, b.Slug,   b.Blog_Img, b.CategoryId, b.BlogDescription  ,c.BlogCategory FROM 
+                    b.BlogID, b.BlogTitle,  b.MetaTitle,   b.MetaDescription, b.Slug,   b.Blog_Img, b.CategoryID, b.BlogDescription, b.Created_dt  ,c.BlogCategoryName FROM 
                     tbl_blog b
                 INNER JOIN 
-                    tbl_BlogCategory c ON b.CategoryId = c.Id";
+                    tbl_BlogCategory c ON b.CategoryID = c.CategoryID";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
@@ -411,15 +454,17 @@ namespace BarrownzUS.Controllers
                             {
                                 list_Blog.Add(new BlogData()
                                 {
-                                    Id = Convert.ToInt32(reader["Id"]),
+                                    BlogID = Convert.ToInt32(reader["BlogID"]),
                                     BlogTitle = reader["BlogTitle"].ToString(),
                                     MetaTitle = reader["MetaTitle"].ToString(),
                                     MetaDescription = reader["MetaDescription"].ToString(),
                                     Slug = reader["Slug"].ToString(),
                                     Blog_Img = reader["Blog_Img"].ToString(),
-                                    CategoryId = Convert.ToInt32(reader["CategoryId"]),
+                                    CategoryID = Convert.ToInt32(reader["CategoryID"]),
                                     BlogDescription = reader["BlogDescription"].ToString(),
-                                    BlogCategory=reader["BlogCategory"].ToString()
+                                    BlogCategoryName=reader["BlogCategoryName"].ToString(),
+                                    Created_dt = Convert.ToDateTime(reader["Created_dt"]),
+                                    
                                 });
                             }
                         }
@@ -436,41 +481,52 @@ namespace BarrownzUS.Controllers
     
         //Delete Blog
         [HttpPost]
-        public ActionResult Delete_Blog(int Id)
+        public ActionResult Delete_Blog(int BlogID)
         {
-            string ImageName = string.Empty;
-            string folderpath = Server.MapPath("~/Content/Blog_Uploaded_Image/");
-
-            using (SqlConnection con = new SqlConnection(Connection))
+            try
             {
-                string query = "Select Blog_Img from tbl_Blog where id=@id";
-                using (SqlCommand cmd = new SqlCommand(query, con))
+                string ImageName = string.Empty;
+                string folderpath = Server.MapPath("~/Content/Blog_Uploaded_Image/");
+
+                using (SqlConnection con = new SqlConnection(Connection))
                 {
-                    cmd.Parameters.AddWithValue("@id", Id);
-                    con.Open();
-                    ImageName = (string)cmd.ExecuteScalar();
+                    string query = "Select Blog_Img from tbl_Blog where BlogID=@BlogID";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@BlogID", BlogID);
+                        con.Open();
+                        ImageName = (string)cmd.ExecuteScalar();
+                    }
+                }
+
+                string filepath = Path.Combine(folderpath, ImageName);
+
+                if (System.IO.File.Exists(filepath))
+                {
+                    System.IO.File.Delete(filepath);
+                }
+
+                using (SqlConnection con = new SqlConnection(Connection))
+                {
+                    string query = "DELETE FROM tbl_blog where BlogID=@BlogID";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@BlogID", BlogID);
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+
+                        TempData["Msg"] = "Data delete successfully";
+                        return RedirectToAction("BlogList", "Admin");
+                    }
+
                 }
             }
-
-            string filepath = Path.Combine(folderpath, ImageName);
-
-            if (System.IO.File.Exists(filepath))
+            catch(Exception ex)
             {
-                System.IO.File.Delete(filepath);
+                ViewBag.ErrorMessage = ex.Message;
             }
-
-            using (SqlConnection con = new SqlConnection(Connection))
-            {
-                string query = "DELETE FROM tbl_blog where Id=@Id";
-                using (SqlCommand cmd = new SqlCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("@Id", Id);
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                }
-                TempData["Msg"] = "Data delete successfully";
-                return RedirectToAction("BlogList", "Admin");
-            }
+            
+            return View();
         }
         //Edit Blog
         public ActionResult EditBlog(int Id)
@@ -479,33 +535,31 @@ namespace BarrownzUS.Controllers
 
             using (SqlConnection con = new SqlConnection(Connection))
             {
-                string query = "SELECT * FROM tbl_Blog WHERE Id = @Id";
+                string query = "SELECT * FROM tbl_Blog WHERE BlogID = @BlogID";
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                    cmd.Parameters.AddWithValue("@Id", Id);
+                    cmd.Parameters.AddWithValue("@BlogID", Id);
                     con.Open();
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
-                            data.Id = Convert.ToInt32(reader["Id"]);
+                            data.BlogID = Convert.ToInt32(reader["BlogID"]);
                             data.BlogTitle = reader["BlogTitle"].ToString();
                             data.MetaTitle = reader["MetaTitle"].ToString();
                             data.MetaDescription = reader["MetaDescription"].ToString();
                             data.Slug = reader["Slug"].ToString();
                             data.Blog_Img = reader["Blog_Img"].ToString();
-                            data.CategoryId = Convert.ToInt32(reader["CategoryId"]);
+                            data.CategoryID = Convert.ToInt32(reader["CategoryID"]);
                             data.BlogDescription = reader["BlogDescription"].ToString();
                         }
                     }
                 }
             }
             ViewBag.Categories = GetAllCategories(); // Method should return List<BlogCategory>
-
             return View(data);
         }
-
-        //Upadte Blog
+     //Upadate Blog
         [HttpPost]
         public ActionResult EditBlog(BlogData data, HttpPostedFileBase Blog_Img)
         {
@@ -517,10 +571,10 @@ namespace BarrownzUS.Controllers
                 //old image 
                 using (SqlConnection conn = new SqlConnection(Connection))
                 {
-                    string selectQuery = "SELECT Blog_Img FROM tbl_blog WHERE Id = @Id";
+                    string selectQuery = "SELECT Blog_Img FROM tbl_Blog WHERE BlogID=@BlogID";
                     using (SqlCommand cmd = new SqlCommand(selectQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@Id", data.Id);
+                        cmd.Parameters.AddWithValue("@BlogID", data.BlogID);
                         conn.Open();
                         object result = cmd.ExecuteScalar();
                         if (result != null)
@@ -561,7 +615,7 @@ namespace BarrownzUS.Controllers
           
                 using (SqlConnection conn = new SqlConnection(Connection))
                 {
-                    string updateQuery = @"UPDATE tbl_blog 
+                    string updateQuery = @"UPDATE tbl_Blog 
                                    SET BlogTitle = @BlogTitle,
                                        MetaTitle = @MetaTitle,
                                        MetaDescription = @MetaDescription,
@@ -569,17 +623,17 @@ namespace BarrownzUS.Controllers
                                        Blog_Img = @Blog_Img,
                                        CategoryId = @CategoryId,
                                        BlogDescription = @BlogDescription
-                                   WHERE Id = @Id";
+                                   WHERE BlogID = @BlogID";
 
                     using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@Id", data.Id);
+                        cmd.Parameters.AddWithValue("@BlogID", data.BlogID);
                         cmd.Parameters.AddWithValue("@BlogTitle", data.BlogTitle);
                         cmd.Parameters.AddWithValue("@MetaTitle", data.MetaTitle);
                         cmd.Parameters.AddWithValue("@MetaDescription", data.MetaDescription);
                         cmd.Parameters.AddWithValue("@Slug", data.Slug);
                         cmd.Parameters.AddWithValue("@Blog_Img", newImageName);
-                        cmd.Parameters.AddWithValue("@CategoryId", data.CategoryId);
+                        cmd.Parameters.AddWithValue("@CategoryID", data.CategoryID);
                         cmd.Parameters.AddWithValue("@BlogDescription", data.BlogDescription);
 
                         conn.Open();
@@ -592,6 +646,7 @@ namespace BarrownzUS.Controllers
                     }
                 }
 
+   
                 TempData["error"] = "Blog update failed.";
                 return RedirectToAction("EditBlog","Admin");
             }
@@ -606,13 +661,13 @@ namespace BarrownzUS.Controllers
 
 
         //Fetch Category
-        public List<tbl_BlogCategory> GetAllCategories()
+        public List<BlogCategory> GetAllCategories()
         {
-            List<tbl_BlogCategory> categories = new List<tbl_BlogCategory>();
+            List<BlogCategory> categories = new List<BlogCategory>();
 
             using (SqlConnection con = new SqlConnection(Connection))
             {
-                string query = "SELECT Id, BlogCategory FROM tbl_BlogCategory";
+                string query = "SELECT CategoryID, BlogCategoryName FROM tbl_BlogCategory";
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
                     con.Open();
@@ -620,10 +675,10 @@ namespace BarrownzUS.Controllers
                     {
                         while (reader.Read())
                         {
-                            categories.Add(new tbl_BlogCategory()
+                            categories.Add(new BlogCategory()
                             {
-                                Id = Convert.ToInt32(reader["Id"]),
-                                BlogCategory = reader["BlogCategory"].ToString()
+                                CategoryID = Convert.ToInt32(reader["CategoryID"]),
+                                BlogCategoryName = reader["BlogCategoryName"].ToString()
                             });
                         }
                     }

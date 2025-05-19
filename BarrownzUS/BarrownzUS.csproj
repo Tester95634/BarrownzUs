@@ -125,10 +125,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BlogCategory.cs" />
     <Compile Include="Models\BlogData.cs" />
+    <Compile Include="Models\CategoryWithBlogModal.cs" />
     <Compile Include="Models\ContactEnquiry.cs" />
-    <Compile Include="Models\tbl_Admin.cs" />
-    <Compile Include="Models\tbl_BlogCategory.cs" />
+    <Compile Include="Models\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,13 +140,16 @@
     <Content Include="Content\Admin_assets\assets\fonts\metropolis\SIL Open Font License.txt" />
     <Content Include="Content\Admin_assets\css\Image_style.css" />
     <Content Include="Content\Admin_assets\css\Style.css" />
+    <Content Include="Content\Admin_assets\Image\Avatar.png" />
     <Content Include="Content\Admin_assets\js\AdminLogin_Validation.js" />
     <Content Include="Content\Admin_assets\js\ContactUs_Validation.js" />
+    <Content Include="Content\Admin_assets\js\Custom.js" />
     <Content Include="Content\Admin_assets\js\datatables\datatables-simple-demo.js" />
     <Content Include="Content\Admin_assets\js\litepicker.js" />
     <Content Include="Content\Admin_assets\js\markdown.js" />
     <Content Include="Content\Admin_assets\js\scripts.js" />
     <Content Include="Content\Admin_assets\js\toasts.js" />
+    <Content Include="Content\Blog_Uploaded_Image\owl.jpg" />
     <Content Include="Content\css\Blog_And_BlogDetails_Style.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\box_style.css" />
@@ -262,6 +267,7 @@
     <Content Include="Content\img\web_development_image.jpg" />
     <Content Include="Content\img\wordpress.png" />
     <Content Include="Content\img\youtube.png" />
+    <Content Include="Content\js\ClientSideValidation.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\Our_effect.js" />
     <Content Include="Content\lib\animate\animate.css" />
@@ -694,7 +700,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Blog_Uploaded_Image\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

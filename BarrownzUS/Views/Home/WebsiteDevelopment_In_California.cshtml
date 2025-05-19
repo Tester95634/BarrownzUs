@@ -4,7 +4,9 @@
     ViewBag.MetaDescription = "At Barrownz Group, we offer top web design services in California. We understand your business needs and ensure your website represents your brand effectively";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/web-development-service-california" />
+}
 
 <div class="webdevelopmentcalifornia large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
@@ -41,7 +43,7 @@
             </div>
             <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center position-relative">
                 <img src="~/Content/Web_Development_Images/California/Services2.webp" class="img-fluid border border-primary-1 p-1 position-relative dev" />
-                
+
             </div>
         </div>
     </div>
@@ -83,7 +85,7 @@
                     <img src="~/Content/Web_Development_Images/California/vector1.2.webp" class="img-fluid" />
                 </div>
                 <div class="col-lg-6 d-flex justify-content-center flex-column">
-                  <p class="lh-5 py-4">
+                    <p class="lh-5 py-4">
                         At our <b>Web Design Agency in California,</b> we specialize in creating websites that help businesses grow. Whether you’re just starting or already have an established company, we understand the importance of a strong online presence. Our team works closely with you to understand your goals and create a website that matches your brand perfectly. We make sure your website is not only beautiful but also user-friendly and easy to navigate
                     </p>
                 </div>
@@ -265,11 +267,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4 ">
-                <a href="@Url.Action("WebsiteDevelopment_In_California")" class="d-flex align-items-center justify-content-center flex-column border">
-                    <img src="~/Content/location-icon/California.png" class="img-fluid" style="height:100px; width:100px;" />
-                    <p class="text-center">California</p>
-                </a>
-            </div>*@
+                    <a href="@Url.Action("WebsiteDevelopment_In_California")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/California.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">California</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4 ">
                 <a href="@Url.Action("WebsiteDevelopment_In_Florida")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/Florida.png" class="img-fluid" style="height:100px; width:100px;" />

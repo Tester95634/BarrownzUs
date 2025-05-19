@@ -4,11 +4,13 @@
     ViewBag.MetaDescription = "Barrownz Group is the top SEO agency in Kansas City, USA. We offer a wide range of SEO services, including quality backlinks, on-page SEO, off-page SEO, local SEO, and more.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/seo-service-in-kansas-city" />
+}
 
 <div class="seoKansas_City large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
-      <div class="row w-100 px-lg-3">
+        <div class="row w-100 px-lg-3">
             <div class="col-lg-6">
                 <div class="inner-left-container">
                     <h1 class="first_heading animated zoomIn carousel_text Expert text-white hero_section_PText ">
@@ -36,8 +38,8 @@
             </div>
             <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center position-relative">
                 <img src="~/Content/SeoImages/KansasCity/SEOServices.webp" class="img-fluid border border-primary-1 p-1 position-relative dev" />
-              
-              
+
+
             </div>
         </div>
     </div>
@@ -166,7 +168,7 @@
                     <div class="notiborderglow"></div>
                     <div class="notititle fw-bold">
                         <h3 style="color: #06A3DA; font-size: 1.1rem;"> Unique Content</h3>
-                       
+
                     </div>
                     <div class="notibody">
                         We create original, high-quality content that attracts visitors, keeps them interested, & helps improve your website’s search engine rankings.
@@ -293,11 +295,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4 icon_gaps">
-            <a href="@Url.Action("SEO_In_KansasCity","Home")" class="d-flex align-items-center justify-content-center flex-column border">
-                <img src="~/Content/location-icon/Kansas_City.png" class="img-fluid" style="height:100px; width:100px;" />
-                <p class="text-center">Kansas City</p>
-            </a>
-        </div>*@
+                    <a href="@Url.Action("SEO_In_KansasCity","Home")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Kansas_City.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Kansas City</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4">
                 <a href="@Url.Action("SEO_In_LosAngeles","Home")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/Los_Angeles.png" class="img-fluid" style="height:100px; width:100px;" />
@@ -306,7 +308,7 @@
             </div>
         </div><br />
         <div class="row d-flex align-items-center justify-content-center gap-4 box_gaps">
-           
+
             <div class="col-lg-2 col-md-4">
                 <a href="@Url.Action("SEO_In_NewJersey","Home")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/New_Jersey.png" class="img-fluid" style="height:100px; width:100px;" />

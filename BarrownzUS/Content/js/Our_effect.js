@@ -79,58 +79,62 @@ TweenMax.to(".ball", 1, {
 
 
 //The validation for form
+
 function validate() {
+    let isValid = true;
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let number = document.getElementById("number").value;
-    let option = document.getElementById("option").value;
-    let message = document.getElementById("message").value;
+    // Clear all previous error messages
+    document.getElementById("name_error").innerText = "";
+    document.getElementById("email_error").innerText = "";
+    document.getElementById("number_error").innerText = "";
+    document.getElementById("option_error").innerText = "";
+    document.getElementById("message_error").innerText = "";
 
-    let valid = true;
+    // Get values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const number = document.getElementById("number").value.trim();
+    const option = document.getElementById("option").value;
+    const message = document.getElementById("message").value.trim();
 
-    let name_error = document.getElementById("name_error");
-    let email_error = document.getElementById("email_error");
-    let number_error = document.getElementById("number_error");
-    let option_error = document.getElementById("option_error");
-    let message_error = document.getElementById("message_error");
-
-    name_error.textContent = "";
-    email_error.textContent = "";
-    number_error.textContent = "";
-    option_error.textContent = "";
-    message_error.textContent = "";
-
-
-    if (name.trim() === "") {
-        name_error.textContent = "Please enter your name";
-        valid = false;
+    // Name validation
+    if (name === "") {
+        document.getElementById("name_error").innerText = "Name is  required.";
+        isValid = false;
     }
 
-    let emailPattern = /^[a-zA-Z0-9._-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    if (email === "" && !email.match(emailPattern)) {
-        email_error.textContent = "Please enter valid email";
-        valid = false;
+    // Email validation
+    const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    if (email === "") {
+        document.getElementById("email_error").innerText = "Email is required.";
+        isValid = false;
+    } else if (!emailPattern.test(email)) {
+        document.getElementById("email_error").innerText = "Enter a valid email address.";
+        isValid = false;
     }
 
-    if (option === "") {
-        option_error.textContent = "Please select option";
-        valid = false;
+    // Number validation
+    if (number === "") {
+        document.getElementById("number_error").innerText = "Phone number is required.";
+        isValid = false;
+    } else if (number.length < 10) {
+        document.getElementById("number_error").innerText = "Enter a valid phone number.";
+        isValid = false;
     }
 
-    if (number === "" || number.length < 10) {
-        number_error.textContent = "Please enter a valid number";
-        valid = false;
+    if (option === "" || option === "Select A Service") {
+        document.getElementById("option_error").innerText = "Please select a service.";
+        isValid = false;
     }
 
 
+    // Message validation
     if (message === "") {
-        message_error.textContent = "please write message";
-        valid = false;
+        document.getElementById("message_error").innerText = "Message is required.";
+        isValid = false;
     }
 
-    return valid;
-
+    return isValid;
 }
 
 

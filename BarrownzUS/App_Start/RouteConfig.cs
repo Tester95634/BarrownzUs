@@ -672,6 +672,31 @@ namespace BarrownzUS
             );
 
 
+
+
+            //Blog
+
+            routes.MapRoute(
+      name: "Blog_genrl",
+      url: "Home/Blog",
+      defaults: new { controller = "Home", action = "RedirectToBlog" }
+      );
+
+            routes.MapRoute(
+                name: "Blog_default",
+                url: "Blog",
+                defaults: new { controller = "Home", action = "Blog" }
+            );
+
+
+            //BlogDetails Slug Routing
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.MapRoute(
+           name: "BlogDetails",
+           url: "BlogDetails/{Slug}", // Here url create 
+           defaults: new { controller = "Home", action = "BlogDetails", Slug = UrlParameter.Optional }
+       );
+
             //Default Routing
             routes.MapRoute(
                 name: "Default",

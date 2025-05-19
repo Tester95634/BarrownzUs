@@ -4,7 +4,9 @@
     ViewBag.MetaDescription = "Barrownz Group USA is a trusted Texas Website Design Company. We understand the needs of our clients and focus on creating websites that help businesses grow.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/web-development-service-texas" />
+}
 
 <div class="webdevelopmentTexas large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
@@ -38,7 +40,7 @@
             </div>
             <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center position-relative">
                 <img src="~/Content/Web_Development_Images/Texas/Services 4.webp" class="img-fluid border border-primary-1 p-1 position-relative dev" />
-               
+
             </div>
         </div>
     </div>
@@ -276,11 +278,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4 icon_gaps">
-                <a href="@Url.Action("WebsiteDevelopment_In_Taxes")" class="d-flex align-items-center justify-content-center flex-column border">
-                    <img src="~/Content/location-icon/Texas.png" class="img-fluid" style="height:100px; width:100px;" />
-                    <p class="text-center">Texas</p>
-                </a>
-            </div>*@
+                    <a href="@Url.Action("WebsiteDevelopment_In_Taxes")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Texas.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Texas</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4 icon_gaps">
                 <a href="@Url.Action("WebsiteDevelopment_In_KansasCity")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/Kansas_City.png" class="img-fluid" style="height:100px; width:100px;" />

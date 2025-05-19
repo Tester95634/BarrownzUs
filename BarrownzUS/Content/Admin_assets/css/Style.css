@@ -5852,6 +5852,7 @@ textarea.form-control-lg {
     flex: 1 1 auto;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     color: var(--bs-card-color);
+    overflow-x:auto;
 }
 
 .card-title {
@@ -19106,8 +19107,8 @@ body {
 
 .btn .feather {
     margin-top: -1px;
-    height: 0.875rem;
-    width: 0.875rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .btn-lg .feather, .btn-group-lg > .btn .feather {
@@ -20902,7 +20903,7 @@ body {
 
 .topnav {
     padding-left: 0;
-    height: 3.625rem;
+    height: 4.5rem;
     z-index: 1039;
     font-size: 0.9rem;
 }
@@ -20915,7 +20916,7 @@ body {
     }
 
         .topnav .navbar-brand img {
-            height: 0.8rem;
+            height: 5.8rem;
         }
 
 @media (min-width: 992px) {

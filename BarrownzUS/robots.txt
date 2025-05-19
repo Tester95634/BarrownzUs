@@ -1,4 +1,27 @@
-User-agent: *
-Disallow: 
+User-agent: *	
+allow: /	
+Sitemap: https://barrownz.us/sitemap.xml	
 
-Sitemap: https://barrownz.us/sitemap.xml
+User-agent: ChatGPT-User
+Allow: /
+ 
+User-agent: GPTBot
+Allow: /
+ 
+User-agent: OpenAI-User
+Allow: /
+ 
+User-agent: ClaudeBot
+Allow: /
+ 
+User-agent: facebookexternalhit
+Allow: /
+ 
+User-agent: MetaAI
+Allow: /
+ 
+User-agent: PerplexityBot
+Allow: /
+
+
+

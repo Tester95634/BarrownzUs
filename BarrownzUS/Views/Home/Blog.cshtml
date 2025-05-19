@@ -3,8 +3,21 @@
     ViewBag.Title = "Blog";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@{
+    var posts = ((IEnumerable<dynamic>)Model.Posts);
+}
+
+<style>
+    .Blogdescription {
+        width: 295px;
+        height:23px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
 
+</style>
 
 <div class="container-fluid p-0">
     <div class="blog_helo py-5 px-lg-5 px-3 position-relative text-white">
@@ -34,15 +47,14 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">All</button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="blog1-tab" data-bs-toggle="tab" data-bs-target="#blog1" type="button" role="tab">Blog1</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="blog2-tab" data-bs-toggle="tab" data-bs-target="#blog2" type="button" role="tab">Blog2</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="blog3-tab" data-bs-toggle="tab" data-bs-target="#blog3" type="button" role="tab">Blog3</button>
-                    </li>
+                    @foreach (var category in Model.Category)
+                    {
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-@category.CategoryID" data-bs-toggle="tab" data-bs-target="#pane-@category.CategoryID" type="button" role="tab">
+                                @category.BlogCategoryName
+                            </button>
+                        </li>
+                    }
 
                 </ul>
                 <!-- Tab Content -->
@@ -52,214 +64,85 @@
                     <div class="tab-pane fade show active" id="all" role="tabpanel">
                         <div class="container-fluid px-0">
                             <div class="row gap-4 gap-lg-0 gap-md-0">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100 mt-3">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/code.png" class="img-fluid position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
 
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i>  05/09/2025 11:55 AM</p>
+                                @foreach (var data in Model.Posts)
+                                {
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="Card_box border w-100 mt-3">
+                                            <div class="Blog_Inage position-relative">
+                                                <img src="~/Content/Blog_Uploaded_Image/@data.Blog_Img" class="img-fluid position-relative" alt="Blog_image" />
+                                                <div class="link-secondary_icons position-absolute">
+                                                    <a href="@Url.Action("BlogDetails","Home",new {Slug=data.Slug})" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
+                                                </div>
+                                                <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">@data.BlogCategoryName</p>
+
                                             </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software
+                                            <div class="blog_title_and_Info p-3">
+                                                <div class="Blog_title">
+                                                    <h4>@data.BlogTitle</h4>
+                                                    <p class="mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> @data.Created_dt</p>
+                                                </div>
+                                                <div class="py-2  d-flex">
+                                                    <span class="Blogdescription">
+                                                        @Html.Raw(data.BlogDescription)
+                                                    </span>
+                                                    <span>....</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100 mt-3">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/design.png" class="img-fluid  position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="p-0 mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> 05/09/2025 11:55 AM </p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100 mt-3">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/code.png" class="img-fluid position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i>  05/09/2025 11:55 AM</p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100 mt-3">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/design.png" class="img-fluid  position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="p-0 mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> 05/09/2025 11:55 AM </p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                }
+
+
                             </div>
                         </div>
                     </div>
 
                     <!--Blog'One-->
-                    <div class="tab-pane fade" id="blog1" role="tabpanel">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/design.png" class="img-fluid  position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="p-0 mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> 05/09/2025 11:55 AM </p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/design.png" class="img-fluid  position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="p-0 mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> 05/09/2025 11:55 AM </p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Tab Panes -->
+                 
+                        @foreach (var category in Model.Category)
 
-                    <!--Blog'Two-->
-                    <div class="tab-pane fade" id="blog2" role="tabpanel">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/design.png" class="img-fluid  position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="p-0 mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> 05/09/2025 11:55 AM </p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/design.png" class="img-fluid  position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="p-0 mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> 05/09/2025 11:55 AM </p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        {
+                            var filterpost = posts.Where(p => p.CategoryID ==category.CategoryID);
 
-                    <!--Blog'Three-->
-                    <div class="tab-pane fade" id="blog3" role="tabpanel">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/design.png" class="img-fluid  position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
+                            <div class="tab-pane fade" id="pane-@category.CategoryID" role="tabpanel">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        @foreach (var post in filterpost)
+                                        {
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="Card_box border w-100">
+                                                    <div class="Blog_Inage position-relative">
+                                                        <img src="~/Content/Blog_Uploaded_Image/@post.Blog_Img" class="img-fluid position-relative" alt="Blog_image" />
+                                                        <div class="link-secondary_icons position-absolute">
+                                                            <a href="@Url.Action("Blogdetails","Home",new {Slug=post.Slug})" class="redirection_icon">
+                                                                <i class="fa-solid fa-arrow-up-right-from-square text-white"></i>
+                                                            </a>
+                                                        </div>
+                                                        <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">@post.BlogCategoryName</p>
+                                                    </div>
+                                                    <div class="blog_title_and_Info p-3">
+                                                        <div class="Blog_title">
+                                                            <h4>@post.BlogTitle</h4>
+                                                            <p class="p-0 mb-0 Date_time">
+                                                                <i class="fa-solid fa-clock text-primary"></i> @post.Created_dt
+                                                            </p>
+                                                        </div>
+                                                        <div class="py-2  d-flex">
+                                                            <span class="Blogdescription">
+                                                                @Html.Raw(post.BlogDescription)
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="p-0 mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> 05/09/2025 11:55 AM </p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="Card_box border w-100">
-                                        <div class="Blog_Inage position-relative">
-                                            <img src="~/Content/icon_image/design.png" class="img-fluid  position-relative" alt="Blog_image" />
-                                            <div class="link-secondary_icons position-absolute">
-                                                <a href="@Url.Action("BlogDetails","Home")" class="redirection_icon"><i class="fa-solid fa-arrow-up-right-from-square text-white"></i> </a>
-                                            </div>
-                                            <p class="position-absolute bg-primary p-1 mt-1 top-0 text-white blog-types">Blog Type</p>
-                                        </div>
-                                        <div class="blog_title_and_Info p-3">
-                                            <div class="Blog_title">
-                                                <h4>This Is a first blog</h4>
-                                                <p class="p-0 mb-0 Date_time"><i class="fa-solid fa-clock text-primary"></i> 05/09/2025 11:55 AM </p>
-                                            </div>
-                                            <p class="py-2">SimpleText allows text editing and text formatting, fonts, and sizes.software </p>
-                                        </div>
+                                        }
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        }
+                  
                 </div>
             </div>
             <div class="col-lg-3">
@@ -270,22 +153,22 @@
                         <div class="d-flex flex-column gap-2 py-2">
                             <div>
                                 <i class="fa-solid fa-arrows-up-down-left-right fs-5"></i>
-                                <a href="@Url.Action("SEO_In_Us","Home")" class="fw-bold">Search Engine Optimization</a>
+                                <a href="@Url.Action("SEO_In_US","Home")" class="fw-bold">Search Engine Optimization</a>
                                 <hr class="m-1" />
                             </div>
                             <div>
                                 <i class="fa-solid fa-arrows-up-down-left-right fs-5"></i>
-                                <a href="@Url.Action("DigitalMarketing_In_Us","Hpme")" class="fw-bold">Digital Marketing</a>
+                                <a href="@Url.Action("DigitalMarketing_In_US","Home")" class="fw-bold">Digital Marketing</a>
                                 <hr class="m-1" />
                             </div>
                             <div>
                                 <i class="fa-solid fa-arrows-up-down-left-right fs-5"></i>
-                                <a href="@Url.Action("GraphicDesign_Us")" class="fw-bold">Graphic Design</a>
+                                <a href="@Url.Action("GraphicDesign_In_US" ,"Home")" class="fw-bold">Graphic Design</a>
                                 <hr class="m-1" />
                             </div>
                             <div>
                                 <i class="fa-solid fa-arrows-up-down-left-right fs-5"></i>
-                                <a href="@Url.Action("WebsiteDevelopment","Home")" class="fw-bold">Web Development</a>
+                                <a href="@Url.Action("WebsiteDevelopment_In_US","Home")" class="fw-bold">Web Development</a>
                                 <hr class="m-0" />
                             </div>
                         </div>
@@ -293,10 +176,11 @@
                         <div class="categories mt-3">
                             <h4>Categories</h4>
                             <div class="d-flex flex-wrap gap-2">
-                                <p class="bg-primary p-1 text-white w-auto One_categories">Categories</p>
-                                <p class="bg-primary p-1 text-white w-auto One_categories">All Categories</p>
-                                <p class="bg-primary p-1 text-white w-auto One_categories">All Categories</p>
-                                <p class="bg-primary p-1 text-white w-auto One_categories">All Categories</p>
+
+                                @foreach (var data in Model.Category)
+                                {
+                                    <p class="bg-primary p-1 text-white w-auto One_categories">@data.BlogCategoryName</p>
+                                }
                             </div>
                         </div>
 
@@ -309,6 +193,8 @@
 
 
 <script>
+    //Blog Page
+    //This js work Hover image show iconlink for redirect other page
     const image_holders = document.querySelectorAll('.Blog_Inage');
     const icon_holders = document.querySelectorAll('.link-secondary_icons');
 

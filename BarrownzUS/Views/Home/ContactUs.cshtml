@@ -27,38 +27,42 @@
 
             <div class="col-lg-6 col-md-6">
                 <div class="form_container">
-                    <form action="@Url.Action("SaveData", "Home")" method="post">
-                        @*@Html.AntiForgeryToken()*@
+                    <form id="contactForm" action="@Url.Action("SaveData", "Home")" method="post" novalidate>
                         <div class="name_email_holer d-flex gap-5">
                             <div class="mb-3">
                                 <div class="form-label fw-bold">Name<sup class="text-primary">*</sup></div>
                                 <input type="text" class="form-control" name="Name" />
+                                <div class="text-danger error-message"></div>
                             </div>
                             <div class="mb-3">
                                 <div class="form-label fw-bold">Email<sup class="text-primary">*</sup></div>
                                 <input type="email" class="form-control" name="Email" />
+                                <div class="text-danger error-message"></div>
                             </div>
                         </div>
                         <div class="mb-3">
                             <div class="form-label fw-bold">Number<sup class="text-primary">*</sup></div>
                             <input type="number" class="form-control" name="PhoneNumber" />
+                            <div class="text-danger error-message"></div>
                         </div>
                         <div class="mb-3">
                             <div class="form-label fw-bold">Select a service<sup class="text-primary">*</sup></div>
                             <select class="form-control" name="Service">
-                                <option>Select A Service</option>
+                                <option value="">Select A Service</option>
                                 <option>Design & Development</option>
                                 <option>Search Engin Optimization</option>
                                 <option>Digital marketing</option>
                                 <option>Graphic Design</option>
                             </select>
+                            <div class="text-danger error-message"></div>
                         </div>
                         <div class="mb-3">
                             <div class="form-label fw-bold">Message<sup class="text-primary">*</sup></div>
                             <textarea class="form-control" placeholder="Message" name="Message"></textarea>
+                            <div class="text-danger error-message"></div>
                         </div>
 
-                        <button class="btn btn-primary rounded" type="submit">Send Massage</button>
+                        <button class="btn btn-primary rounded" type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -71,6 +75,7 @@
         </div>
     </div>
 </div>
+
 <script>
     @if (TempData["Msg"] != null)
      {
@@ -98,6 +103,8 @@
       </text>
       }
 </script>
+
+
 
 
 

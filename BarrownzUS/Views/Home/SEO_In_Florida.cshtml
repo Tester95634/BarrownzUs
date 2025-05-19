@@ -4,14 +4,16 @@
     ViewBag.MetaDescription = "To help your business grow, we are the Best SEO company in Florida. Our team starts by understanding your target audience, then uses the most effective SEO strategies to improve your online presence.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/seo-service-in-florida" />
+}
 
 <div class="seoflorida large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
         <div class="row w-100 px-lg-3">
             <div class="col-lg-6">
                 <div class="inner-left-container">
-                    <h1 class="first_heading animated zoomIn carousel_text Expert text-white hero_section_PText ">   
+                    <h1 class="first_heading animated zoomIn carousel_text Expert text-white hero_section_PText ">
                         Best SEO Company in Florida
                     </h1>
                     <p class=" text-align-justify first_second text-start animated zoomIn carousel_text text-white  hero_section_PText">We offer Top SEO tricks to boost your business.</p>
@@ -33,7 +35,7 @@
             </div>
             <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center position-relative">
                 <img src="~/Content/SeoImages/Florida/SEOServices.webp" class="img-fluid border border-primary-1 p-1 position-relative dev" />
-                
+
             </div>
         </div>
     </div>
@@ -140,7 +142,7 @@
                     <div class="notiborderglow"></div>
                     <div class="notititle fw-bold">
                         <h3 style="color: #06A3DA; font-size: 1.1rem;"> Local SEO</h3>
-                       
+
                     </div>
                     <div class="notibody">For businesses targeting a specific geographical area, we focus on optimizing your website for local searches. This includes enhancing your Google My Business profile, adding local keywords, and ensuring your business appears in local search results, making it easier for nearby customers to find you.</div>
                 </div>
@@ -158,7 +160,8 @@
                     <div class="notiglow"></div>
                     <div class="notiborderglow"></div>
                     <div class="notititle fw-bold">
-                        <h3 style="color: #06A3DA; font-size: 1.1rem;">Unique Content</h3></div>
+                        <h3 style="color: #06A3DA; font-size: 1.1rem;">Unique Content</h3>
+                    </div>
                     <div class="notibody">In SEO, content is king. Having unique, relevant, and high-quality content is crucial for success. We create original content for your audience, ensuring it’s engaging and informative. Unique content boosts rankings, attracts customers, and keeps your business relevant and visible online.</div>
                 </div>
             </div>
@@ -255,11 +258,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4 ">
-            <a href="@Url.Action("SEO_In_Florida","Home")" class="d-flex align-items-center justify-content-center flex-column border">
-                <img src="~/Content/location-icon/Florida.png" class="img-fluid" style="height:100px; width:100px;" />
-                <p class="text-center">Florida</p>
-            </a>
-        </div>*@
+                    <a href="@Url.Action("SEO_In_Florida","Home")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Florida.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Florida</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4 icon_gaps">
                 <a href="@Url.Action("SEO_In_Taxes","Home")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/Texas.png" class="img-fluid" style="height:100px; width:100px;" />
@@ -280,7 +283,7 @@
             </div>
         </div><br />
         <div class="row d-flex align-items-center justify-content-center gap-4 box_gaps">
-            
+
             <div class="col-lg-2 col-md-4">
                 <a href="@Url.Action("SEO_In_NewJersey","Home")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/New_Jersey.png" class="img-fluid" style="height:100px; width:100px;" />

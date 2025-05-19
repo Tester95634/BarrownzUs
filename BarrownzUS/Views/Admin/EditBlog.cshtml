@@ -5,7 +5,7 @@
 }
 
 @{
-    var categories = ViewBag.Categories as List<BarrownzUS.Models.tbl_BlogCategory>;
+    var categories = ViewBag.Categories as List<BarrownzUS.Models.BlogCategory>;
 }
 
 <div class="container-fluid">
@@ -13,7 +13,7 @@
         <div class="p-sm-2 p-lg-5 pl-md-5">
             <h2>Add blog details</h2>
             <form action="@Url.Action("EditBlog","Admin")" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="@Model.Id" />
+                <input type="hidden" name="BlogID" value="@Model.BlogID"/>
 
                 <div class="row py-2">
                     <div class="col-lg-12 d-flex gap-5">
@@ -36,8 +36,8 @@
                             {
                                 foreach (var item in categories)
                                 {
-                                    var selected = (item.Id == Model.CategoryId) ? "selected" : "";
-                                    <option value="@item.Id" @selected>@item.BlogCategory</option>
+                                    var selected = (item.CategoryID == Model.CategoryID) ? "selected" : "";
+                                    <option value="@item.CategoryID" @selected>@item.BlogCategoryName</option>
                                 }
                             }
                         </select>
@@ -58,7 +58,7 @@
                 <div class="row py-2">
                     <div class="col-lg-6">
                         <div class="form-label">Slug</div>
-                        <input type="text" class="form-control" placeholder="Slug" name="Slug" value="@Model.Slug"/>
+                        <input type="text" class="form-control" placeholder="Slug" name="Slug" value="@Model.Slug" />
                     </div>
                     <div class="col-lg-6">
                         <div class="form-label">Blog Title</div>
@@ -69,7 +69,7 @@
                 <div class="row py-2">
                     <div class="col-lg-12">
                         <div class="form-label">Blog Description</div>
-                        <textarea placeholder="Blog Description" name="BlogDescription" class="form-control lh-2">@Model.BlogDescription</textarea>
+                        <textarea placeholder="Blog Description" name="BlogDescription" class="form-control lh-2" id="BlogDescription">@Model.BlogDescription</textarea>
                     </div>
                 </div>
 
@@ -78,6 +78,24 @@
         </div>
     </div>
 </div>
+<script>
+    
+</script>
+<script>
+         @if (TempData["error"] != null)
+{
+    <text>
+        Swal.fire({
+            icon: 'error',
+            title: 'Update Failed',
+            text: '@TempData["error"]',
+            timer: 2000,
+            showConfirmButton: false
+        });
+    </text>
+}
 
-
+    //CkEditor
+    CKEDITOR.replace('BlogDescription');
+</script>
 

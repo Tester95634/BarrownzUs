@@ -4,7 +4,9 @@
     ViewBag.MetaDescription = "At Barrownz Group, we offer top-rated SEO services in Pennsylvania, USA, providing everything you need to improve your online presence";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/seo-service-in-pennsylvania" />
+}
 
 
 <div class="seoPennsylvania large_screen d-flex align-items-center justify-content-center flex-column">
@@ -290,11 +292,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4 icon_gaps">
-                <a href="@Url.Action("SEO_In_Pennsylvania","Home")" class="d-flex align-items-center justify-content-center flex-column border">
-                    <img src="~/Content/location-icon/Pennsylvania.png" class="img-fluid" style="height:100px; width:100px;" />
-                    <p class="text-center">Pennsylvania</p>
-                </a>
-            </div>*@
+                    <a href="@Url.Action("SEO_In_Pennsylvania","Home")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Pennsylvania.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Pennsylvania</p>
+                    </a>
+                </div>*@
         </div>
     </div>
 </div>

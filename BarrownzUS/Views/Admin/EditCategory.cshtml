@@ -5,16 +5,16 @@
 }
 
 <form method="post" action="@Url.Action("EditCategory","Admin")" class="w-50">
-    <input type="hidden" id="@Model.Id" />
+    <input type="hidden" name="CategoryID" value="@Model.CategoryID" />
     <div class="modal-body">
         <div class="mb-3">
             <label for="name" class="form-label">Category</label>
-            <input type="text" name="BlogCategory" value="@Model.BlogCategory" class="form-control" required />
+            <input type="text" name="BlogCategoryName" value="@Model.BlogCategoryName" class="form-control" required />
         </div>
         <!-- Add more fields as needed -->
     </div>
     <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-primary">Update</button>
     </div>
 </form>
 

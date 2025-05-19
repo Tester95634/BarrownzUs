@@ -4,7 +4,9 @@
     ViewBag.MetaDescription = "At our website design company in Florida, we specialize in creating stunning, user-friendly websites that help businesses succeed online.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/web-development-service-florida" />
+}
 
 <div class="webdevelopmentflorida large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
@@ -36,11 +38,11 @@
                     We also understand how important it is to be found online, so we help with Search Engine Optimization (SEO) to improve your website’s ranking on Google. This makes it easier for potential customers to find your business. Choose us for <b>professional website development in Florida.</b> We are committed to providing high-quality, affordable web design services that help your business grow. Let us create a website that helps you stand out from the competition and succeed online.
 
                 </p>
-          </div>
+            </div>
             <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center position-relative">
                 <img src="~/Content/Web_Development_Images/Florida/Services3.webp" class="img-fluid border border-primary-1 p-1 position-relative dev" />
-               
-               
+
+
             </div>
         </div>
     </div>
@@ -261,11 +263,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4 ">
-                <a href="@Url.Action("WebsiteDevelopment_In_Florida")" class="d-flex align-items-center justify-content-center flex-column border">
-                    <img src="~/Content/location-icon/Florida.png" class="img-fluid" style="height:100px; width:100px;" />
-                    <p class="text-center">Florida</p>
-                </a>
-            </div>*@
+                    <a href="@Url.Action("WebsiteDevelopment_In_Florida")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Florida.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Florida</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4 icon_gaps">
                 <a href="@Url.Action("WebsiteDevelopment_In_Taxes")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/Texas.png" class="img-fluid" style="height:100px; width:100px;" />

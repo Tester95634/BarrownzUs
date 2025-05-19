@@ -4,7 +4,7 @@
     ViewBag.MetaDescription = "Barrownz Group offers top web development, SEO, digital marketing, graphic design services & much more, to help your business grow online. Quality work, real results.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@section Styles {
+@section  Canonical{
     <link rel="canonical" href="https://barrownz.us/" />
 }
 <!-- Spinner Start -->
@@ -969,7 +969,7 @@
                             </div>
                             <div class="col-12">
                                 <select class="form-select bg-light border-0" id="option" name="Service" style="height: 55px;">
-                                    <option selected>Select A Service</option>
+                                    <option value="">Select A Service</option>
                                     <option>Web development</option>
                                     <option>SEO Optimization</option>
                                     <option>Digital Marketing</option>

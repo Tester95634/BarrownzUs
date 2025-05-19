@@ -6,10 +6,12 @@ using System.Web;
 
 namespace BarrownzUS.Models
 {
-    public class tbl_Admin
-    {
+	public class Users
+	{
         [Key]
         public int Id { get; set; }
+        [Required]
+        public string Usernmae { get; set; }
         [Required]
         public string Email { get; set; }
         [Required]

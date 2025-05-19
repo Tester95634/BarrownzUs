@@ -5,7 +5,6 @@
 }
 
 
-<main>
     <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
         <div class="container-xl px-4">
             <div class="page-header-content pt-4">
@@ -15,7 +14,7 @@
                             <div class="page-header-icon"><i data-feather="filter"></i></div>
                             Blog Category List
                         </h1>
-                        <div class="page-header-subtitle">An extension of the Simple DataTables library, customized for SB Admin Pro</div>
+                        <div class="page-header-subtitle">Add a new category to organize and classify your blog posts. Categories help users easily navigate and find relevant content based on their interests.</div>
                     </div>
                 </div>
             </div>
@@ -46,7 +45,7 @@
                                 <div class="modal-body">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Category</label>
-                                        <input type="text" name="BlogCategory" class="form-control" required />
+                                        <input type="text" name="BlogCategoryName" class="form-control" required />
                                     </div>
                                     <!-- Add more fields as needed -->
                                 </div>
@@ -64,6 +63,7 @@
                         <tr>
                             <th>Srno</th>
                             <th>Category</th>
+                            <th>Created_dt</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -76,15 +76,16 @@
                         {
                             <tr>
                                 <td>@SrNo</td>
-                                <td>@item.BlogCategory</td>
+                                <td>@item.BlogCategoryName</td>
+                                <td>@item.Created_dt</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <form action="/Admin/Delete_Category" method="post">
-                                            <input type="hidden" name="Id" value="@item.Id" />
+                                            <input type="hidden" name="CategoryID" value="@item.CategoryID" />
                                             <button class="btn btn-danger" onclick="confirm('Are yor sure want to delete')"><i class="fa-solid fa-trash"></i></button>
                                         </form>
 
-                                        <a href="@Url.Action("EditCategory", "Admin", new {Id=item.Id})" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="@Url.Action("EditCategory", "Admin", new {Id=item.CategoryID})" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
 
                                     </div>
                                 </td>
@@ -98,7 +99,7 @@
             </div>
         </div>
     </div>
-</main>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 

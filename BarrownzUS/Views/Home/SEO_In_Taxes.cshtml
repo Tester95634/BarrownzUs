@@ -4,11 +4,13 @@
     ViewBag.MetaDescription = " Barrownz Group offers top-rated SEO services in Texas, and we understand how important it is to stand out online.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Canonical {
+    <link rel="canonical" href="https://barrownz.us/seo-service-in-texas" />
+}
 
 <div class="seoTexas large_screen d-flex align-items-center justify-content-center flex-column">
     <div class="layer d-flex align-items-center justify-content-center flex-column">
-      <div class="row w-100 px-lg-3">
+        <div class="row w-100 px-lg-3">
             <div class="col-lg-6">
                 <div class="inner-left-container">
                     <h1 class="first_heading animated zoomIn carousel_text Expert text-white hero_section_PText ">
@@ -34,7 +36,7 @@
             </div>
             <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center position-relative">
                 <img src="~/Content/SeoImages/Texas/SEOServices.webp" class="img-fluid border border-primary-1 p-1 position-relative dev" />
-               
+
             </div>
         </div>
     </div>
@@ -103,14 +105,14 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-6 border" style="border-radius:50%; overflow:hidden;"> 
+                <div class="col-lg-6 border" style="border-radius:50%; overflow:hidden;">
                     <img src="~/Content/SeoImages/Texas/3.webp" class="img-fluid" />
                 </div>
                 <div class="col-lg-6 d-flex justify-content-center flex-column">
                     @*<h4> <i class="fa-solid fa-circle-arrow-right text-primary"></i> MLOps</h4>*@
                     <p class="mt-3">
                         Partnering with Barrownz Group means you’ll get a dedicated team that cares about your business’s success. We are here to help you reach more customers, grow your brand, and achieve long-term results.
-                       
+
                     </p>
                     <p> If you want to take your business to the next level, opt for Barrownz Group, the best SEO company in Texas, and watch your online presence soar!</p>
                 </div>
@@ -153,7 +155,7 @@
                     <div class="notiborderglow"></div>
                     <div class="notititle fw-bold">
                         <h3 style="color: #06A3DA; font-size: 1.1rem;"> On-Page SEO</h3>
-                       
+
                     </div>
                     <div class="notibody">
                         We fix your website’s pages by using the right titles, keywords, & infographics so search engines and people can easily find and use them.
@@ -164,7 +166,7 @@
                 <div class="notification pb-4">
                     <div class="notiglow"></div>
                     <div class="notiborderglow"></div>
-                    <div class="notititle fw-bold"> 
+                    <div class="notititle fw-bold">
                         <h3 style="color: #06A3DA; font-size: 1.1rem;">Off-Page SEO </h3>
                     </div>
                     <div class="notibody">
@@ -280,11 +282,11 @@
                 </a>
             </div>
             @*<div class="col-lg-2 col-md-4 icon_gaps">
-            <a href="@Url.Action("SEO_In_Texas","Home")" class="d-flex align-items-center justify-content-center flex-column border">
-                <img src="~/Content/location-icon/Texas.png" class="img-fluid" style="height:100px; width:100px;" />
-                <p class="text-center">Texas</p>
-            </a>
-        </div>*@
+                    <a href="@Url.Action("SEO_In_Texas","Home")" class="d-flex align-items-center justify-content-center flex-column border">
+                        <img src="~/Content/location-icon/Texas.png" class="img-fluid" style="height:100px; width:100px;" />
+                        <p class="text-center">Texas</p>
+                    </a>
+                </div>*@
             <div class="col-lg-2 col-md-4 icon_gaps">
                 <a href="@Url.Action("SEO_In_KansasCity","Home")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/Kansas_City.png" class="img-fluid" style="height:100px; width:100px;" />
@@ -299,7 +301,7 @@
             </div>
         </div><br />
         <div class="row d-flex align-items-center justify-content-center gap-4 box_gaps">
-            
+
             <div class="col-lg-2 col-md-4">
                 <a href="@Url.Action("SEO_In_NewJersey","Home")" class="d-flex align-items-center justify-content-center flex-column border">
                     <img src="~/Content/location-icon/New_Jersey.png" class="img-fluid" style="height:100px; width:100px;" />

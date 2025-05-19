@@ -3,7 +3,9 @@
     ViewBag.Title = "BlogDetails";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@{
+    var categories = ViewBag.Category as List<BarrownzUS.Models.BlogCategory>;
+}
 <div class="container-fluid p-0">
     <div class="blog_helo_Details py-5 px-lg-5 px-3 position-relative text-white">
         <!-- Overlay shadow -->
@@ -12,7 +14,7 @@
         <!-- Text Content -->
         <div class="container d-flex align-items-center our_blogs w-auto position-relative ">
             <p class="mb-0 fw-bold fs-5 hover-underline">
-                <i class="fa-solid fa-blog text-white border p-2"></i> Straightforward Blog
+                <i class="fa-solid fa-blog text-white border p-2"></i> @Model.BlogCategoryName
             </p>
         </div>
     </div>
@@ -23,19 +25,14 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="blog_Details_holder  p-4">
-                    <div class="show_types">  <span class="bg-primary text-white One_categories p-1">straightforward</span></div>
-                    <h4 class="fw-bold mt-2">A blog is a regularly updated website containing articles or posts.</h4>
-                    <p class="One_categories text-primary"><i class="fa-solid fa-clock"></i> Date Time</p>
+                    <div class="show_types">  <span class="bg-primary text-white One_categories p-1">@Model.BlogCategoryName</span></div>
+                    <h4 class="fw-bold mt-2">@Model.BlogTitle</h4>
+                    <p class="One_categories text-primary"><i class="fa-solid fa-clock"></i> @Model.Created_dt</p>
                     <div class="Blog_Image">
-                        <img src="~/Content/icon_image/code.png" class="img-fluid">
+                        <img src="~/Content/Blog_Uploaded_Image/@Model.Blog_Img" class="img-fluid">
                     </div>
                     <div class="only_Text_heading mt-3">
-                        <p class="growingText">Simply Text is a powerful, straightforward text editor for Windows. Designed for anyone, from the casual user up to and including the professional developer, Simply Text provides a feature-rich experience without any clutter. With Simply Text the user doesn't need to compromise on usability and functionality.</p>
-                        <p class="growingText">Simply Text is a powerful, straightforward text editor for Windows. Designed for anyone, from the casual user up to and including the professional developer, Simply Text provides a feature-rich experience without any clutter. With Simply Text the user doesn't need to compromise on usability and functionality.</p>
-                        <p class="growingText">Simply Text is a powerful, straightforward text editor for Windows. Designed for anyone, from the casual user up to and including the professional developer, Simply Text provides a feature-rich experience without any clutter. With Simply Text the user doesn't need to compromise on usability and functionality.</p>
-                        <p class="growingText">Simply Text is a powerful, straightforward text editor for Windows. Designed for anyone, from the casual user up to and including the professional developer, Simply Text provides a feature-rich experience without any clutter. With Simply Text the user doesn't need to compromise on usability and functionality.</p>
-                        <p class="growingText">Simply Text is a powerful, straightforward text editor for Windows. Designed for anyone, from the casual user up to and including the professional developer, Simply Text provides a feature-rich experience without any clutter. With Simply Text the user doesn't need to compromise on usability and functionality.</p>
-
+                        @Html.Raw(Model.BlogDescription)
                     </div>
                 </div>
             </div>
@@ -44,10 +41,9 @@
                     <div class=" blog_Details_holder p-5">
                         <h4 class="fw-bold">Categories</h4>
                         <ul>
-                            <li>straightforward</li>
-                            <li>powerful</li>
-                            <li>Windows</li>
-                            <li>Designed </li>
+                            @foreach (var cate in categories) {
+                                <li>@cate.BlogCategoryName</li>
+                            }
                         </ul>
                     </div>
                     <div class="blog_Details_holder p-5 mt-2">
@@ -66,22 +62,20 @@
 
 <script>
     const slider = document.getElementById('progressSlider');
-    const texts = document.querySelectorAll('.growingText');
+    const texts = document.querySelectorAll('.only_Text_heading>p');
     var value_in_px = document.getElementById('font_size');
 
-slider.addEventListener('input', () => {
-  const value = parseInt(slider.value); // 0 to 100
-  const minSize = 16;
-    const maxSize = 25;
-  
+    slider.addEventListener('input', () => {
+        const value = parseInt(slider.value); // 0 to 100
+        const minSize = 16;
+        const maxSize = 25;
 
-    const newSize = minSize + (value / 100) * (maxSize - minSize);
-    texts.forEach(text => {
-        text.style.fontSize = newSize + 'px';
+
+        const newSize = minSize + (value / 100) * (maxSize - minSize);
+        texts.forEach(text => {
+            text.style.fontSize = newSize + 'px';
+        });
+
+        value_in_px.textContent = value;
     });
-
-    value_in_px.textContent = value;
-});
-
-
 </script>

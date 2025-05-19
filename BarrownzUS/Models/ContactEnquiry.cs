@@ -9,7 +9,7 @@ namespace BarrownzUS.Models
     public class ContactEnquiry
     {
         [Key]
-        public int Id { get; set; }
+        public int ID { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
@@ -20,5 +20,10 @@ namespace BarrownzUS.Models
         public string Service { get; set; }
         [Required]
         public string Message { get; set; }
+
+        [Required]
+        public DateTime Created_dt { get; set; }
+
+
     }
 }
